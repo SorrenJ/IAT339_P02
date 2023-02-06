@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Sorren Jao
+ID: 301302783
+Course: IAT 339
+Assignment: P01 Process-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P01</title>
+  <link href="css/eathealthy.css" rel="stylesheet">
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="nav"><a href="index.html">
+      <div class="nav-item home"><i class="fa-solid fa-drumstick-bite"> </i> EatHealthy</div>
+    </a><a href="menu.html">
+      <div class="nav-item">Menu</div>
+    </a> <a href="order.html">
+      <div class="nav-item">Order</div>
+    </a><a href="#contact">
+      <div class="nav-item">Contact</div>
+    </a> <a href="styleguide.html">
+      <div class="nav-item">Styleguide</div>
+    </a>
+    <div class="nav-item cart"> <span><i class="fa-solid fa-cart-shopping"></i>Cart</span>
+      <div class="dropdownCart-content">
+        <div class="menu-flex-container">
+          <div class="menu-flex-item-pic"> <a href="sandwich.html"><img class="thumb-img" src="imgs/sandwich.jpg"
+                alt="sandwich"></a> </div>
+          <div class="menu-flex-item-desc">
+            <p>Sandwich Pack</p>
+            <p>$79.99</p>
+          </div>
+        </div>
+        <div class="menu-flex-container">
+          <div class="menu-flex-item-pic"> <a href="asian_cuisine.html"><img class="thumb-img" src="imgs/asianDish.jpg"
+                alt="asianDish"></a> </div>
+          <div class="menu-flex-item-desc">
+            <p> Asian Cusine</p>
+            <p>$89.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header ends -->
+  <br>
+  <!-- page navigation -->
+  <div class="style_nav">
+    <a href="#colors">
+      <div class="style-nav-item">Colors</div>
+    </a>
+    <a href="#branding">
+      <div class="style-nav-item">Branding</div>
+    </a>
+    <a href="#fonts">
+      <div class="style-nav-item">Font</div>
+    </a>
+    <a href="#nav">
+      <div class="style-nav-item">Navigation</div>
+    </a>
+    <a href="#interactive">
+      <div class="style-nav-item">Interactive</div>
+    </a>
+    <a href="#testimonial">
+      <div class="style-nav-item">Testimonial</div>
+    </a>
+    <a href="#products">
+      <div class="style-nav-item">Products</div>
+    </a>
+    <a href="#checkout">
+      <div class="style-nav-item">Checkout</div>
+    </a>
+    <a href="#references">
+      <div class="style-nav-item">References</div>
+    </a>
+  </div>
+  <!--end of page navigation -->
+
+  <!-- page section starts -->
+  <section>
+    <!-- Color Palette container -->
+    <div id="colors" class="styleguide-container">
+      <h2>Color Palette</h2>
+
+      <div class="colorPalette_lightblue"></div>
+      <p style="display: inline"> #a3cfee - Background</p>
+      <br><br>
+      <div class="colorPalette_navyblue"></div>
+      <p style="display: inline"> #003358 - Foreground (i.e. Buttons, Header, Footer, etc.)</p>
+      <br><br>
+      <div class="colorPalette_transgrey"></div>
+      <p style="display: inline"> #2348624d - Container Border</p>
+      <br><br>
+      <div class="colorPalette_skyblue"></div>
+      <p style="display: inline"> #0970b9 - Emphasis (i.e. Cart)</p>
+      <br><br>
+      <div class="colorPalette_black"></div>
+      <p style="display: inline"> #000000 - Body Text Font</p>
+      <br><br>
+      <div class="colorPalette_white"></div>
+      <p style="display: inline"> #ffffff - Icons, Foreground Text, & Hover</p>
+    </div>
+    <!-- Color Palette container ends -->
+
+    <!-- Branding container -->
+    <div id="branding" class="styleguide-container">
+      <h2>Branding ideas</h2>
+      <p>This company delivers bulk healthy meals to organizations or a group of working people. To customers this a
+        healthy alternative to eating fast-food. This company promotes healthy eating while being convenient when eaten
+        on the job. </p>
+      <br>
+      The main brand color is navy blue to represent a healthy well-being.
+
+    </div>
+    <!-- Branding container ends -->
+
+    <!-- Branding Logo container -->
+    <div class="styleguide-container">
+      <h2>Brand Logo</h2>
+
+      <div class="nav-item home" style="background-color:#003358; color:white">
+        <i class="fa-solid fa-drumstick-bite"> </i> EatHealthy
+      </div>
+      <br>
+      <h2>Inverted Brand Logo</h2>
+      <div class="nav-item home" style="background-color:#ffffff; color:rgb(0, 0, 0)">
+        <i class="fa-solid fa-drumstick-bite"> </i> EatHealthy
+      </div>
+      <br>
+    </div>
+
+    <!-- Branding Logo container ends -->
+
+
+    <!-- Fonts container -->
+    <div id="fonts" class="styleguide-container">
+
+      <h2>Font</h2>
+      <p>Body Font: <code>font-family: 'Verdana', sans-serif;</code></p>
+      <br>
+      <p> Heading Font: <code>font-family: Georgia, serif;</code></p>
+      <br>
+
+      <h2>Headings</h2>
+      <div class="styleguide-container">
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+      </div>
+      <br>
+      <h2>Paragraph</h2>
+
+      <p>EatHealthy is a healthy foods catering service that delivers a bulk of healthy foods to homes, construction
+        sites, movie production sites, offices workplaces, and other large sites.</p>
+      <p>No restaurant nearby your site? No worries, EatHealthy deliver's easy to eat, and nutrious foods to your crew.
+      </p>
+      <p>Fast and reliable services, while prioritizing a balanced diet!</p>
+      <br>
+      <h2>Numbered list</h2>
+      <ol>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Carrot</li>
+      </ol>
+      <br>
+      <h2>In-text Link</h2>
+      <a href="index.html">Click here</a>
+    </div>
+    <!-- Fonts container ends-->
+
+    <br>
+    <br>
+
+    <h2>Navigation</h2>
+  </section>
+
+
+  <!-- navigation bar container -->
+  <div class="nav"><a href="index.html">
+      <div class="nav-item home">
+        <i class="fa-solid fa-drumstick-bite">
+
+        </i> EatHealthy
+      </div>
+    </a>
+    <a href="menu.html">
+      <div class="nav-item">Menu</div>
+    </a>
+    <a href="order.html">
+      <div class="nav-item">Order</div>
+    </a><a href="#contact">
+      <div class="nav-item">Contact</div>
+    </a>
+    <a href="styleguide.html">
+      <div class="nav-item">Styleguide</div>
+    </a>
+    <div class="nav-item cart"> <span>
+        <i class="fa-solid fa-cart-shopping">
+
+        </i>Cart</span>
+      <div class="dropdownCart-content">
+        <div class="menu-flex-container">
+          <div class="menu-flex-item-pic">
+            <a href="sandwich.html">
+              <img class="thumb-img" src="imgs/sandwich.jpg" alt="sandwich"></a>
+          </div>
+          <div class="menu-flex-item-desc">
+            <p>Sandwich Pack</p>
+            <p>$79.99</p>
+          </div>
+        </div>
+        <div class="menu-flex-container">
+          <div class="menu-flex-item-pic">
+            <a href="asian_cuisine.html">
+              <img class="thumb-img" src="imgs/asianDish.jpg" alt="asianDish"></a>
+          </div>
+          <div class="menu-flex-item-desc">
+            <p> Asian Cusine</p>
+            <p>$89.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navigation bar container ends -->
+  <section>
+    <br>
+    <!-- navbar class container -->
+    <div id="nav" class="styleguide-container">
+      <h2>Navbar Container</h2>
+      <p>Navbar class: <code>nav</code></p>
+
+      <pre>
+<code>
+&lt;div class=&quot;nav&quot;&gt;&lt;/div&gt;
+</code>
+</pre>
+
+      <h2>Navbar items</h2>
+      <p>Navbar item class: <code>nav-item</code></p>
+      <pre>
+<code>
+  &lt;div class=&quot;nav&quot;&gt; 
+  &lt;a href=&quot;menu.html&quot;&gt;&lt;div class =&quot;nav-item&quot;&gt;Menu&lt;/div&gt;&lt;/a&gt; 
+  &lt;a href=&quot;order.html&quot;&gt;&lt;div class =&quot;nav-item&quot;&gt;Order&lt;/div&gt;&lt;/a&gt; 
+  &lt;a href=&quot;#contact&quot;&gt;&lt;div class =&quot;nav-item&quot;&gt;Contact&lt;/div&gt;&lt;/a&gt; 
+  &lt;/div&gt;
+</code> 
+</pre>
+      <h2>Mobile Navigation</h2>
+      <pre>
+<code>
+  @media only screen and (max-width: 1000px) {
+  .nav {
+  margin:0;
+  flex-direction: column;
+  width:100%;
+    }
+  }
+</code>
+</pre>
+
+      <h2>Cart button</h2>
+
+      <div class="nav-item cart"> <span>
+          <i class="fa-solid fa-cart-shopping">
+
+          </i>Cart</span>
+        <div class="dropdownCart-content">
+          <div class="menu-flex-container">
+            <div class="menu-flex-item-pic">
+              <a href="sandwich.html">
+                <img class="thumb-img" src="imgs/sandwich.jpg" alt="sandwich"></a>
+            </div>
+            <div class="menu-flex-item-desc">
+              <p>Sandwich Pack</p>
+              <p>$79.99</p>
+            </div>
+          </div>
+          <div class="menu-flex-container">
+            <div class="menu-flex-item-pic">
+              <a href="asian_cuisine.html">
+                <img class="thumb-img" src="imgs/asianDish.jpg" alt="asianDish"></a>
+            </div>
+            <div class="menu-flex-item-desc">
+              <p> Asian Cusine</p>
+              <p>$89.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <pre>
+
+<code>
+  &#x3C;div class=&#x22;nav-item cart&#x22;&#x3E;
+  &#x3C;span&#x3E;&#x3C;i class=&#x22;fa-solid fa-cart-shopping&#x22;&#x3E;&#x3C;/i&#x3E;Cart&#x3C;/span&#x3E;
+  &#x3C;div class=&#x22;dropdownCart-content&#x22;&#x3E; 
+  &#x3C;div class = &#x22;menu-flex-container&#x22;&#x3E;
+  &#x3C;div class=&#x22;menu-flex-item-pic&#x22;&#x3E;
+  &#x3C;a href=&#x22;sandwich.html&#x22;&#x3E;
+  &#x3C;img class=&#x22;thumb-img src=&#x22;imgs/sandwich.jpg&#x22; alt=&#x22;sandwich&#x22;&#x3E;&#x3C;/a&#x3E; &#x3C;/div&#x3E; 
+  &#x3C;div class=&#x22;menu-flex-item-desc&#x22;&#x3E; 
+  &#x3C;p&#x3E;Sandwich Pack&#x3C;/p&#x3E;&#x3C;p&#x3E;$79.99&#x3C;/p&#x3E; 
+  &#x3C;/div&#x3E; 
+  &#x3C;/div&#x3E; 
+  &#x3C;div class = &#x22;menu-flex-container&#x22;&#x3E; 
+  &#x3C;div class=&#x22;menu-flex-item-pic&#x22;&#x3E; 
+  &#x3C;a href=&#x22;asian_cuisine.html&#x22;&#x3E;
+  &#x3C;img class=&#x22;thumb-img&#x22; src=&#x22;imgs/asianDish.jpg&#x22; alt=&#x22;asianDish&#x22;&#x3E;
+  &#x3C;/a&#x3E; 
+  /div&#x3E; 
+  &#x3C;div class=&#x22;menu-flex-item-desc&#x22;&#x3E; 
+  &#x3C;p&#x3E; Asian Cusine&#x3C;/p&#x3E; &#x3C;p&#x3E;$89.99&#x3C;/p&#x3E; 
+  &#x3C;/div&#x3E; 
+  &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+  
+</code>
+</pre>
+      <br>
+    </div>
+    <!-- navbar class container ends-->
+
+    <!-- Interactable Elements container -->
+    <div>
+      <h2>Interactive Elements</h2>
+    </div>
+    <div id="interactive" class="styleguide-container">
+      <h2>Radio Elements</h2>
+      <input type="radio" id="delivery_date3" name="delivery_date3" value="3">
+      <label for="delivery_date1">Jan. 21 2023</label>
+      <br>
+      <input type="radio" id="delivery_date4" name="delivery_date4" value="4">
+      <label for="delivery_date2">Jan. 22 2023</label>
+
+      <br>
+      <br>
+      <div id="contact1">
+        <div class="footerContainer"><br>
+          <h2>Text Input</h2>
+          <form action="_blank" method="post">
+            <h3><label for="full-name1">Full Name</label></h3>
+            <input type="text" name="name1" id="full-name1" placeholder="First and Last" required="">
+            <br>
+            <h3><label for="email-address1">Email Address</label></h3>
+            <input type="email" name="_replyto" id="email-address1" placeholder="sjao@sfu.ca" required=""><br>
+            <h3><label for="message1">How can we improve your experience?</label></h3>
+            <textarea rows="5" name="message1" id="message1" placeholder="Hello." required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject1" value="Contact Form Submission"> <br> <br>
+            <input class="button" type="submit" value="Submit">
+          </form>
+        </div>
+
+      </div>
+      <br>
+
+      <pre>
+      <code>
+        .button{
+          background:#003358;
+          color:white;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          text-align:center;
+          width:50%;
+          border-radius: 25px;
+          border-block: 1px solid #ffffff;
+          }
+          
+          .button:hover{
+            background:#ffffff;
+            color:rgb(0, 0, 0);
+            border-block: 1px solid #003358;
+            transition: 0.5s;
+            cursor: pointer; 
+            /* pointer when hover */
+          }
+
+      </code>
+    </pre>
+
+    <h2>Image as a link</h2>
+    <div class="menu-flex-item-pic">
+    <br><a href="sandwich.html"><img class="menu-img" src="imgs/sandwich.jpg" alt="sandwich"></a>
+    </div>
+
+
+
+
+
+    </div>
+    <!-- Interactable Elements container ends -->
+    <br>
+    <!-- Testimonial container -->
+    <div id="testimonial" class="styleguide-container">
+      <h2>Testimonial or User Feedback</h2>
+      <!-- testominal conatiner starts -->
+      <p>Testomonial Container class: <code>testomonialContainer</code></p>
+      <p>Testomonial User Profile class: <code>UserProf</code></p>
+      <p>Testomonial Quote class: <code>quote</code></p>
+      <br>
+      <a href="index.html">
+        <p>See Testimonial page</p>
+      </a>
+      <div class="testomonialColor">
+        <section>
+          <h2>&nbsp;</h2>
+          <div class="testomonialContainer">
+
+            <div class="UserProf">
+              <img src="imgs/businessGuy2.jpg" alt="youngman">
+            </div>
+            <div class="quote">
+              <p><i>"As a Construction supervisor, I find EatHealthy quite handy as I can treat my fellow crew members
+                  nutritious meals. Fast food doesn't always have to be the only option."</i></p>
+            </div>
+
+          </div>
+
+
+        </section>
+        <hr>
+      </div>
+
+
+
+
+      <pre>
+        <code>
+          &#x3C;div class=&#x22;testomonialContainer&#x22;&#x3E;
+          &#x3C;div class=&#x22;UserProf&#x22;&#x3E;
+            &#x3C;img src=&#x22;imgs/businessGuy2.jpg&#x22; alt=&#x22;youngman&#x22;&#x3E;
+          &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;quote&#x22;&#x3E;
+             &#x3C;p&#x3E;&#x3C;i&#x3E;&#x22;As a Construction supervisor, I find EatHealthy quite handy as I can treat my fellow crew members nutritious meals. Fast food doesn&#x27;t always have to be the only option.&#x22;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+             &#x3C;/div&#x3E;
+         &#x3C;/div&#x3E;
+        
+        
+        </code>
+        </pre>
+    </div>
+    <!-- testominal container ends -->
+
+    <!--Product Selection container -->
+    <div id="products" class="styleguide-container">
+      <h1>Product Selection</h1>
+      <p>Menu Container class: <code>menu-flex-container</code></p>
+      <p>Menu Image Item class: <code>menu-flex-item-pic</code></p>
+      <p>Menu Description class: <code>menu-flex-item-desc</code></p>
+      <br>
+      <a href="menu.html">
+        <p>See Menu page</p>
+      </a>
+    </div>
+
+
+    <div class="menu-flex-container">
+      <div class="menu-flex-item-pic">
+        <br><a href="sandwich.html"><img class="menu-img" src="imgs/sandwich.jpg" alt="sandwich"></a>
+      </div>
+      <div class="menu-flex-item-desc">
+        <h2>Sandwich Pack</h2>
+        <h3>$79.99</h3>
+        <br>
+        <p>60 customizable sandwiches.<br> Easy to eat on the job.<br>Perfect for convience and for a quick a bite.
+        </p> <br>
+        <br>
+        <a href="sandwich.html">
+          <div class="button">See details</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-flex-container">
+      <div class="menu-flex-item-pic">
+        <br><a href="asian_cuisine.html"><img class="menu-img" src="imgs/asianDish.jpg" alt="asianDish"></a>
+      </div>
+      <div class="menu-flex-item-desc">
+        <h2> Asian Cusine</h2>
+        <h3>$89.99</h3>
+        <br>
+        <p>60 customizable rice/noodle dishes.<br> Dishes range from shanghai noodles to fried rice dishes.</p> <br>
+        <br>
+        <a href="asian_cuisine.html">
+          <div class="button">See details</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-flex-container">
+      <div class="menu-flex-item-pic">
+        <br><a href="beyond_meat.html"><img class="menu-img" src="imgs/beyondmeat.jpg" alt="beyondmeat"></a>
+      </div>
+      <div class="menu-flex-item-desc">
+        <h2>Beyond Meat Burgers</h2>
+        <h3>$80.49</h3>
+        <br>
+        <p>60 plant based burgers</p><br>
+        <a href="beyond_meat.html">
+          <div class="button">See details</div>
+        </a>
+      </div>
+    </div>
+    <br>
+
+
+    <pre>
+  <code>
+    &#x3C;div class = &#x22;menu-flex-container&#x22;&#x3E;
+    &#x3C;div class=&#x22;menu-flex-item-pic&#x22;&#x3E;
+      &#x3C;br&#x3E;&#x3C;a href=&#x22;sandwich.html&#x22;&#x3E;&#x3C;img class=&#x22;menu-img&#x22; src=&#x22;imgs/sandwich.jpg&#x22; alt=&#x22;sandwich&#x22;&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;menu-flex-item-desc&#x22;&#x3E;
+     &#x3C;h2&#x3E;Sandwich Pack&#x3C;/h2&#x3E;
+     &#x3C;h3&#x3E;$79.99&#x3C;/h3&#x3E; 
+      &#x3C;br&#x3E;
+      &#x3C;p&#x3E;60 customizable sandwiches.&#x3C;br&#x3E; Easy to eat on the job.&#x3C;br&#x3E;Perfect for convience and for a quick a bite.&#x3C;/p&#x3E; &#x3C;br&#x3E;
+       &#x3C;br&#x3E;
+      &#x3C;a href=&#x22;sandwich.html&#x22;&#x3E;
+        &#x3C;div class=&#x22;button&#x22;&#x3E;See details&#x3C;/div&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+  </code>
+</pre>
+
+    <!--Product Selection container ends-->
+
+    <!--Checkout container -->
+    <div id="checkout" class="styleguide-container">
+      <h1>Checkout & Payment Form</h1>
+      <p> <code>super-order-flex-container</code> This class encapsulates all containers.</p>
+
+      <p><code>super-order-flex-item"</code> This class encapsulates order containers.</p>
+
+      <p><code>order-flex-container</code> This class encapsulates any order items.</p>
+
+      <p> <code>order-flex-item</code> This class encapulates any fields, radio buttons, etc.</p>
+
+      <p><code>order-summary</code> This class has the same hiearchy as <code>order-flex-container</code> but has unique
+        properties.</p>
+      <a href="order.html">
+        <p>See Checkout page</p>
+      </a>
+    </div>
+
+    <!-- form start -->
+    <form action="order_confirmed.html" method="post">
+
+      <!-- form container starts -->
+      <div class="super-order-flex-container">
+
+        <!-- form container item 1 starts -->
+        <div class="super-order-flex-item">
+
+          <!-- order container 1 starts -->
+          <div class="order-flex-container">
+
+            <!-- order item 1 starts -->
+            <div class="order-flex-item">
+              <h2>Delivery Information</h2>
+              <br>
+
+              <label for="fname">First Name</label>
+              <br>
+              <input type="text" id="fname" name="fname">
+              <br>
+              <br>
+
+              <label for="lname">Last Name</label>
+              <br>
+              <input type="text" id="lname" name="lname">
+              <br>
+
+            </div>
+            <!-- order item 1 ends -->
+
+            <!-- order item 2 starts -->
+            <div class="order-flex-item">
+
+              <br>
+
+              <label for="address">Address</label>
+              <br>
+
+              <input type="text" id="address" name="address">
+              <br>
+              <br>
+
+              <label for="zip">ZIP</label>
+              <br>
+
+              <input type="text" id="zip" name="zip">
+              <br>
+              <br>
+              <label for="province">Province</label>
+              <br>
+              <input type="text" id="province" name="province">
+              <br><br>
+              <label for="city">City</label>
+              <br>
+              <input type="text" id="city" name="city">
+              <br><br>
+              <label for="phone">Phone</label>
+              <br>
+              <input type="text" id="phone" name="phone">
+              <br><br>
+            </div>
+            <!-- order item 2 ends -->
+          </div>
+          <!-- order container 1  ends -->
+
+          <!-- order container 2  starts -->
+          <div class="order-flex-container">
+
+            <!-- order item 1 starts -->
+            <div class="order-flex-item">
+              <h2>Billing Information</h2>
+              <br>
+
+              <label for="card">Card number</label>
+              <br>
+              <input type="text" id="card" name="card">
+              <br><br>
+
+              <label for="exp">Expiration</label>
+              <br>
+              <input type="text" id="exp" name="exp">
+              <br><br>
+              <label for="cvc">CVC</label>
+              <br>
+              <input type="text" id="cvc" name="cvc">
+            </div>
+            <!-- order item 1 ends -->
+
+            <!-- order item 2 starts -->
+            <div class="order-flex-item">
+              <h2>Items and shipping</h2>
+
+              <h3>Cart</h3>
+              <ol>
+                <li>
+                  <p>Sandwich pack - $79.99</p>
+                </li>
+                <li>
+                  <p>Asian Cusine - $89.99</p>
+                </li>
+              </ol>
+              <h3>Delivery date(s)</h3>
+              <input type="radio" id="delivery_date1" name="delivery_date1" value="1">
+              <label for="delivery_date1">Jan. 21 2023</label>
+              <br>
+              <input type="radio" id="delivery_date2" name="delivery_date2" value="2">
+              <label for="delivery_date2">Jan. 22 2023</label>
+
+
+            </div>
+            <!-- order item 2 ends -->
+          </div>
+          <!-- order container 2  ends -->
+        </div>
+        <!-- form container item 1 ends -->
+
+        <!-- form container item 2 starts -->
+        <div class="super-order-flex-item">
+
+          <!--  order summary container starts -->
+          <div class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+              <tr>
+                <td>Sandwich Pack: <br>
+                </td>
+                <td>$79.99</td>
+              </tr>
+              <tr>
+                <td>Asian Cusine:</td>
+                <td>$89.99</td>
+              </tr>
+
+
+              <tr>
+                <td>Shipping:</td>
+                <td>
+                  <del>$9.99</del>
+                </td>
+              </tr>
+              <tr>
+                <td>Tax:</td>
+                <td>$20.39</td>
+              </tr>
+            </table>
+            <h3> Order total:</h3>
+            <h3>$190.37</h3>
+            <input class="button" type="reset" value="Reset">
+            <br><br>
+            <input class="button" type="submit" value="Place order">
+          </div>
+          <!--  order summary container ends -->
+
+        </div>
+        <!-- form container item 2 ends -->
+      </div>
+      <!-- form container ends -->
+
+    </form>
+    <!-- form ends -->
+
+    <pre>
+  <code>
+    &#x3C;!-- form start --&#x3E;
+  &#x3C;form action=&#x22;order_confirmed.html&#x22; method=&#x22;post&#x22;&#x3E;
+    
+    &#x3C;!-- form container starts --&#x3E;
+    &#x3C;div class=&#x22;super-order-flex-container&#x22;&#x3E;
+   
+      &#x3C;!-- form container item 1 starts --&#x3E;
+      &#x3C;div class=&#x22;super-order-flex-item&#x22;&#x3E;
+      
+        &#x3C;!-- order container 1 starts --&#x3E;
+        &#x3C;div class=&#x22;order-flex-container&#x22;&#x3E;
+      
+   &#x3C;!-- order item 1 starts --&#x3E;
+      &#x3C;div class=&#x22;order-flex-item&#x22;&#x3E;
+          &#x3C;h2&#x3E;Delivery Information&#x3C;/h2&#x3E;
+          &#x3C;br&#x3E;
+      
+              &#x3C;label for=&#x22;fname&#x22;&#x3E;First Name&#x3C;/label&#x3E;
+              &#x3C;br&#x3E;
+              &#x3C;input type=&#x22;text&#x22; id=&#x22;fname&#x22; name=&#x22;fname&#x22;&#x3E;
+              &#x3C;br&#x3E;
+           &#x3C;br&#x3E;
+           
+              &#x3C;label for=&#x22;lname&#x22;&#x3E;Last Name&#x3C;/label&#x3E;
+              &#x3C;br&#x3E;
+              &#x3C;input type=&#x22;text&#x22; id=&#x22;lname&#x22; name=&#x22;lname&#x22;&#x3E;
+              &#x3C;br&#x3E;
+           
+          &#x3C;/div&#x3E;
+ &#x3C;!-- order item 1 ends --&#x3E;
+   
+  &#x3C;!-- order item 2 starts --&#x3E;
+      &#x3C;div class=&#x22;order-flex-item&#x22;&#x3E;
+        
+        &#x3C;br&#x3E;
+    
+        &#x3C;label for=&#x22;address&#x22;&#x3E;Address&#x3C;/label&#x3E;
+        &#x3C;br&#x3E;
+       
+        &#x3C;input type=&#x22;text&#x22; id=&#x22;address&#x22; name=&#x22;address&#x22;&#x3E;
+            &#x3C;br&#x3E;
+            &#x3C;br&#x3E;
+         
+            &#x3C;label for=&#x22;zip&#x22;&#x3E;ZIP&#x3C;/label&#x3E;
+            &#x3C;br&#x3E;
+           
+            &#x3C;input type=&#x22;text&#x22; id=&#x22;zip&#x22; name=&#x22;zip&#x22;&#x3E;
+            &#x3C;br&#x3E;
+            &#x3C;br&#x3E;
+            &#x3C;label for=&#x22;province&#x22;&#x3E;Province&#x3C;/label&#x3E;
+            &#x3C;br&#x3E;
+            &#x3C;input type=&#x22;text&#x22; id=&#x22;province&#x22; name=&#x22;province&#x22;&#x3E;
+            &#x3C;br&#x3E;&#x3C;br&#x3E;
+            &#x3C;label for=&#x22;city&#x22;&#x3E;City&#x3C;/label&#x3E;
+            &#x3C;br&#x3E;
+            &#x3C;input type=&#x22;text&#x22; id=&#x22;city&#x22; name=&#x22;city&#x22;&#x3E;
+            &#x3C;br&#x3E;&#x3C;br&#x3E;
+            &#x3C;label for=&#x22;phone&#x22;&#x3E;Phone&#x3C;/label&#x3E;
+            &#x3C;br&#x3E;
+            &#x3C;input type=&#x22;text&#x22; id=&#x22;phone&#x22; name=&#x22;phone&#x22;&#x3E;
+            &#x3C;br&#x3E;&#x3C;br&#x3E;
+          &#x3C;/div&#x3E;
+       &#x3C;!-- order item 2 ends --&#x3E;
+        &#x3C;/div&#x3E;
+ &#x3C;!-- order container 1  ends --&#x3E;
+
+ &#x3C;!-- order container 2  starts --&#x3E;
+    &#x3C;div class=&#x22;order-flex-container&#x22;&#x3E;
+      
+    &#x3C;!-- order item 1 starts --&#x3E;
+      &#x3C;div class=&#x22;order-flex-item&#x22;&#x3E;
+          &#x3C;h2&#x3E;Billing Information&#x3C;/h2&#x3E;
+          &#x3C;br&#x3E;
+      
+          &#x3C;label for=&#x22;card&#x22;&#x3E;Card number&#x3C;/label&#x3E;
+          &#x3C;br&#x3E;
+          &#x3C;input type=&#x22;text&#x22; id=&#x22;card&#x22; name=&#x22;card&#x22;&#x3E;
+              &#x3C;br&#x3E;&#x3C;br&#x3E;
+           
+              &#x3C;label for=&#x22;exp&#x22;&#x3E;Expiration&#x3C;/label&#x3E;
+              &#x3C;br&#x3E;
+              &#x3C;input type=&#x22;text&#x22; id=&#x22;exp&#x22; name=&#x22;exp&#x22;&#x3E;
+              &#x3C;br&#x3E;&#x3C;br&#x3E;
+              &#x3C;label for=&#x22;cvc&#x22;&#x3E;CVC&#x3C;/label&#x3E;
+              &#x3C;br&#x3E;
+              &#x3C;input type=&#x22;text&#x22; id=&#x22;cvc&#x22; name=&#x22;cvc&#x22;&#x3E;
+          &#x3C;/div&#x3E;
+ &#x3C;!-- order item 1 ends --&#x3E;
+
+         &#x3C;!-- order item 2 starts --&#x3E;
+      &#x3C;div class=&#x22;order-flex-item&#x22;&#x3E;
+        &#x3C;h2&#x3E;Items and shipping&#x3C;/h2&#x3E;
+        
+        &#x3C;h3&#x3E;Cart&#x3C;/h3&#x3E;
+        &#x3C;ol&#x3E;
+          &#x3C;li&#x3E;
+            &#x3C;p&#x3E;Sandwich pack - $79.99&#x3C;/p&#x3E;
+          &#x3C;/li&#x3E;
+          &#x3C;li&#x3E;
+            &#x3C;p&#x3E;Asian Cusine - $89.99&#x3C;/p&#x3E;
+          &#x3C;/li&#x3E;
+        &#x3C;/ol&#x3E;
+        &#x3C;h3&#x3E;Delivery date(s)&#x3C;/h3&#x3E;
+        &#x3C;input type=&#x22;radio&#x22; id=&#x22;delivery_date1&#x22; name=&#x22;delivery_date1&#x22; value=&#x22;1&#x22;&#x3E;
+        &#x3C;label for=&#x22;delivery_date1&#x22;&#x3E;Jan. 21 2023&#x3C;/label&#x3E;
+        &#x3C;br&#x3E;
+        &#x3C;input type=&#x22;radio&#x22; id=&#x22;delivery_date2&#x22; name=&#x22;delivery_date2&#x22; value=&#x22;2&#x22;&#x3E;
+        &#x3C;label for=&#x22;delivery_date2&#x22;&#x3E;Jan. 22 2023&#x3C;/label&#x3E;
+  
+         
+        &#x3C;/div&#x3E;
+            &#x3C;!-- order item 2 ends --&#x3E;
+&#x3C;/div&#x3E;
+ &#x3C;!-- order container 2  ends --&#x3E;
+&#x3C;/div&#x3E;
+ &#x3C;!-- form container item 1 ends --&#x3E;
+
+  &#x3C;!-- form container item 2 starts --&#x3E;
+ &#x3C;div class=&#x22;super-order-flex-item&#x22;&#x3E;
+
+ &#x3C;!--  order summary container starts --&#x3E;
+  &#x3C;div class=&#x22;order-summary&#x22;&#x3E;
+    &#x3C;h2&#x3E;Order Summary&#x3C;/h2&#x3E;
+    &#x3C;table&#x3E;
+      &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Sandwich Pack: &#x3C;br&#x3E;
+        &#x3C;/td&#x3E;
+        &#x3C;td&#x3E;$79.99&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Asian Cusine:&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;$89.99&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+  
+  
+      &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Shipping:&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;
+          &#x3C;del&#x3E;$9.99&#x3C;/del&#x3E;
+        &#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Tax:&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;$20.39&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+    &#x3C;/table&#x3E;
+    &#x3C;h3&#x3E; Order total:&#x3C;/h3&#x3E;
+    &#x3C;h3&#x3E;$190.37&#x3C;/h3&#x3E;
+    &#x3C;input class=&#x22;button&#x22; type=&#x22;reset&#x22; value=&#x22;Reset&#x22;&#x3E;
+    &#x3C;br&#x3E;&#x3C;br&#x3E;
+    &#x3C;input class=&#x22;button&#x22; type=&#x22;submit&#x22; value=&#x22;Place order&#x22;&#x3E;
+  &#x3C;/div&#x3E;
+ &#x3C;!--  order summary container ends --&#x3E;
+
+&#x3C;/div&#x3E;
+      &#x3C;!-- form container item 2 ends --&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- form container ends --&#x3E;
+
+&#x3C;/form&#x3E;
+&#x3C;!-- form ends --&#x3E;
+  </code>
+</pre>
+
+    <!--Checkout container ends -->
+
+    <!--Reference container -->
+    <div class="reference" id="references">
+      <h1>References</h1>
+      <h3>Images</h3>
+      <p class="ref">imgs/asianDish.jpg retrieved from:
+        <br>
+        Johnson, B. (n.d.). [Image of Honey Walnut Shrimp]. In delish. <a target="_blank"
+          href=" https://www.delish.com/cooking/g1003/fast-homemade-asian-recipes/?slide=7.">
+          https://www.delish.com/cooking/g1003/fast-homemade-asian-recipes/?slide=7.</a>
+      </p>
+      <p class="ref">imgs/beyondmeat.jpg retrieved from:
+        <br>
+        [Image of Beyond Meat 6 oz. Plant-Based Vegan Burger Patty - 32/Case]. (n.d.). In webstaurantstore. <a
+          target="_blank"
+          href="https://www.webstaurantstore.com/beyond-meat-6-oz-plant-based-vegan-burger-patty-case/871BEY35003.html">https://www.webstaurantstore.com/beyond-meat-6-oz-plant-based-vegan-burger-patty-case/871BEY35003.html</a>
+      </p>
+      <p class="ref">imgs/businessGuy1.jpg retrieved from:
+        <br>
+        [Image of Brandon Reed]. (n.d.). In constructions-pierre. <a target="_blank"
+          href="http://constructions-pierre.com/">http://constructions-pierre.com/</a>
+      </p>
+      <p class="ref">imgs/businessGuy2.jpg retrieved from:
+        <br>
+        [Image of Asian Male]. (2018). In cosmeticsdesign-asia. <a target="_blank"
+          href="https://www.cosmeticsdesign-asia.com/Article/2018/06/20/Should-male-grooming-brands-adjust-their-customer-journey-approach">https://www.cosmeticsdesign-asia.com/Article/2018/06/20/Should-male-grooming-brands-adjust-their-customer-journey-approach</a>
+      </p>
+      <p class="ref">imgs/newBg.jpg retrieved from:
+        <br>
+        [Image of Eco-friendly food boxes]. (n.d.) In zeuspackaging. <a target="_blank"
+          href="https://www.zeuspackaging.com/uk/eco-friendly-options/">https://www.zeuspackaging.com/uk/eco-friendly-options/</a>
+      </p>
+      <p class="ref">imgs/sandwich.jpg retrieved from:
+        <br>
+        Howard, N. (2021). [Image of Club Sandwich]. In deliciousmeetshealthy. <a target="_blank"
+          href="https://www.deliciousmeetshealthy.com/club-sandwich">https://www.deliciousmeetshealthy.com/club-sandwich</a>
+      </p>
+      <br>
+      <h3>Icons & Logo</h3>
+      <p class="ref">Icons (Chicken Leg & Shopping Cart) retrieved from: <a target="_blank"
+          href=https://fontawesome.com>https://fontawesome.com/</a></p>
+    </div>
+    <!--Reference container ends -->
+
+    <!--Page section ends -->
+  </section>
+  <!-- load in footer txt file here -->
+  <div id="contact">
+
+    <div class="footerContainer"><br>
+      <h2>Contact Us</h2>
+      <form action="_blank" method="post">
+        <h3><label for="full-name">Full Name</label></h3><input type="text" name="name" id="full-name"
+          placeholder="First and Last" required=""><br>
+        <h3><label for="email-address">Email Address</label></h3><input type="email" name="_replyto" id="email-address"
+          placeholder="sjao@sfu.ca" required=""><br>
+        <h3><label for="message">How can we improve your experience?</label></h3> <textarea rows="5" name="message"
+          id="message" placeholder="Hello." required=""></textarea> <input type="hidden" name="_subject"
+          id="email-subject" value="Contact Form Submission"> <br> <br> <input class="button" type="submit"
+          value="Submit">
+      </form>
+    </div>
+    <h4>&copy; EatHealthy 2023</h4>
+  </div>
+</body>
+
+</html>
