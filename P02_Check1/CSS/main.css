@@ -26,6 +26,7 @@ section {
     padding: 0.75rem;
     position: sticky;
     top: 0;
+    z-index:3;
     }   
 
 .nav {
@@ -367,4 +368,83 @@ form {
   
     }
   }
+  /* end of Sorren's flex payment */
+
+  /* Menu page elements */
+
+.menu-flex-container {
+    display: flex;
+  }
   
+  .menu-flex-container .menu-flex-item-pic {
+    flex: 25%;
+  
+  }
+  
+  .menu-flex-container .menu-flex-item-desc {
+    flex: 75%;
+    margin-left: 25px;
+  }
+  
+  .menu-img {
+    /* makes imgs all same size */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* maintain aspect ratio */
+    border-radius: 25px;
+  
+  }
+  
+  .menu-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  
+  .thumb-img {
+    /* makes imgs all same size */
+    /* float: left; */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    /* maintain aspect ratio */
+    border-radius: 25px;
+  
+  }
+  
+  .thumb-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  
+  
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .menu-flex-container {
+  
+      flex-direction: column;
+      margin-left: auto;
+      text-align: center;
+    }
+  
+    .menu-flex-container .menu-flex-item-desc {
+      flex: 75%;
+      margin-left: 0px;
+  
+    }
+  
+    .menu-img {
+      margin-left: 0px;
+      margin-right: 0px;
+      text-align: center;
+    }
+  
+    .thumb-img {
+      margin-left: 0px;
+      margin-right: 0px;
+      text-align: center;
+    }
+  }
+  
+  /* end of menu page */
