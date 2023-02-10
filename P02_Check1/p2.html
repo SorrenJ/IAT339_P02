@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>P1 - Style guide for Sweet Spot Bakery</title>
+    <link href="CSS/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            P01 - Style Guide for Sweet Spot
+        </h1>
+        <p>
+            Sweet spot is a quaint patisserie in historic Steveston village that has handmade french pastries,
+            viennoise, cookies & confections
+        </p>
+    </header>
+
+    <!-- container for the navigation, then individual nav elements within -->
+    <div class="page_container">
+        <nav class="nav_elements">
+            <a class="nav" href="#identity"> Brand Identity</a>
+            <a class="nav" href="#interactive_elements">Interactive Elements</a>
+            <a class="nav" href="#text_elements">Typography & Text Elements</a>
+            <a class="nav" href="#product_listing">Product Listing Template</a>
+            <a class="nav" href="#checkout">Checkout Template</a>
+            <a class="nav" href="#citations">Citations</a>
+        </nav>
+
+
+        <!-- brand identity section, composed of header then container below that is flex for the image and paragraph -->
+        <section id="identity">
+            <h2>
+                Brand Identity
+            </h2>
+            <div class="identity_container">
+                <img src="img/logo.png" alt="logo" class="identity_elements">
+                <p class="identity_elements">
+                    The Sweet Spot Bakery, located in Richmond, British Columbia, is a family-owned bakery that
+                    specializes in European-style pastries and sweets. The bakery is proud to be a part of the local
+                    community and wants to represent this in its brand identity. The color scheme for the Sweet Spot is
+                    a combination of warm and inviting beige and earthy green, which reflects the bakery's connection to
+                    nature and its community. The green color is a nod to the family-owned aspect of the business,
+                    symbolizing growth, renewal, and togetherness. The beige represents the warm and cozy atmosphere of
+                    the bakery, and its commitment to quality ingredients and traditional baking techniques.
+
+                    The Sweet Spot's brand identity represents its passion for creating sweet treats that bring people
+                    together. Whether it's a morning coffee and croissant, or a celebration cake, the Sweet Spot Bakery
+                    is dedicated to providing its customers with a memorable experience that they can share with their
+                    loved ones. The bakery's brand promise is to create a warm, welcoming, and comfortable atmosphere
+                    where everyone feels at home, and the focus is always on quality, fresh ingredients and traditional
+                    baking techniques.
+                </p>
+            </div>
+        </section>
+
+        <!-- interactive elements section with the intext link & then the 2 kinds of buttons used -->
+        <section id="interactive_elements">
+            <h2>
+                Interactive Elements
+            </h2>
+            <hr>
+            <section>
+                <h3>
+                    In-text link
+                </h3>
+                <a href="https://www.thesweetspotbakery.ca" class="nav-main"> The Real Sweet Spot </a>
+            </section>
+            <div class="buttons_container">
+                <button>Add to Cart</button>
+                <button type="submit">Place Order</button>
+            </div>
+        </section>
+
+        <!-- specific stlying for the typography and then various text styles for headers and body text -->
+        <section id="text_elements">
+            <h2>
+                Typography & Text Elements
+            </h2>
+            <hr>
+            <p class="typography">
+                Font for text is Playfair.
+            </p>
+
+            <div class="text_elements">
+                <div>
+                    <p class="heading1">
+                        Heading 1
+                    </p>
+                    <p class="heading2">
+                        Heading 2
+                    </p>
+                    <p class="heading3">
+                        Heading 3
+                    </p>
+                </div>
+
+                <div class="paragraphs">
+                    <p class="body_text">
+                        Body Text
+                    </p>
+                    <p class="caption_text">
+                        Caption Text
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- product template section listing a few products with image, description, price and then button below to "add to cart" (non functional) 
+             made with a flex container for product-list and then containers for the product molecules
+        -->
+        <section id="product_listing" class="product_listing">
+            <h2>
+                Product Listing Template
+            </h2>
+            <hr>
+            <div class="product-list">
+                <div class="product">
+                    <img src="img/chocolate_cake.png" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>A rich and moist chocolate cake made with the finest ingredients.</p>
+                    <p>Price: $10</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/croissant.png" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <p>A fluffy and flaky croissant filled with almond cream.</p>
+                    <p>Price: $5</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/blueberry_muffin.png" alt="Blueberry Muffin">
+                    <h3>Blueberry Muffin</h3>
+                    <p>A sweet and tender muffin filled with juicy blueberries.</p>
+                    <p>Price: $3</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="checkout" class="checkout">
+            <h2>
+                Checkout Template
+            </h2>
+            <hr>
+            <!-- using a table to arrange the fictional checkout with prices for the selected products above -->
+            <div class="checkout-cart">
+                <h2>Your Cart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Chocolate Cake</td>
+                            <td>$10</td>
+                            <td>2</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>Croissant</td>
+                            <td>$5</td>
+                            <td>2</td>
+                            <td>$10</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>$30</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <!-- a checkout section for submitting payment online, composed of a form with labels and then inputs for payment information-->
+            <div class="checkout-section">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="text" id="expiry-date" name="expiry-date">
+                    </div>
+
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- citation area with online references for code as well as images-->
+        <section id="citations" class="citations">
+            <h2>
+                Citations
+            </h2>
+            <hr>
+            <p>
+                For food photos: <br>
+                https://www.latimes.com/recipe/proofs-chocolate-espresso-layer-cake <br>
+                https://www.recipegirl.com/bakery-style-blueberry-muffins/ <br>
+                https://dailyhive.com/vancouver/best-croissants-vancouver-2019 <br>
+
+                Code sources: <br>
+                https://www.w3schools.com/html/html_tables.asp <br>
+                https://learn.shayhowe.com/html-css/building-forms/#form-and-input-attributes <br>
+                https://www.w3schools.com/html/html_forms.asp <br>
+
+            </p>
+        </section>
+
+        <!-- small footer section with a description of the sweet spot company-->
+        <footer class="sweet-spot-footer">
+            <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
+                European-style pastries and sweets, and we're proud to be a part of the local community. Our brand
+                identity is a combination of warm beige and earthy green, symbolizing our connection to nature and our
+                community, and our passion for creating sweet treats that bring people together.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+body {
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1 {
+    font-size: 2.5rem;
+	margin-bottom: 0;
+}
+
+/* Styling navigation elements */
+.page_container {
+    display: flex;
+    flex-direction: column;
+    }   
+
+.nav_elements {
+    background-color: rgb(246, 215, 130);
+    padding: 0.75rem;
+    position: sticky;
+    top: 0;
+    }   
+
+.nav {
+    padding: 0.5rem;
+    color: black;
+    justify-content: space-between;
+    background-color: rgb(246, 215, 130);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    }
+
+.nav:hover, .nav:focus {
+    background-color: rgba(141, 75, 10, 0.837);
+    color: #fff;
+    }
+nav {
+    position: sticky;
+}
+
+
+/* styling for the brand identity section to have image beside text */
+.identity_container {
+    display: flex;
+    }
+
+.identity_elements {
+    flex-direction: row;
+}
+
+/* styling interactive elements like the intext link & the various buttons used */
+.buttons_container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(246, 215, 130);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 2rem;
+}
+
+/* Styling for the text elements section with different headers and body text examples */
+.text_elements {
+    display: flex;
+    }
+
+.text_elements div {
+    border: 1px #000 solid;
+    padding: 0 5rem 0 5rem;
+    }
+
+.heading1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    }
+
+.heading2 {
+    font-size: 2rem;
+    font-weight: 700;
+    }
+
+.heading3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    }
+
+.body_text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+
+.caption_text {
+    background-color: rgb(246, 215, 130);
+    color: #333;
+    font-style: italic;
+}
+
+/* styling container as flex and order all elements in a column */
+.checkout-section {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.form-group {
+    margin-bottom: 20px;
+    }
+
+/* styling font weight for the text entry section headers */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+
+/* styling the input fields to have a border*/
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    }
+
+/* styling the submit button */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(246, 215, 130);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    }
+button:hover {
+    background-color: rgba(141, 75, 10, 0.837);
+    color: #fff;
+}
+
+/* styling the product template section with flex to the container, styling font details & the buttons for adding to cart */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.product {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    }
+
+.product h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    }
+
+.product p {
+    margin-top: 10px;
+    font-size: 14px;
+    }
+
+.product button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(246, 215, 130);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    }
+
+.product button:hover {
+    background-color: rgba(141, 75, 10, 0.837);
+    color: #fff;
+}
+
+/* styling the checkout cart template section that used a table in the html*/
+.checkout-cart {
+    width: 400px;
+    margin: 50px 0;
+    text-align: left;
+    }
+
+.checkout-cart h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    }
+
+.checkout-cart table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+.checkout-cart th,
+.checkout-cart td {
+    padding: 10px;
+    text-align: left;
+    }
+
+.checkout-cart th {
+    background-color: #333;
+    color: #fff;
+    }
+
+.checkout-cart td {
+    border-top: 1px solid #333;
+    }
+
+.checkout-cart tfoot td {
+    font-weight: bold;
+}
+
+/* css styling for a footer description of the Sweet Spot, center aligned and lighter color text */
+.sweet-spot-footer {
+    background-color: rgb(246, 215, 130);
+    color: #333;
+    padding: 40px;
+    text-align: center;
+    }
+
+.sweet-spot-footer p {
+font-size: 16px;
+margin: 0;
+}
+  
