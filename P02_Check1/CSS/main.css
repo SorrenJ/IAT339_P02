@@ -7,6 +7,14 @@ h1 {
 	margin-bottom: 0;
 }
 
+section {
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    /* background-color: #ffffff; */
+  
+  }
+
 /* Styling navigation elements */
 .page_container {
     display: flex;
