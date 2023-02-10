@@ -150,7 +150,7 @@
             </h2>
             <hr>
             <!-- using a table to arrange the fictional checkout with prices for the selected products above -->
-            <div class="checkout-cart">
+            <!-- <div class="checkout-cart">
                 <h2>Your Cart</h2>
                 <table>
                     <thead>
@@ -184,10 +184,10 @@
                         </tr>
                     </tfoot>
                 </table>
-            </div>
+            </div> -->
 
             <!-- a checkout section for submitting payment online, composed of a form with labels and then inputs for payment information-->
-            <div class="checkout-section">
+            <!-- <div class="checkout-section">
                 <form>
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -216,8 +216,182 @@
 
                     <button type="submit">Place Order</button>
                 </form>
-            </div>
-        </section>
+            </div> -->
+        <!-- </section> -->
+
+
+
+
+ <!-- form start -->
+ <form action="order_confirmed.html" method="post">
+
+    <!-- form container starts -->
+    <div class="super-order-flex-container">
+
+      <!-- form container item 1 starts -->
+      <div class="super-order-flex-item">
+
+        <!-- order container 1 starts -->
+        <div class="order-flex-container">
+
+          <!-- order item 1 starts -->
+          <div class="order-flex-item">
+            <h2>Delivery Information</h2>
+            <br>
+
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <br>
+
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lname">
+            <br>
+
+          </div>
+          <!-- order item 1 ends -->
+
+          <!-- order item 2 starts -->
+          <div class="order-flex-item">
+
+            <br>
+
+            <label for="address">Address</label>
+            <br>
+
+            <input type="text" id="address" name="address">
+            <br>
+            <br>
+
+            <label for="zip">ZIP</label>
+            <br>
+
+            <input type="text" id="zip" name="zip">
+            <br>
+            <br>
+            <label for="province">Province</label>
+            <br>
+            <input type="text" id="province" name="province">
+            <br><br>
+            <label for="city">City</label>
+            <br>
+            <input type="text" id="city" name="city">
+            <br><br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" id="phone" name="phone">
+            <br><br>
+          </div>
+          <!-- order item 2 ends -->
+        </div>
+        <!-- order container 1  ends -->
+
+        <!-- order container 2  starts -->
+        <div class="order-flex-container">
+
+          <!-- order item 1 starts -->
+          <div class="order-flex-item">
+            <h2>Billing Information</h2>
+            <br>
+
+            <label for="card">Card number</label>
+            <br>
+            <input type="text" id="card" name="card">
+            <br><br>
+
+            <label for="exp">Expiration</label>
+            <br>
+            <input type="text" id="exp" name="exp">
+            <br><br>
+            <label for="cvc">CVC</label>
+            <br>
+            <input type="text" id="cvc" name="cvc">
+          </div>
+          <!-- order item 1 ends -->
+
+          <!-- order item 2 starts -->
+          <div class="order-flex-item">
+            <h2>Items and shipping</h2>
+
+            <h3>Cart</h3>
+            <ol>
+              <li>
+                <p>Sandwich pack - $79.99</p>
+              </li>
+              <li>
+                <p>Asian Cusine - $89.99</p>
+              </li>
+            </ol>
+            <h3>Delivery date(s)</h3>
+            <input type="radio" id="delivery_date1" name="delivery_date1" value="1">
+            <label for="delivery_date1">Jan. 21 2023</label>
+            <br>
+            <input type="radio" id="delivery_date2" name="delivery_date2" value="2">
+            <label for="delivery_date2">Jan. 22 2023</label>
+
+
+          </div>
+          <!-- order item 2 ends -->
+        </div>
+        <!-- order container 2  ends -->
+      </div>
+      <!-- form container item 1 ends -->
+
+      <!-- form container item 2 starts -->
+      <div class="super-order-flex-item">
+
+        <!--  order summary container starts -->
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <table>
+            <tr>
+              <td>Sandwich Pack: <br>
+              </td>
+              <td>$79.99</td>
+            </tr>
+            <tr>
+              <td>Asian Cusine:</td>
+              <td>$89.99</td>
+            </tr>
+
+
+            <tr>
+              <td>Shipping:</td>
+              <td>
+                <del>$9.99</del>
+              </td>
+            </tr>
+            <tr>
+              <td>Tax:</td>
+              <td>$20.39</td>
+            </tr>
+          </table>
+          <h3> Order total:</h3>
+          <h3>$190.37</h3>
+         <input class="button" type="reset" value="Reset">
+          <br><br>
+          <input class="button" type="submit" value="Place order">
+        </div>
+        <!--  order summary container ends -->
+
+      </div>
+      <!-- form container item 2 ends -->
+    </div>
+    <!-- form container ends -->
+
+  </form>
+  <!-- form ends -->
+</section>
+
+
+
+
+
+
+
+
 
         <!-- citation area with online references for code as well as images-->
         <section id="citations" class="citations">

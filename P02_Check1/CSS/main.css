@@ -136,7 +136,9 @@ button[type="submit"] {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    
     }
+
 button:hover {
     background-color: rgba(141, 75, 10, 0.837);
     color: #fff;
@@ -235,4 +237,126 @@ button:hover {
 font-size: 16px;
 margin: 0;
 }
+  
+
+/* Sorren's Flex Payment Form */
+
+    /* styling the submit button */
+    .button[type="submit"] {
+        padding: 10px 20px;
+        background-color: rgb(247, 153, 12);
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        }
+
+           /* styling the reset button */
+    .button[type="reset"] {
+        padding: 10px 20px;
+        background-color: rgb(246, 215, 130);
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgba(141, 75, 10, 0.837);
+            color: #fff;
+        }
+        
+form {
+    width: 100%;
+  
+  }
+  
+  .super-order-flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .super-order-flex-item {
+    flex: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    padding-bottom: 25px;
+  }
+  
+  .order-flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-color: #2348624d;
+  }
+  
+  .order-flex-item {
+    flex: 25%;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 25px;
+  }
+  
+  .order-summary {
+    padding-bottom: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    color: black;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .order-flex-container {
+      flex-direction: column;
+      margin-left: auto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      border-color:transparent; 
+    }
+  
+    .order-flex-container .order-flex-item {
+      flex: 75%;
+      margin-left: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+  
+  
+    .super-order-flex-container {
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .super-order-flex-item {
+      
+      padding-left: 0;
+      padding-right: 0;
+  
+    }
+    .order-summary .button {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+     
+  
+    }
+    .order-summary table {
+  
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+     
+  
+    }
+  }
   
