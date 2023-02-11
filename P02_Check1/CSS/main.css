@@ -7,6 +7,11 @@ h1 {
 	margin-bottom: 0;
 }
 
+textarea{
+  width: 100%;
+  height:200px;
+}
+
 section {
     margin-left: 15%;
     margin-right: 15%;
@@ -74,6 +79,74 @@ button {
     font-size: 16px;
     margin-right: 2rem;
 }
+
+
+/* styling for color palette */
+
+/*start of color palettes*/
+
+.colorPalette_lightblue {
+  background-color: #a3cfee;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_navyblue {
+  background-color: #003358;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_transgrey {
+  background-color: #2348624d;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_skyblue {
+  background-color: #0970b9;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_black {
+  background-color: #000000;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_white {
+  background-color: #ffffff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+/*end of color palettes*/
+
+
+
+
+
+
+
 
 /* Styling for the text elements section with different headers and body text examples */
 .text_elements {
@@ -475,3 +548,15 @@ form {
   }
   
   /* end of menu page */
+
+  /* feedback container*/
+
+
+@media only screen and (max-width: 1000px) {
+
+  .feedbackContainer {
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

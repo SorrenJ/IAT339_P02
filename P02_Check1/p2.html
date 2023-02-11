@@ -30,6 +30,9 @@
         </nav>
 
 
+
+
+
         <!-- brand identity section, composed of header then container below that is flex for the image and paragraph -->
         <section id="identity">
             <h2>
@@ -55,6 +58,33 @@
                 </p>
             </div>
         </section>
+
+<section id="colorPalette">
+    <!-- Color Palette container -->
+    <div id="colors" class="styleguide-container">
+      <h2>Color Palette</h2>
+
+      <div class="colorPalette_lightblue"></div>
+      <p style="display: inline"> #a3cfee - Background</p>
+      <br><br>
+      <div class="colorPalette_navyblue"></div>
+      <p style="display: inline"> #003358 - Foreground (i.e. Buttons, Header, Footer, etc.)</p>
+      <br><br>
+      <div class="colorPalette_transgrey"></div>
+      <p style="display: inline"> #2348624d - Container Border</p>
+      <br><br>
+      <div class="colorPalette_skyblue"></div>
+      <p style="display: inline"> #0970b9 - Emphasis (i.e. Cart)</p>
+      <br><br>
+      <div class="colorPalette_black"></div>
+      <p style="display: inline"> #000000 - Body Text Font</p>
+      <br><br>
+      <div class="colorPalette_white"></div>
+      <p style="display: inline"> #ffffff - Icons, Foreground Text, & Hover</p>
+    </div>
+    <!-- Color Palette container ends -->
+  </section>
+
 
         <!-- interactive elements section with the intext link & then the 2 kinds of buttons used -->
         <section id="interactive_elements">
@@ -451,6 +481,27 @@
   <!-- form ends -->
 </section>
 
+<section id="feedback" class="feedback">
+  <h2>
+    Feedback Template
+</h2>
+<hr>
+
+    <div class="feedbackContainer"><br>
+      <h2>Leave a feedback</h2>
+      <form action="_blank" method="post">
+        <h3><label for="full-name">Full Name</label></h3><input type="text" name="name" id="full-name"
+          placeholder="First and Last" required=""><br>
+        <h3><label for="email-address">Email Address</label></h3><input type="email" name="_replyto" id="email-address"
+          placeholder="sjao@sfu.ca" required=""><br>
+        <h3><label for="message">How can we improve your experience?</label></h3> <textarea name="message"
+          id="message" placeholder="Hello." required=""></textarea> <input type="hidden" name="_subject"
+          id="email-subject" value="Contact Form Submission"> <br> <br> <input class="button" type="submit"
+          value="Submit">
+      </form>
+    </div>
+   
+</section>
 
 
 
