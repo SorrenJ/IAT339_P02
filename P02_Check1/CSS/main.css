@@ -85,41 +85,6 @@ button {
 
 /*start of color palettes*/
 
-.colorPalette_lightblue {
-  background-color: #a3cfee;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: 1px dotted rgb(75, 75, 75);
-  display: inline-block;
-}
-
-.colorPalette_navyblue {
-  background-color: #003358;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: 1px dotted rgb(75, 75, 75);
-  display: inline-block;
-}
-
-.colorPalette_transgrey {
-  background-color: #2348624d;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: 1px dotted rgb(75, 75, 75);
-  display: inline-block;
-}
-
-.colorPalette_skyblue {
-  background-color: #0970b9;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: 1px dotted rgb(75, 75, 75);
-  display: inline-block;
-}
 
 .colorPalette_black {
   background-color: #000000;
@@ -139,6 +104,51 @@ button {
   display: inline-block;
 }
 
+.colorPalette_beige {
+  background-color: rgb(246, 215, 130);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_orange {
+  background-color: rgb(247, 153, 12);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_brown {
+  background-color: rgba(141, 75, 10, 0.837);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+
+.colorPalette_leafGreen{
+  background-color: #91d24d;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.colorPalette_transgrey {
+  background-color: #2348624d;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px dotted rgb(75, 75, 75);
+  display: inline-block;
+}
 /*end of color palettes*/
 
 
