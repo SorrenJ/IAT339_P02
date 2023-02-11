@@ -250,6 +250,33 @@ margin: 0;
 
 /* Sorren's Flex Payment Form */
 
+.button{
+    background-color: rgb(246, 215, 130);
+    color: rgb(0, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 50%;
+    border-radius: 25px;
+    cursor: pointer;
+    }
+
+/* mobile button elements */
+@media only screen and (max-width: 1000px) {
+
+    .button {
+     
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border-radius: 25px;
+  
+    }
+}
+
     /* styling the submit button */
     .button[type="submit"] {
         padding: 10px 20px;
@@ -309,7 +336,7 @@ form {
   .order-flex-item {
     flex: 25%;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 50px;
     color: rgb(0, 0, 0);
     padding-bottom: 25px;
   }
