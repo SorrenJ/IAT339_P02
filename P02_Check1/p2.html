@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>P1 - Style guide for Sweet Spot Bakery</title>
+  <title>P2 - Style guide for Sweet Spot Bakery</title>
   <link href="CSS/main.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>
-      P01 - Style Guide for Sweet Spot
+      P02 - Style Guide for Sweet Spot
     </h1>
     <p>
       Sweet spot is a quaint patisserie in historic Steveston village that has handmade french pastries,
@@ -21,23 +21,26 @@
   <!-- container for the navigation, then individual nav elements within -->
   <div class="page_container">
     <nav class="nav_elements">
-      <a class="nav" href="#identity"> Brand Identity</a>
-      <a class="nav" href="#promotions"> Promotions</a>
+      <a class="nav" href="#identity">Brand Identity</a>
+      <a class="nav" href="#promotions">Promotions</a>
+      <a class="nav" href="#colors">Colors</a>
       <a class="nav" href="#interactive_elements">Interactive Elements</a>
       <a class="nav" href="#text_elements">Typography & Text Elements</a>
       <a class="nav" href="#product_listing">Product Listing Template</a>
       <a class="nav" href="#checkout">Checkout Template</a>
+      <a class="nav" href="#feedback">Feedback</a>
+      <a class="nav" href="#details">Details</a>
       <a class="nav" href="#citations">Citations</a>
     </nav>
-    
+
     <!-- brand identity section, composed of header then container below that is flex for the image and paragraph -->
     <section id="identity">
       <h2>
         Brand Identity
       </h2>
-      <div class="identity_container">
-        <img src="img/logo.png" alt="logo" class="identity_elements">
-        <p class="identity_elements">
+      <div>
+        <img class="logo" src="img/logo.png" alt="logo" >
+        <p class="wrap">
           The Sweet Spot Bakery, located in Richmond, British Columbia, is a family-owned bakery that
           specializes in European-style pastries and sweets. The bakery is proud to be a part of the local
           community and wants to represent this in its brand identity. The color scheme for the Sweet Spot is
@@ -64,10 +67,10 @@
         Utilizing a banner, the Sweet Spot advertises current promotions or events near the top of the screen
       </p>
       <div class="promo">
-          <div class="promo-inner">
-            <h2 class="promo-desc">Get 10% Off When You Online Order!</h2>
-            <p class="promo-desc">Discount automatically applied, promotion lasts until Feb.28th 2023.</p>
-          </div>
+        <div class="promo-inner">
+          <h2 class="promo-desc">Get 10% Off When You Online Order!</h2>
+          <p class="promo-desc">Discount automatically applied, promotion lasts until Feb.28th 2023.</p>
+        </div>
       </div>
     </section>
 
@@ -107,12 +110,12 @@
         Interactive Elements
       </h2>
       <hr>
-   
-        <h3>
-          In-text link
-        </h3>
-        <a href="https://www.thesweetspotbakery.ca" class="nav-main"> The Real Sweet Spot </a>
-      
+
+      <h3>
+        In-text link
+      </h3>
+      <a href="https://www.thesweetspotbakery.ca" class="nav-main"> The Real Sweet Spot </a>
+
       <h3>
         Buttons
       </h3>
@@ -123,11 +126,13 @@
       <h3>
         Image link
       </h3>
-      <br><a href="sandwich.html"><img class="menu-img" src="img/blueberry_muffin.png" alt="Blueberry Muffin"></a>
+      <br><a href="#details"><img class="menu-img" src="img/blueberry_muffin.png" alt="Blueberry Muffin"></a>
     </section>
 
     <!-- specific stlying for the typography and then various text styles for headers and body text -->
+
     <section id="text_elements">
+
       <h2>
         Typography & Text Elements
       </h2>
@@ -135,24 +140,19 @@
 
       <p class="typography">
         Headings use 'Georgia' Font-family. Body text including paragraphs and buttons use 'Verdana' font-family.
-      
+
       </p>
       <div class="text_elements_container">
-
         <div class="text_elements">
 
-          <h1>
-            Heading 1
-          </h1>
-          <h2>
-            Heading 2
-          </h2>
-          <h3>
-            Heading 3
-          </h3>
-          <h4>
-            Heading 4
-          </h4>
+          <h1>Heading 1</h1>
+
+          <h2>Heading 2</h2>
+
+          <h3>Heading 3</h3>
+
+          <h4>Heading 4</h4>
+
         </div>
 
         <div class="text_elements">
@@ -163,6 +163,8 @@
             Caption Text
           </p>
         </div>
+
+
       </div>
 
     </section>
@@ -175,36 +177,10 @@
         Product Listing Template
       </h2>
       <hr>
-      <!-- <div class="product-list">
-                <div class="product">
-                    <img src="img/chocolate_cake.png" alt="Chocolate Cake">
-                    <h3>Chocolate Cake</h3>
-                    <p>A rich and moist chocolate cake made with the finest ingredients.</p>
-                    <p>Price: $10</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="product">
-                    <img src="img/croissant.png" alt="Croissant">
-                    <h3>Croissant</h3>
-                    <p>A fluffy and flaky croissant filled with almond cream.</p>
-                    <p>Price: $5</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="product">
-                    <img src="img/blueberry_muffin.png" alt="Blueberry Muffin">
-                    <h3>Blueberry Muffin</h3>
-                    <p>A sweet and tender muffin filled with juicy blueberries.</p>
-                    <p>Price: $3</p>
-                    <button>Add to Cart</button>
-                </div>
-            </div> -->
-
 
       <div class="menu-flex-container">
         <div class="menu-flex-item-pic">
-          <br><a href="sandwich.html"><img class="menu-img" src="img/blueberry_muffin.png" alt="Blueberry Muffin"></a>
+          <br><a href="#details"><img class="menu-img" src="img/blueberry_muffin.png" alt="Blueberry Muffin"></a>
         </div>
         <div class="menu-flex-item-desc">
           <h2>Blueberry Muffin</h2>
@@ -213,7 +189,7 @@
           <p>A sweet and tender muffin filled with juicy blueberries.
           </p> <br>
           <br>
-          <a href="sandwich.html">
+          <a href="#details">
             <div class="button">See details</div>
           </a>
         </div>
@@ -221,7 +197,7 @@
 
       <div class="menu-flex-container">
         <div class="menu-flex-item-pic">
-          <br><a href="asian_cuisine.html"><img class="menu-img" src="img/chocolate_cake.png" alt="Chocolate Cake"></a>
+          <br><a href="#details"><img class="menu-img" src="img/chocolate_cake.png" alt="Chocolate Cake"></a>
         </div>
         <div class="menu-flex-item-desc">
           <h2>Chocolate Cake</h2>
@@ -229,7 +205,7 @@
           <br>
           <p>A rich and moist chocolate cake made with the finest ingredients.</p> <br>
           <br>
-          <a href="asian_cuisine.html">
+          <a href="#details">
             <div class="button">See details</div>
           </a>
         </div>
@@ -237,28 +213,19 @@
 
       <div class="menu-flex-container">
         <div class="menu-flex-item-pic">
-          <br><a href="beyond_meat.html"><img class="menu-img" src="img/croissant.png" alt="Croissant"></a>
+          <br><a href="#details"><img class="menu-img" src="img/croissant.png" alt="Croissant"></a>
         </div>
         <div class="menu-flex-item-desc">
           <h2>Croissant</h2>
           <h3>$4.99</h3>
           <br>
           <p>A fluffy and flaky croissant filled with almond cream.</p><br>
-          <a href="beyond_meat.html">
+          <a href="#details">
             <div class="button">See details</div>
           </a>
         </div>
       </div>
       <br>
-
-
-
-
-
-
-
-
-
 
     </section>
 
@@ -267,78 +234,6 @@
         Checkout Template
       </h2>
       <hr>
-      <!-- using a table to arrange the fictional checkout with prices for the selected products above -->
-      <!-- <div class="checkout-cart">
-                <h2>Your Cart</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Chocolate Cake</td>
-                            <td>$10</td>
-                            <td>2</td>
-                            <td>$20</td>
-                        </tr>
-                        <tr>
-                            <td>Croissant</td>
-                            <td>$5</td>
-                            <td>2</td>
-                            <td>$10</td>
-                        </tr>
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">Total</td>
-                            <td>$30</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div> -->
-
-      <!-- a checkout section for submitting payment online, composed of a form with labels and then inputs for payment information-->
-      <!-- <div class="checkout-section">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="address">Address:</label>
-                        <input type="text" id="address" name="address">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="card-number">Card Number:</label>
-                        <input type="text" id="card-number" name="card-number">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="expiry-date">Expiry Date:</label>
-                        <input type="text" id="expiry-date" name="expiry-date">
-                    </div>
-
-                    <button type="submit">Place Order</button>
-                </form>
-            </div> -->
-      <!-- </section> -->
-
-
-
 
       <!-- form start -->
       <form action="order_confirmed.html" method="post">
@@ -527,25 +422,25 @@
 
     <!-- Product details page -->
     <section>
-     <h2>Product Details Template</h2>
-     <hr>
-     <div>
-      <div class="product-details-content">
-        <img  src="img/blueberry_muffin.png" alt="Blueberry Muffin">
-        <div>
-          <h2>Blueberry Muffin</h2>
-          <ul class="product-info">
-            <li>200 Calories</li>
-            <li>$4.50</li>
-          </ul>
-          <p>Our blueberry muffins are the ideal fusion of moist, luscious blueberries with sweet,
-          soft muffin batter. The muffins are perfectly baked,
-          with a top that is just a little bit crumbly and an interior that is moist and delicate.
-          Our blueberry muffins are the ideal treat, whether you're grabbing one on the move or
-          enjoying a leisurely morning.</p>
+      <h2>Product Details Template</h2>
+      <hr>
+      <div>
+        <div id="details" class="product-details-content">
+          <img src="img/blueberry_muffin.png" alt="Blueberry Muffin">
+          <div>
+            <h2>Blueberry Muffin</h2>
+            <ul class="product-info">
+              <li>200 Calories</li>
+              <li>$4.50</li>
+            </ul>
+            <p>Our blueberry muffins are the ideal fusion of moist, luscious blueberries with sweet,
+              soft muffin batter. The muffins are perfectly baked,
+              with a top that is just a little bit crumbly and an interior that is moist and delicate.
+              Our blueberry muffins are the ideal treat, whether you're grabbing one on the move or
+              enjoying a leisurely morning.</p>
+          </div>
         </div>
       </div>
-     </div>
     </section>
 
     <!-- citation area with online references for code as well as images-->
@@ -555,15 +450,11 @@
       </h2>
       <hr>
       <p>
-        For food photos: <br>
+        Food photos: <br>
         https://www.latimes.com/recipe/proofs-chocolate-espresso-layer-cake <br>
         https://www.recipegirl.com/bakery-style-blueberry-muffins/ <br>
         https://dailyhive.com/vancouver/best-croissants-vancouver-2019 <br>
 
-        Code sources: <br>
-        https://www.w3schools.com/html/html_tables.asp <br>
-        https://learn.shayhowe.com/html-css/building-forms/#form-and-input-attributes <br>
-        https://www.w3schools.com/html/html_forms.asp <br>
       </p>
     </section>
 
@@ -578,7 +469,7 @@
       <p class="footer_text">
         Address:
         <br>
-        110 - 12000 First Avenue 
+        110 - 12000 First Avenue
         Richmond, BC V7E 3L9
         Steveston Village
         <br>

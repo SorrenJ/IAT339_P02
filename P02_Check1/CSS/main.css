@@ -18,17 +18,18 @@ body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-h1 {
+/* h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
   font-family: Georgia, serif;
-}
+} */
 
 div h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
   font-family: Georgia, serif;
 }
+
 div h2 {
   font-family: Georgia, serif;
 }
@@ -40,10 +41,14 @@ div h3 {
 div h4 {
   font-family: Georgia, serif;
 }
+
+
+
 textarea {
   width: 100%;
   height: 200px;
 }
+
 
 section {
   margin-left: 15%;
@@ -51,6 +56,17 @@ section {
   position: relative;
   /* background-color: #ffffff; */
 }
+
+p .wrap{
+  text-align: justify;
+}
+
+.logo{
+float:left;
+width:313px;
+height:126px;
+}
+
 
 /* Styling navigation elements */
 .page_container {
@@ -65,7 +81,7 @@ section {
   top: 0;
   z-index: 3;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 /* items of nav_elements */
@@ -78,8 +94,8 @@ section {
   transition-duration: 0.5s;
   padding-bottom: 15px;
   padding-top: 15px;
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav:hover,
@@ -126,7 +142,7 @@ nav {
   .promo h2 {
     font-size: 24px;
   }
-  
+
   .promo-desc {
     font-size: 16px;
   }
@@ -134,11 +150,12 @@ nav {
 
 @media only screen and (max-width: 1000px) {
   .nav_elements {
-  display: flex;
-  flex-direction:column;
-  text-align:center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
-}
+
 /* styling for the brand identity section to have image beside text */
 .identity_container {
   display: flex;
@@ -155,6 +172,10 @@ nav {
 
 .identity_elements {
   flex-direction: row;
+}
+
+.identity_elements_img {
+  width:500px;
 }
 
 /* styling interactive elements like the intext link & the various buttons used */
@@ -646,7 +667,7 @@ form {
   gap: 2rem;
 }
 
-.product-details-content > * {
+.product-details-content>* {
   flex: 1;
 }
 
@@ -671,7 +692,7 @@ form {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .product-details-content {
     max-width: none;
   }
