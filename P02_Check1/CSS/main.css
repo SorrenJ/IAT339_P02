@@ -50,7 +50,6 @@ section {
   margin-right: 15%;
   position: relative;
   /* background-color: #ffffff; */
-
 }
 
 /* Styling navigation elements */
@@ -91,6 +90,46 @@ section {
 
 nav {
   position: sticky;
+}
+
+.promotions {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.promo {
+  display: flex;
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F02%2F13%2Fprinci_at_the_roastery_starbucks-2000.jpg&q=60);
+}
+
+.promo-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.promo-desc {
+  color: rgb(0, 0, 0);
+}
+
+.promo h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.promo p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .promo h2 {
+    font-size: 24px;
+  }
+  
+  .promo-desc {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -550,7 +589,6 @@ form {
 }
 
 /* end of Sorren's flex payment */
-
 /* Menu page elements */
 
 .menu-flex-container {
