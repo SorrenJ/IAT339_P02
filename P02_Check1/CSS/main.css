@@ -57,8 +57,18 @@ section {
   /* background-color: #ffffff; */
 }
 
+
+@media (max-width: 1000px) {
+  section {
+    text-align:center;
+  }
+#identity{
+    text-align: left;
+  }
+  
+}
 p .wrap{
-  text-align: justify;
+  text-align: left;
 }
 
 .logo{
@@ -691,6 +701,7 @@ form {
   .product-details-content {
     flex-direction: column;
     align-items: stretch;
+    text-align:center;
   }
 
   .product-details-content {
@@ -736,5 +747,6 @@ form {
     margin-left: auto;
     padding-left: 25px;
     padding-right: 25px;
+    text-align:center;
   }
 }
