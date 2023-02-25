@@ -671,19 +671,25 @@ form {
 }
 
 .product-details-content {
-  padding-top: 1rem;
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.product-details-content>* {
-  flex: 1;
+.info-ingredients-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
-.product-details-content img {
-  aspect-ratio: 1/1;
-  max-width: 300px;
+.vertical-padding {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#blueberry-muffin {
+  width: 350px;
+  flex-shrink: 0;
   border-radius: 25px;
 }
 
@@ -700,12 +706,16 @@ form {
 @media only screen and (max-width: 800px) {
   .product-details-content {
     flex-direction: column;
-    align-items: stretch;
-    text-align:center;
+    align-items: center;
+    text-align: center;
   }
 
   .product-details-content {
     max-width: none;
+  }
+
+  .info-ingredients-container {
+    justify-content: center;
   }
 }
 
