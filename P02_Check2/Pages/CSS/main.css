@@ -135,20 +135,20 @@ nav {
 }
 
 /* feedback css */
-input[type="text"],
-input[type="email"] {
+  input[type="text"],
+  input[type="email"] {
   padding: 10px;
   width: 50%;
   border-radius: 5px;
   border: 1px solid gray;
-}
+  }
 
-textarea {
+  textarea {
   width: 50%;
   height: 200px;
-}
+  }
 
-@media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1000px) {
 
   .feedbackContainer {
     margin-left: auto;
