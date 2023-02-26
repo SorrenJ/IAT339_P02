@@ -88,34 +88,51 @@ nav {
 
 
 /* product details css */
-.product-details-content {
+  .product-details-content {
   display: flex;
   gap: 1rem;
   }
 
-.info-ingredients-container {
+  .info-ingredients-container {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
   } 
 
-.vertical-padding {
+  .vertical-padding {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   }
 
-#blueberry-muffin {
+  #blueberry-muffin {
   width: 350px;
   flex-shrink: 0;
   border-radius: 25px;
   }
 
-.product-info {
+  .product-info {
   display: flex;
   gap: 1rem;
   font-weight: 200;
 }
+
+  @media only screen and (max-width: 800px) {
+  .product-details-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-details-content {
+    max-width: none;
+  }
+
+  .info-ingredients-container {
+    justify-content: center;
+  }
+  }
+/* product details end css */
 
 /* footer css*/
 .footer_text {
