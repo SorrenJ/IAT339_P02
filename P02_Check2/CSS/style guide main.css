@@ -660,8 +660,6 @@ form {
 .thumb-img:hover {
   transform: scale(1.1);
   transition: 0.5s;
-
-
 }
 
 .product-details-content {
