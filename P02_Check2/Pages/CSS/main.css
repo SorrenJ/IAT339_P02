@@ -7,8 +7,12 @@ header {
 .page_container {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   }
 
+=======
+}
+>>>>>>> main
 
 /* nav_elements is the container for all nav  */
 .nav_elements {
@@ -18,8 +22,12 @@ header {
   z-index: 3;
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   }
 
+=======
+}
+>>>>>>> main
 
 /* items of nav_elements */
 .nav {
@@ -33,18 +41,27 @@ header {
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> main
 
 .nav:hover,
 .nav:focus {
   background-color: rgba(141, 75, 10, 0.837);
   color: #fff;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> main
 
 nav {
   position: sticky;
 }
 
+<<<<<<< HEAD
 
 
 /* styling interactive elements like the intext link & the various buttons used */
@@ -70,6 +87,8 @@ nav {
 }
 
 /* product page css */
+=======
+>>>>>>> main
 .gallery {
     display: flex;
     flex-wrap: wrap;
