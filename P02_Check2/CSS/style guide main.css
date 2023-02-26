@@ -42,8 +42,6 @@ div h4 {
   font-family: Georgia, serif;
 }
 
-
-
 textarea {
   width: 100%;
   height: 200px;
@@ -56,7 +54,6 @@ section {
   position: relative;
   /* background-color: #ffffff; */
 }
-
 
 @media (max-width: 1000px) {
   section {
@@ -76,7 +73,6 @@ float:left;
 width:313px;
 height:126px;
 }
-
 
 /* Styling navigation elements */
 .page_container {
@@ -179,7 +175,6 @@ nav {
   }
 }
 
-
 .identity_elements {
   flex-direction: row;
 }
@@ -208,7 +203,6 @@ button {
 
 
 /* styling for color palette */
-
 /*start of color palettes*/
 
 
