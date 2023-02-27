@@ -1,6 +1,23 @@
+
+
 header {
     display: flex;
     flex-direction: row;
+}
+
+section {
+  margin-left: 15%;
+  margin-right: 15%;
+  position: relative;
+  /* background-color: #ffffff; */
+}
+
+input[type=text]:hover {
+  border: 1px solid #91d24d;
+}
+
+input[type=text]:focus {
+  border: 2px solid #91d24d;
 }
 
 /* Styling navigation elements */
@@ -10,19 +27,28 @@ header {
   }
 
 
+
+
+
+
+
+
+
+
+
 /* nav_elements is the container for all nav  */
-.nav_elements {
+/* .nav_elements {
   background-color: rgb(246, 215, 130);
   position: sticky;
   top: 0;
   z-index: 3;
   display: flex;
   flex-direction: row;
-  }
+  } */
 
 
 /* items of nav_elements */
-.nav {
+/* .nav {
   color: black;
   justify-content: space-between;
   background-color: rgb(246, 215, 130);
@@ -33,9 +59,9 @@ header {
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  }
+  } */
 
-.nav:hover,
+/* .nav:hover,
 .nav:focus {
   background-color: rgba(141, 75, 10, 0.837);
   color: #fff;
@@ -43,15 +69,15 @@ header {
 
 nav {
   position: sticky;
-}
+} */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 800px) {
   .nav_elements {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-}
+} */
 
 
 
@@ -70,12 +96,65 @@ nav {
   border-radius: 20px;
   font-size: 16px;
   margin-right: 2rem;
+  cursor:pointer;
+  font-weight: bold;
   }
 
 .button:hover {
   background-color: rgba(141, 75, 10, 0.837);
   color: #fff;
 }
+
+
+/* home landing image */
+.landingImg {
+  background-image: url("../imgs/newBg.jpg");
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-size: cover;
+  background-color: #000000bd;
+  background-blend-mode: darken;
+}
+
+/* home landing image end */
+
+/* content on the landing image */
+.landingContent {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  background-image: none;
+  padding: 100px;
+  background-color: transparent;
+
+}
+
+.landingContent a {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .landingImg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+
+  }
+
+
+  .landingContent {
+    padding-top: 25px;
+  }
+}
+
+/*end of content on the landing image */
+
+
 
 /* product page css */
 .gallery {
@@ -143,6 +222,107 @@ nav {
   }
 /* product details end css */
 
+/* Payment form page */
+
+form {
+  width: 100%;
+
+}
+
+.super-order-flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.super-order-flex-item {
+  flex: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.order-flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  border-style: solid;
+  border-color: #2348624d;
+}
+
+.order-flex-item {
+  flex: 25%;
+  padding-left: 25px;
+  padding-right: 50px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 25px;
+}
+
+.order-summary {
+  padding-bottom: 25px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .order-flex-container {
+    flex-direction: column;
+    margin-left: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: transparent;
+  }
+
+  .order-flex-container .order-flex-item {
+    flex: 75%;
+    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+  .super-order-flex-container {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .super-order-flex-item {
+
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
+  .order-summary .button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+
+  }
+
+  .order-summary table {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+
+  }
+}
+
+/* end of Sorren's flex payment */
+
+
 /* footer css*/
 .footer_text {
   font-style: italic;
@@ -183,3 +363,5 @@ nav {
     text-align:center;
   }
 }
+
+

@@ -6,27 +6,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="CSS/main.css" rel="stylesheet" /> 
+    <link href="CSS/navbar.css" rel="stylesheet">
+    <!-- font awesome icons -->
+<script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <header>
-      <img class="logo" src="img/logo.png" alt="logo">
-      <h1>
-        Sweet Spot Products
-      </h1>
-      <p>
-        Our current selection of freshly baked pastries depends on the ingredients in season! We may not have some things available year round.
-      </p>
-    </header>
+  <header>
+    <!-- header -->
+    <div class="home_nav">
+      <div class="home_nav-item">
+        <div class="home_icon"><a href="index.html">
+        <img src="img/logoCondensed5.svg"
+        alt="logo"></a></div></div>
+    
+
+
+      <div class="home_nav-item">
+        <div class="nav">
+      
+
+         
+        <div class="nav-item"> <a href="products.html">Products</a></div>
+        
+    <div class="nav-item"> <a href="payment.html">Order</a></div>
+ 
+    <div class="nav-item"><a href="contactUs.html">Contact</a></div>
   
-    <!-- container for the navigation, then individual nav elements within -->
-    <div class="sticky">
-      <nav class="nav_elements">
-        <a class="nav" href="homePage.html">Home</a>
-        <a class="nav" href="menu.html">Products</a>
-        <a class="nav" href="contactUs.html">Contact us</a>
-      </nav>
+
+  
     </div>
+</div>
+
+<div class="home_nav-item cart"> <span><i class="fa-solid fa-cart-shopping"></i>Cart</span>
+  <div class="dropdownCart-content">
+    <div class="menu-flex-container">
+      <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img" src="img/croissant.png"
+            alt="croissant"></a> </div>
+      <div class="menu-flex-item-desc">
+        <p>Croissant</p>
+        <p>$4.99</p>
+      </div>
+    </div>
+    <div class="menu-flex-container">
+      <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img" src="img/chocolate_cake.png"
+            alt="asianDish"></a> </div>
+      <div class="menu-flex-item-desc">
+        <p>Chocolate Cake</p>
+        <p>$9.99</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- header ends -->
+
+  </header>
+  
+  
 
     <div>
       <a class="button" href="menu.html"> Back to products </a>
