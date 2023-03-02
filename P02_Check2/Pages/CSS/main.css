@@ -1,5 +1,3 @@
-
-
 header {
     display: flex;
     flex-direction: row;
@@ -27,58 +25,13 @@ input[type=text]:focus {
   }
 
 
+p{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 
-
-
-
-
-
-
-
-
-/* nav_elements is the container for all nav  */
-/* .nav_elements {
-  background-color: rgb(246, 215, 130);
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  display: flex;
-  flex-direction: row;
-  } */
-
-
-/* items of nav_elements */
-/* .nav {
-  color: black;
-  justify-content: space-between;
-  background-color: rgb(246, 215, 130);
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  } */
-
-/* .nav:hover,
-.nav:focus {
-  background-color: rgba(141, 75, 10, 0.837);
-  color: #fff;
-  }
-
-nav {
-  position: sticky;
-} */
-
-/* @media only screen and (max-width: 800px) {
-  .nav_elements {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-} */
-
+h1{
+  font-family: Georgia, serif;
+}
 
 
 /* styling interactive elements like the intext link & the various buttons used */
@@ -163,10 +116,23 @@ nav {
     gap: 20px;
   }
   .gallery img {
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    /* height: auto; */
+    width: 300px;
+  height: 200px;
+  object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img {
+  /* makes imgs all same size */
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  /* maintain aspect ratio */
+  border-radius: 25px;
+
 }
 
 .menu-img:hover {
@@ -185,7 +151,19 @@ nav {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  /* background-color: #8D4B0A; */
   } 
+
+  .info-ingredients-container h3{
+   /* color:#8d4c0a; */
+    /* font-weight: 400; */
+    /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+    font-family: Georgia, serif;
+  }
+
+  .info-ingredients-container li{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
 
   .vertical-padding {
   display: flex;
@@ -206,7 +184,18 @@ nav {
 }
 
   @media only screen and (max-width: 800px) {
-  .product-details-content {
+    section .gallery{
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .gallery{
+    text-align:center;
+    display: block;
+
+    }
+
+ 
+    .product-details-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
