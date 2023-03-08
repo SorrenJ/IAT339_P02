@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <!-- allows chrome emulation device mode respond to media queries -->
-  <title> Sweet Spot Bakery </title>
-  <link href="CSS/main.css" rel="stylesheet">
+  <title>Croissant</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="CSS/main.css" rel="stylesheet" />
   <link href="CSS/navbar.css" rel="stylesheet">
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
@@ -79,10 +78,51 @@
   </header>
   <script src="JS/navbar.js"></script>
 
+  <section>
+    <div>
+      <!-- <a class="button" href="menu.html"> Back to products </a> -->
+      <h2>Croissant</h2>
+      <div id="details" class="product-details-content">
+        <img id="blueberry-muffin" src="img/croissant2.jpg" alt="Croissant" />
+        <div>
+          <div class="info-ingredients-container">
+            <div>
+              <h3>Information</h3>
+              <ul class="vertical-padding">
+                <li>406 Calories</li>
+                <li>$4.50</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Ingredients</h3>
+              <ul class="vertical-padding">
+                <li>Flour</li>
+                <li>Milk</li>
+                <li>Yeast</li>
+                <li>Salt</li>
+                <li>Butter</li>
+                <li>Egg</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Description</h3>
+          <p>
+            Flaky, layered French pastry in the shape of a crescent. 
+            They’re loved by everyone and for a good reason! 
+            We’re talking cloud-like puff pastry, buttery, flaky, yeasty, chewy bread. 
+            It really is one of the most decadent things you can eat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br> <br>
+    <h2>Recommended For You</h2>
+  </section>
 
-  <br>
+
   <section class="gallery">
-    <div class="item" data-filter-type="muffin">
+
+    <div class="item">
       <a href="itemDetails_blueberryMuffin.html"><img class="menu-img" src="img/blueberry_muffin.png" alt="Muffin"></a>
       <h2>Blueberry Muffins</h2>
       <p>Muffins with fresh blueberies.</p>
@@ -90,46 +130,18 @@
         <a href="#details" class="button"> Add to Cart </a>
       </div>
     </div>
-    <div class="item" data-filter-type="muffin">
-      <a href="itemDetails_croissants.html"><img class="menu-img" src="img/croissant.png" alt="Croissants"></a>
+    <div class="item">
+      <img src="img/img2.png" alt="Croissants">
       <h2>Croissants</h2>
       <p>Flaky and buttery croissants.</p>
-      <div class="buttons_container">
-        <a href="#details" class="button"> Add to Cart </a>
-      </div>
     </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img3.png" alt="Brownies" data-filter-type="muffin">
+    <div class="item">
+      <img src="img/img3.png" alt="Brownies">
       <h2>Brownies</h2>
       <p>Fudgy and chocolatey brownies.</p>
     </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img4.png" alt="Baguettes">
-      <h2>Baguettes</h2>
-      <p>Crispy baguettes.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img5.png" alt="Pies">
-      <h2>Pies</h2>
-      <p>Homemade pies.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img6.png" alt="Macarons">
-      <h2>Macarons</h2>
-      <p>Colorful macarons with various flavors.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img7.png" alt="Cookies">
-      <h2>Cookies</h2>
-      <p>Classic chocolate chip cookies.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img8.png" alt="Cakes">
-      <h2>Cakes</h2>
-      <p>Customizable cakes.</p>
-    </div>
-  </section>
 
+  </section>
   <br>
   <footer class="sweet-spot-footer">
     <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
@@ -151,6 +163,9 @@
       604-271-8865
     </p>
   </footer>
+
+
 </body>
+
 
 </html>

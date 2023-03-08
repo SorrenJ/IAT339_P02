@@ -10,10 +10,15 @@ section {
   /* background-color: #ffffff; */
 }
 
-input[type=text]:hover {
-  border: 1px solid #91d24d;
+input[type=text]:hover,input[type=email]:hover {
+  border: 2px solid #91d24d;
 }
 
+
+textarea:hover{
+  border: 2px solid #91d24d;
+
+}
 input[type=text]:focus {
   border: 2px solid #91d24d;
 }
