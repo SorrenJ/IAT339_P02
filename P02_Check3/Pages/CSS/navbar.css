@@ -25,8 +25,7 @@ header{
     display: inline-block;
     /* background:#222222; */
     /* background:#ffffff; */
-    -webkit-box-shadow: 0 4px 6px -6px #222;
-    -moz-box-shadow: 0 4px 6px -6px #222;
+   
     box-shadow: 0 4px 6px -6px #222;
 }
 
@@ -61,7 +60,7 @@ header{
  .home_nav-item .search-container input[type=text] {
     /* float: left; */
     padding: 6px;
-    border-color: 5px black;
+    border: 5px black;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
@@ -144,6 +143,10 @@ header{
        color:rgb(0, 0, 0);
   }
   
+  a{
+    color: #000000;
+  }
+
   .cart {
     /* background-color: #0970b9; */
     float:right;
@@ -228,7 +231,7 @@ header{
   /* end of desktop navbar */
   
   /* mobile nav bar */
-  @media only screen and (max-width: 1000px) {
+  @media screen and (max-width: 800px) {
     .home_icon{
       /* width:45%;
       height:45%;    */
@@ -266,7 +269,7 @@ header{
 
     .hamburger:active{
       transform: rotate(90deg);
-      color:#ce0000;
+      color:#91d24d;
     }
 
 
@@ -374,8 +377,17 @@ header{
     }
  
  
-
-    
+    .cart a{
+      /* background-color: #0970b9; */
+      /* float:right; */
+      /* vertical-align: middle; */
+      margin-top: 2em;
+     
+      color: #000000;
+    }
+    .cart{
+      padding-bottom: 4px;
+    }
  
   
 
@@ -401,7 +413,7 @@ header{
 
   
   /* desktop screens for cart item only*/
-  @media only screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     
     .cart {
       margin-left: 18%;

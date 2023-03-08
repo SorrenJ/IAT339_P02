@@ -90,7 +90,7 @@ h1{
   color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 
   .landingImg {
     width: 100%;
@@ -259,7 +259,7 @@ form {
   color: black;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .order-flex-container {
     flex-direction: column;
     margin-left: auto;
@@ -343,7 +343,7 @@ form {
   height: 200px;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
 
   .feedbackContainer {
     margin-left: auto;
