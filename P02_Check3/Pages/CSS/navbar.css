@@ -1,6 +1,8 @@
 body{
     margin:0;
 }
+
+
 header{
     top: 0;
     position: sticky;
@@ -35,8 +37,11 @@ header{
         vertical-align: middle;
         padding-top: 5px;
         padding-bottom: 5px;
-   
+        transform:scale(1);
+        transition: 0.5s;
 }
+
+
 
 .home_icon img:hover{
 
@@ -93,6 +98,7 @@ header{
     font-size: 0.8em;
     margin-left: auto;
     margin-right: auto;
+  
   }
   
   i .fa-solid .fa-drumstick-bite {
@@ -209,13 +215,70 @@ header{
 
 
 
-
+  .hamburger{
+    display:none;
+  }
+  #myLinks{
+    display:flex;
+  }
+  .nav_heading{
+    display:none;
+  }
 
   /* end of desktop navbar */
   
   /* mobile nav bar */
   @media only screen and (max-width: 1000px) {
+    .home_icon{
+      /* width:45%;
+      height:45%;    */
+    }
+    
+    .hamburger{
+      /* display:block; */
+      color:black;
+      /* display:absolute; */
+      margin-left:20%;
+      display:inline-block;
+      transform: rotate(0deg);
+      transition: 0.5s;
+    }
   
+.nav_heading{
+  display:inline-block;
+  margin-left:10%;
+}
+    /* .hamburger:visited{
+      transform: rotate(90deg);
+      color:#ddd;
+    } */
+
+
+    .hamburger:hover{
+      transform: rotate(90deg);
+      color:#ffffff;
+      /* background:#222; */
+      transition: 0.5s;
+
+    }
+ 
+
+
+    .hamburger:active{
+      transform: rotate(90deg);
+      color:#ce0000;
+    }
+
+
+
+
+    /* .hamburger::after{
+      transform: rotate(0deg);
+      color:#080808;
+    } */
+    .fa .fa-bars:active{
+      /* transform: rotate(90deg); */
+    }
     .nav {
       /* margin: 0; */
       flex-direction: column;
@@ -223,9 +286,13 @@ header{
       margin-left: auto;
       margin-right: auto;
       text-align:center;
- 
+   
+      
     }
   
+    #myLinks{
+      display:none;
+    }
  
 
     .home_icon img{
@@ -240,9 +307,9 @@ header{
         display: block;
      
         width: 100%;
-        padding-top: 20px;
+        padding-top: 2px;
         /* padding-right: 30px; */
-        padding-bottom: 20px;
+        padding-bottom: 2px;
         text-decoration: none;
         display: block;
         transition: .3s background-color;
@@ -296,7 +363,8 @@ header{
     }
   
    .cart:hover .dropdownCart-content {
-        position: absolute;
+        display:none;
+    position: absolute;
         background-color: #91d24d;
         min-width: 96%;
         box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
@@ -304,10 +372,21 @@ header{
         z-index: 1;
         transform: translate(0%, 10%);
     }
+ 
+ 
+
+    
+ 
+  
+
   }
+
   
   /* end of mobile navbar*/
-  
+   
+ 
+
+
   .cart:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
@@ -316,11 +395,14 @@ header{
        color:rgb(0, 0, 0);
        cursor:pointer;
   }
-  
+  .hidden {
+    display: none;
+  }
+
   
   /* desktop screens for cart item only*/
   @media only screen and (min-width: 1000px) {
-  
+    
     .cart {
       margin-left: 18%;
       color: #000000;
@@ -329,4 +411,11 @@ header{
       padding-right: 30px;
       padding-left: 30px;
     }
+  
+   
+    #myLinks{
+      display:flex !important; 
+      /* open closed hamburger when go back to desktop screen */
+    }
+  
   }
