@@ -18,7 +18,7 @@ header{
     z-index: 3;
     /* background:#91d24d; */
    
-   background:#F6D782;
+   background:#ffffff;
     margin-left:auto;
     margin-right:auto;
     width: 100%;
@@ -60,7 +60,7 @@ header{
  .home_nav-item .search-container input[type=text] {
     /* float: left; */
     padding: 6px;
-    border: 5px black;
+    border: 5px #390834;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
@@ -130,7 +130,7 @@ header{
   
   .nav .nav-item a{
     text-decoration: none;
-    color:black;
+    color:#390834;
        /* color:rgb(255, 255, 255); */
   }
 
@@ -140,11 +140,11 @@ header{
     text-decoration: underline;
     transition: .5s background-color;
     text-decoration-thickness: 3px;
-       color:rgb(0, 0, 0);
+       color:#390834;
   }
   
   a{
-    color: #000000;
+    color: #390834;
   }
 
   .cart {
@@ -152,7 +152,7 @@ header{
     float:right;
     /* vertical-align: middle; */
     margin-top: 2em;
-    color: #000000;
+    color: #ffffff;
   }
   
   .nav-item:hover {
@@ -172,29 +172,30 @@ header{
   /* padding-top:5px; */
     text-align: center;
     vertical-align: middle;
-    color: #000000;
+    color: #390834;
   }
   
   .cart span:hover {
-    color: black;
+    color: #390834;
   }
   
   /* dropdown container*/
   .dropdownCart-content {
     display: none;
     position: absolute;
-    background-color: #91d24d;
+    background-color: #390834;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
     transform: translate(-55%, 15%);
+    color:#ffffff;
   }
   
   .cart:hover .dropdownCart-content {
     transition: .5s display;
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   
 
@@ -259,7 +260,7 @@ header{
 
     .hamburger:hover{
       transform: rotate(90deg);
-      color:#ffffff;
+      color:#390834;
       /* background:#222; */
       transition: 0.5s;
 
@@ -269,7 +270,7 @@ header{
 
     .hamburger:active{
       transform: rotate(90deg);
-      color:#91d24d;
+      color:#390834;
     }
 
 

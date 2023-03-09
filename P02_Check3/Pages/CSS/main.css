@@ -1,3 +1,7 @@
+body{
+  background-color: #ebebeb;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -7,7 +11,7 @@ section {
   margin-left: 15%;
   margin-right: 15%;
   position: relative;
-  /* background-color: #ffffff; */
+
 }
 a{
   text-decoration:none;
@@ -15,16 +19,16 @@ a{
 }
 
 input[type=text]:hover,input[type=email]:hover {
-  border: 2px solid #91d24d;
+  border: 2px solid #390834;
 }
 
 
 textarea:hover{
-  border: 2px solid #91d24d;
+  border: 2px solid #390834;
 
 }
 input[type=text]:focus {
-  border: 2px solid #91d24d;
+  border: 2px solid #390834;
 }
 
 /* Styling navigation elements */
@@ -38,7 +42,7 @@ p{
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1, h2, h3{
   font-family: Georgia, serif;
 }
 
@@ -52,8 +56,9 @@ h1{
 .button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  /* background-color: rgb(246, 215, 130); */
+  background-color:#390834;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
   font-size: 16px;
@@ -63,7 +68,7 @@ h1{
   }
 
 .button:hover {
-  background-color: rgba(141, 75, 10, 0.837);
+  background-color:#130311;
   color: #fff;
 }
 
@@ -123,6 +128,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+ 
   }
   .gallery img {
     /* max-width: 100%; */
@@ -241,6 +247,7 @@ form {
   padding-right: 25px;
   color: white;
   padding-bottom: 25px;
+
 }
 
 .order-flex-container {
@@ -250,7 +257,9 @@ form {
   border-radius: 25px;
   margin-bottom: 25px;
   border-style: solid;
-  border-color: #2348624d;
+  /* border-color: #2348624d; */
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .order-flex-item {
@@ -327,8 +336,9 @@ form {
   }
 
 .sweet-spot-footer {
-  background-color: rgb(246, 215, 130);
-  color: #333;
+  /* background-color: rgb(246, 215, 130); */
+  background-color:#390834;
+  color: #ffffff;
   padding: 40px;
   text-align: center;
   }
@@ -338,7 +348,21 @@ form {
   margin: 0;
 }
 
-/* feedback css */
+/* feedback page css */
+
+
+.feedbackContainer{
+  /* padding-bottom: 25px; */
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+
+  /* border-style: solid; */
+  /* border-color: #2348624d; */
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.089);
+}
+
   input[type="text"],
   input[type="email"] {
   padding: 10px;
