@@ -78,9 +78,11 @@ h1, h2, h3{
   margin-top: 20px;
   padding: 10px 20px;
   /* background-color: rgb(246, 215, 130); */
-  background-color:#390834;
+  /* background-color:#390834; */
   color: rgb(255, 255, 255);
-  border: none;
+  border-style: solid;
+  border-width: thick;
+  border-color:white;
   border-radius: 5px;
   font-size: 16px;
   margin-right: 2rem;
@@ -199,7 +201,6 @@ h1, h2, h3{
 /*end of content on the landing image */
 
 
-
 .about_img{
   width:100%;
   height:100%;
@@ -243,7 +244,6 @@ text-align:center;
 
 }
 
-
 }
 
 .featured_gallery {
@@ -252,8 +252,6 @@ text-align:center;
   gap: 20px;
 
 }
-
-
 
 /* product page css */
 .featured_gallery {
@@ -289,7 +287,7 @@ text-align:center;
 
 }
 
-.featured_gallery_menu-img :hover {
+.featured_gallery_menu-img:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -306,9 +304,6 @@ text-align:center;
   }
 
 }
-
-
-
 
 /* product page css */
 .gallery {
@@ -341,13 +336,6 @@ border-radius: 25px;
 transform: scale(1.1);
 transition: 0.5s;
 }
-
-
-
-
-
-
-
 
 /* product details css */
   .product-details-content {
