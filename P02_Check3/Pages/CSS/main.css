@@ -71,6 +71,30 @@ h1, h2, h3{
   background-color:#130311;
   color: #fff;
 }
+
+
+
+.center_button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  /* background-color: rgb(246, 215, 130); */
+  background-color:#390834;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 2rem;
+  cursor:pointer;
+  font-weight: bold;
+  width:25%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.center_button:hover {
+  background-color:#130311;
+  color: #fff;
+}
 /* home page */
 
 /* home landing image */
@@ -431,6 +455,9 @@ form {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.order-flex-container label{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 .order-flex-item {
   flex: 25%;
   padding-left: 25px;
@@ -444,6 +471,10 @@ form {
   border-radius: 25px;
   margin-bottom: 25px;
   color: black;
+}
+
+.order-summary table{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 800px) {
