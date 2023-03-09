@@ -198,7 +198,9 @@ header{
     color: rgb(255, 255, 255);
   }
   
-
+  .dropdownCart-content .menu-flex-item-desc{
+    color: rgb(255, 255, 255);
+  }
   .thumb-img {
     /* makes imgs all same size */
     /* float: left; */
@@ -421,8 +423,8 @@ header{
       color: #000000;
       text-align: center;
       /* padding-top: 20px; */
-      padding-right: 30px;
-      padding-left: 30px;
+      padding-right: 20px;
+    
     }
   
    

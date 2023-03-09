@@ -71,18 +71,20 @@ h1, h2, h3{
   background-color:#130311;
   color: #fff;
 }
-
+/* home page */
 
 /* home landing image */
 .landingImg {
-  background-image: url("../imgs/newBg.jpg");
+  background-image: url("../img/bakeBanner.JPG");
   width: 100%;
   margin-left: 0;
   margin-right: 0;
   background-size: cover;
-  background-color: #000000bd;
+  background-color: #00000091;
   background-blend-mode: darken;
 }
+
+
 
 /* home landing image end */
 
@@ -99,6 +101,7 @@ h1, h2, h3{
   background-color: transparent;
 
 }
+
 
 .landingContent a {
   color: white;
@@ -122,15 +125,127 @@ h1, h2, h3{
 /*end of content on the landing image */
 
 
+/* home landing image */
+.landingImg2 {
+  background-image: url("../img/bakeBanner2.jpg");
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-size: cover;
+  background-color: #0000008e;
+  background-blend-mode: darken;
+  /* position:fixed; */
+}
+
+/* home landing image end */
+
+/* content on the landing image */
+.landingContent2 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  background-image: none;
+  padding: 100px;
+  background-color: transparent;
+
+}
+
+.landingContent2 a {
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .landingImg2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+
+  }
+
+
+  .landingContent2 {
+    padding-top: 25px;
+  }
+}
+
+/*end of content on the landing image */
+
+
+
+.about_img{
+  width:100%;
+  height:100%;
+}
+
+
+.about-flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+
+.about-flex-item {
+  flex: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* color: white; */
+  padding-bottom: 25px;
+
+}
+
+.wrap{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top:25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .about-flex-container {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-flex-item {
+
+text-align:center;
+
+}
+
+
+}
+
+.featured_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+
 
 /* product page css */
-.gallery {
+.featured_gallery {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 20px;
+    /* margin-left:auto;
+    margin-right: auto; */
  
   }
-  .gallery img {
+
+  .featured_gallery .item{
+    flex: 25%;
+  }
+
+  .featured_gallery  img {
     /* max-width: 100%; */
     /* height: auto; */
     width: 300px;
@@ -140,7 +255,7 @@ h1, h2, h3{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.menu-img {
+.featured_gallery_menu-img {
   /* makes imgs all same size */
   width: 300px;
   height: 200px;
@@ -150,10 +265,64 @@ h1, h2, h3{
 
 }
 
-.menu-img:hover {
+.featured_gallery_menu-img :hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
+
+@media only screen and (max-width: 800px) {
+  .featured_gallery {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .featured_gallery {
+  text-align:center;
+  display: block;
+
+  }
+
+}
+
+
+
+
+/* product page css */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.gallery  img {
+  /* max-width: 100%; */
+  /* height: auto; */
+  width: 300px;
+height: 200px;
+object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img {
+/* makes imgs all same size */
+width: 300px;
+height: 200px;
+object-fit: cover;
+/* maintain aspect ratio */
+border-radius: 25px;
+
+}
+
+.menu-img :hover {
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+
+
+
+
+
 
 
 /* product details css */
@@ -389,9 +558,21 @@ form {
 
 /* cart page elements */
 
+.super-order-flex-container #cartContainer{
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+
+  /* border-style: solid; */
+  /* border-color: #2348624d; */
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.089);
+}
+
 .menu-flex-container {
   display: flex;
   color:black;
+
 }
 
 .menu-flex-container .menu-flex-item-pic {
