@@ -81,53 +81,81 @@
 
 
   <br>
-  <section class="gallery">
-    <div class="item" data-filter-type="muffin">
-      <a href="itemDetails_blueberryMuffin.html"><img class="menu-img" src="img/blueberry_muffin.png" alt="Muffin"></a>
-      <h2>Blueberry Muffins</h2>
-      <p>Muffins with fresh blueberies.</p>
-      <div class="buttons_container">
-        <a href="cart.html"class="button"> Add to Cart </a>
+  <section>
+    <h1>Your Cart</h1>
+<!-- form container starts -->
+<div class="super-order-flex-container">
+
+  <!-- form container item 1 starts -->
+  <div class="super-order-flex-item">
+
+    <div class = "menu-flex-container">
+      <div class="menu-flex-item-pic">
+        <br><a href="itemDetails_croissants.html"><img class="menu-img" src="img/croissant.png" alt="croissant"></a>
+      </div>
+      <div class="menu-flex-item-desc">
+       <h2>Croissant</h2>
+       <h3>$4.99</h3> 
+        <br>
+        <label for="quantity1">Qty:</label>
+        <select name="quantity1" id="quantity1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select><br>
+         <br>
+         <div class="buttons_container">
+          <a href="#details" class="button">Delete</a>
+        </div>
       </div>
     </div>
-    <div class="item" data-filter-type="muffin">
-      <a href="itemDetails_croissants.html"><img class="menu-img" src="img/croissant.png" alt="Croissants"></a>
-      <h2>Croissants</h2>
-      <p>Flaky and buttery croissants.</p>
-      <div class="buttons_container">
-        <a href="cart.html" class="button"> Add to Cart </a>
+     
+    <div class = "menu-flex-container">
+      <div class="menu-flex-item-pic">
+       <br><a href="itemDetails_blueberryMuffin.html"><img class="menu-img" src="img/chocolate_cake.png" alt="chocolate cake"></a>
+      </div>
+      <div class="menu-flex-item-desc">
+        <h2>Chocolate Cake</h2>
+        <h3>$9.99</h3>
+        <br>
+       <!-- <p>60 customizable rice/noodle dishes.<br> Dishes range from shanghai noodles to fried rice dishes.</p> <br> -->
+       <label for="quantity1">Qty:</label>
+       <select name="quantity1" id="quantity1">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+       </select>
+       <br>
+       <div class="buttons_container">
+        <a href="#details" class="button">Delete</a>
+      </div>
       </div>
     </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img3.png" alt="Brownies" data-filter-type="muffin">
-      <h2>Brownies</h2>
-      <p>Fudgy and chocolatey brownies.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img4.png" alt="Baguettes">
-      <h2>Baguettes</h2>
-      <p>Crispy baguettes.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img5.png" alt="Pies">
-      <h2>Pies</h2>
-      <p>Homemade pies.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img6.png" alt="Macarons">
-      <h2>Macarons</h2>
-      <p>Colorful macarons with various flavors.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img7.png" alt="Cookies">
-      <h2>Cookies</h2>
-      <p>Classic chocolate chip cookies.</p>
-    </div>
-    <div class="item" data-filter-type="muffin">
-      <img src="img/img8.png" alt="Cakes">
-      <h2>Cakes</h2>
-      <p>Customizable cakes.</p>
-    </div>
+  </div>
+
+    <br>
+
+    
+        <!-- form container item 2 starts -->
+        <div class="super-order-flex-item">
+
+          <!--  order summary container starts -->
+          <div class="order-summary">
+            <h2>Subtotal (2 items):</h2>
+      
+            <h3>$14.98</h3>
+    
+            <a href="payment.html"> <input class="button" type="submit" value="Proceed to Checkout ">
+          </a>
+            </div>
+          <!--  order summary container ends -->
+
+        </div>
+        <!-- form container item 2 ends -->
+      </div>
+      <!-- form container ends -->
   </section>
 
   <br>
