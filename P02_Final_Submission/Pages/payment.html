@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <!-- allows chrome emulation device mode respond to media queries -->
+  <title> Sweet Spot Bakery </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="CSS/main.css" rel="stylesheet">
+  <link href="CSS/navbar.css" rel="stylesheet">
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <!-- container for the navigation, then individual nav elements within -->
+
+  <header>
+    <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
+    <!-- header -->
+    <div class="home_nav">
+
+
+
+      <div class="home_nav-item">
+        <div class="home_icon"><a href="index.html">
+            <img src="img/logoCondensed5.svg" alt="logo"></a><p class="nav_heading">&nbsp;The Sweet Spot</p>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+              <i class="fa fa-bars" style="font-size:24pt"></i>
+            </a>
+          
+          </div>
+            
+          </div>
+
+     
+      <div class="home_nav-item">
+       
+        
+        <div id="myLinks" class="nav" >
+
+
+
+          <div class="nav-item"> <a href="products.html">Products</a></div>
+
+          <div class="nav-item "> <a href="payment.html">Order</a></div>
+
+          <div class="nav-item "><a href="contactUs.html">Contact</a></div>
+
+
+
+        </div>
+      
+      
+      </div>
+
+      <div class="home_nav-item cart"> <span><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></span>
+        <div class="dropdownCart-content">
+          <div class="menu-flex-container">
+            <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
+                  src="img/croissant.png" alt="croissant"></a> </div>
+            <div class="menu-flex-item-desc">
+              <p>Croissant</p>
+              <p>$4.99</p>
+            </div>
+          </div>
+          <div class="menu-flex-container">
+            <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
+                  src="img/chocolate_cake.png" alt="asianDish"></a> </div>
+            <div class="menu-flex-item-desc">
+              <p>Chocolate Cake</p>
+              <p>$9.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header ends -->
+
+
+  </header>
+  <script src="JS/navbar.js"></script>
+
+  <div class="landingImg2">
+    <div class="landingContent2">
+      <h1>Checkout</h1>
+    
+    </div>
+  </div>
+  <br>
+  <section id="checkout" class="checkout">
+
+
+
+   
+
+    <!-- form start -->
+    <form action="order_confirmed.html" method="post">
+
+      <!-- form container starts -->
+      <div class="super-order-flex-container">
+
+        <!-- form container item 1 starts -->
+        <div class="super-order-flex-item">
+
+          <!-- order container 1 starts -->
+          <div class="order-flex-container">
+
+            <!-- order item 1 starts -->
+            <div class="order-flex-item">
+              <h2>Delivery Information</h2>
+              <br>
+
+              <label for="fname">First Name</label>
+              <br>
+              <input type="text" id="fname" name="fname">
+              <br>
+              <br>
+
+              <label for="lname">Last Name</label>
+              <br>
+              <input type="text" id="lname" name="lname">
+              <br>
+
+            </div>
+            <!-- order item 1 ends -->
+
+            <!-- order item 2 starts -->
+            <div class="order-flex-item">
+
+              <br>
+
+              <label for="address">Address</label>
+              <br>
+
+              <input type="text" id="address" name="address">
+              <br>
+              <br>
+
+              <label for="zip">ZIP</label>
+              <br>
+
+              <input type="text" id="zip" name="zip">
+              <br>
+              <br>
+              <label for="province">Province</label>
+              <br>
+              <input type="text" id="province" name="province">
+              <br><br>
+              <label for="city">City</label>
+              <br>
+              <input type="text" id="city" name="city">
+              <br><br>
+              <label for="phone">Phone</label>
+              <br>
+              <input type="text" id="phone" name="phone">
+              <br><br>
+            </div>
+            <!-- order item 2 ends -->
+          </div>
+          <!-- order container 1  ends -->
+
+          <!-- order container 2  starts -->
+          <div class="order-flex-container">
+
+            <!-- order item 1 starts -->
+            <div class="order-flex-item">
+              <h2>Billing Information</h2>
+              <br>
+
+              <label for="card">Card number</label>
+              <br>
+              <input type="text" id="card" name="card">
+              <br><br>
+
+              <label for="exp">Expiration</label>
+              <br>
+              <input type="text" id="exp" name="exp">
+              <br><br>
+              <label for="cvc">CVC</label>
+              <br>
+              <input type="text" id="cvc" name="cvc">
+            </div>
+            <!-- order item 1 ends -->
+
+            <!-- order item 2 starts -->
+            <div class="order-flex-item">
+              <h2>Items and shipping</h2>
+
+              <h3>Cart</h3>
+              <ol>
+                <li>
+                  <p>Croissant- $4.99</p>
+                </li>
+                <li>
+                  <p>Chocolate Cake- $9.99</p>
+                </li>
+              </ol>
+              <h3>Delivery date(s)</h3>
+              <input type="radio" id="delivery_date1" name="delivery_date1" value="1">
+              <label for="delivery_date1">Jan. 21 </label>
+              <br>
+              <input type="radio" id="delivery_date2" name="delivery_date2" value="2">
+              <label for="delivery_date2">Jan. 22 </label>
+
+           
+            </div>
+            <!-- order item 2 ends -->
+         
+         
+
+          </div>
+          <!-- order container 2  ends -->
+          <div class="buttons_container">
+            <a href="cart.html" class="button"> Back to Cart </a>
+          </div>
+        </div>
+        <!-- form container item 1 ends -->
+
+       
+
+        <!-- form container item 2 starts -->
+        <div class="super-order-flex-item">
+
+          <!--  order summary container starts -->
+          <div class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+              <tr>
+                <td>Croissant: <br>
+                </td>
+                <td>$4.99</td>
+              </tr>
+              <tr>
+                <td>Chocolate Cake:</td>
+                <td>$9.99</td>
+              </tr>
+
+
+              <tr>
+                <td>Shipping:</td>
+                <td>
+                  <del>$9.99</del>
+                </td>
+              </tr>
+              <tr>
+                <td>Tax:</td>
+                <td>$1.79</td>
+              </tr>
+            </table>
+            <h3> Order total:</h3>
+            <h3>$16.77</h3>
+            <input class="button" type="reset" value="Reset">
+            <br><br>
+            <input class="button" type="submit" value="Place order">
+          </div>
+          <!--  order summary container ends -->
+
+        </div>
+        <!-- form container item 2 ends -->
+      </div>
+      <!-- form container ends -->
+
+    </form>
+    <!-- form ends -->
+  </section>
+
+  <br>
+  <footer class="sweet-spot-footer">
+    <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
+      European-style pastries and sweets, and we're proud to be a part of the local community. Our brand
+      identity is a combination of warm beige and earthy green, symbolizing our connection to nature and our
+      community, and our passion for creating sweet treats that bring people together.</p>
+
+    <br>
+    <p class="footer_text">
+      Address:
+      <br>
+      110 - 12000 First Avenue
+      Richmond, BC V7E 3L9
+      Steveston Village
+      <br>
+      <br>
+      Contact us:
+      <br>
+      604-271-8865
+    </p>
+  </footer>
+</body>
+
+</html>
