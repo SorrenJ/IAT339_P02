@@ -262,6 +262,11 @@ text-align:center;
 }
 
 /* product page css */
+
+.product-category {
+  margin-left: 15%
+}
+
 .featured_gallery {
     display: flex;
     /* flex-wrap: wrap; */
