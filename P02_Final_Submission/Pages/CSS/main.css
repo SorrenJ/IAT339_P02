@@ -263,6 +263,11 @@ text-align:center;
 
 /* product page css */
 
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 .filter-button {
   border-radius: 20px;
   padding: 10px 20px;
@@ -276,8 +281,12 @@ text-align:center;
   background-color: #390834;
 }
 
-.filter-button:hover {
-  background-color: transparent;
+.filter-button:not([data-active]):hover {
+  background-color: unset;
+}
+
+.filter-button[data-active]:hover {
+  background-color: #390834;
 }
 
 .product-category-heading {
