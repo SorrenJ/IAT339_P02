@@ -23,9 +23,6 @@ header{
     margin-right:auto;
     width: 100%;
     display: inline-block;
-    /* background:#222222; */
-    /* background:#ffffff; */
-   
     box-shadow: 0 4px 6px -6px #222;
 }
 
@@ -131,52 +128,56 @@ header{
   .nav .nav-item a{
     text-decoration: none;
     color:#390834;
-       /* color:rgb(255, 255, 255); */
-  }
+    
+  /* cart hover intitiation */
+       background-image: linear-gradient(#8a017c, #8a017c);
+       background-size: 0 0.2125rem, auto;
+       background-repeat: no-repeat;
+       background-position: center bottom;
+       transition: all .3s ease-out;
+ 
+      }
 
-   .nav .nav-item a:hover {
+   .nav .nav-item a:hover,  .nav .nav-item a:focus{
     /* color: #000000; */
     /* background-color: #19ac56; */
-    text-decoration: underline;
+    /* text-decoration: underline;
     transition: .5s background-color;
     text-decoration-thickness: 3px;
-       color:#390834;
-  }
+       color:#390834; */
+  
+       background-size: 100% 0.2125rem, auto;
+  
+      }
   
   a{
     color: #390834;
   }
-
-  .cart {
-    /* background-color: #0970b9; */
-    float:right;
-    /* vertical-align: middle; */
-    margin-top: 2em;
-    color: #ffffff;
-  }
-  
   .nav-item:hover {
     color: #000000;
-    /* background-color: #fff; */
     transition: .5s background-color;
   }
   
   /* cart button */
-  .home_nav .home_nav-item .cart {
-    /* padding-top: 105px;
-    padding-left: 5px;
-    padding-right: 5px; */
- 
-    /* padding-right: 30px; */
-    float:right;
-  /* padding-top:5px; */
-    text-align: center;
-    vertical-align: middle;
-    color: #390834;
+  .cart {
+    float:right;   
+    margin-top: 2em;
+    color: #ffffff;
+
   }
   
-  .cart span:hover {
-    color: #390834;
+
+  .cart a{
+    /* cart hover intitiation */
+    background-image: linear-gradient(#8a017c, #8a017c);
+    background-size: 0 0.2125rem, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .3s ease-out;
+  }
+  .cart a:hover {
+    /* color: #8a017c; */
+    background-size: 100% 0.2125rem, auto;
   }
   
   /* dropdown container*/
@@ -251,7 +252,7 @@ header{
       color:black;
     }
 .mobile_cart a:hover{
-  color:#390834;
+  color:#8a017c;
 
   transition: 0.5s;
 }
@@ -280,7 +281,7 @@ header{
 
     .hamburger:hover{
       transform: rotate(90deg);
-      color:#390834;
+      color:#8a017c;
       /* background:#222; */
       transition: 0.5s;
 
@@ -399,9 +400,7 @@ header{
  
  
     .cart a{
-      /* background-color: #0970b9; */
-      /* float:right; */
-      /* vertical-align: middle; */
+
       margin-top: 2em;
      
       color: #000000;
@@ -422,11 +421,11 @@ header{
 
 
   .cart:hover {
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0);
     text-decoration: underline;
     transition: .5s background-color;
     text-decoration-thickness: 3px;
-       color:rgb(0, 0, 0);
+       color:rgb(0, 0, 0); */
        cursor:pointer;
   }
   .hidden {
