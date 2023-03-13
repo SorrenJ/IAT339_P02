@@ -1,4 +1,4 @@
-const galleryContainer = document.querySelector(".galleryContainer");
+const galleryContainer = document.querySelector(".gallery-container");
 
 const initialProducts = getInitialProducts();
 
@@ -6,24 +6,32 @@ const filterButtons = document.querySelectorAll(".filter-button");
 filterButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     const filter = e.target.dataset.filterType;
-    console.log(filter);
-    const filteredProducts = initialProducts.map(({ items, title }) => {
+    const filteredCategories = initialProducts.map(({ items, title }) => {
       const filteredItems = items.filter((item) => {
-        console.log(item.dataset.filterType !== filter);
         return item.dataset.filterType === filter
       })
       return { title, filteredItems };
     });
-    console.log(filteredProducts);
+    // Rerender with filtered items
+    const container = document.createDocumentFragment();
+    filteredCategories.forEach((category) => {
+      container.appendChild(category.title);
+      const section = document.createElement("section");
+      section.classList.add("gallery");
+      section.replaceChildren(...category.filteredItems);
+      container.appendChild(section);
+    })
+    galleryContainer.replaceChildren(container);
   });
+
 })
 
+// Get initial products from the html page
 function getInitialProducts() {
   const initialProducts = [];
   const gallery = document.querySelectorAll(".gallery");
   const headings = document.querySelectorAll(".product-category-heading");
   if (gallery.length !== headings.length) return [];
-  // Populate products with inital products in html
   Array.from({ length: gallery.length }).forEach((_, i) => {
     const items = gallery[i].querySelectorAll(".item");
     initialProducts.push({
