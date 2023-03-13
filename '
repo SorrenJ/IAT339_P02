@@ -1,0 +1,33 @@
+const galleryContainer = document.querySelector(".galleryContainer");
+
+const initialProducts = getInitialProducts();
+
+const filterButtons = document.querySelectorAll(".filter-button");
+
+console.log(filterButtons);
+filterButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const filter = e.target.dataset.filterType;
+    const filteredProducts = initialProducts.map(({ items, title }) => {
+      const filteredItems = items.filter((item) => 
+        item.dataset.filterType !== filter)
+      return { title, filteredItems };
+    });
+  });
+  console.log(filteredProducts);
+})
+
+function getInitialProducts() {
+  const initialProducts = [];
+  const items = document.querySelectorAll(".gallery");
+  const headings = document.querySelectorAll(".product-category-heading");
+  if (items.length !== headings.length) return [];
+  // Populate products with inital products in html
+  Array.from({ length: items.length }).forEach((_, i) => {
+    initialProducts.push({
+      title: headings[i].cloneNode(true),
+      items: Array.from(items).map((item) => item.cloneNode(true))
+    });
+  })
+  return initialProducts;
+}
