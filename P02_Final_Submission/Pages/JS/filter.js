@@ -42,7 +42,6 @@ filterButtons.forEach((button) => {
 })
 
 function getGalleryNodes(data) {
-  console.log(data);
   const container = document.createDocumentFragment();
   data.forEach((category) => {
     container.appendChild(category.title);
