@@ -236,18 +236,36 @@ header{
   /* mobile nav bar */
   @media screen and (max-width: 800px) {
     .home_icon{
-      /* width:45%;
-      height:45%;    */
+      /* width:55%;
+      height:55%;    */
     }
-    
+    .mobile_cart{
+      display:inline;
+      font-size:2em;
+      margin-left: 40%;
+      vertical-align: middle;
+      color:black;
+    }
+
+    .mobile_cart a{
+      color:black;
+    }
+.mobile_cart a:hover{
+  color:#390834;
+
+  transition: 0.5s;
+}
+
     .hamburger{
       /* display:block; */
       color:black;
       /* display:absolute; */
-      margin-left:20%;
+      margin-left:5%;
       display:inline-block;
       transform: rotate(0deg);
       transition: 0.5s;
+      margin-right: -10%;
+      vertical-align: middle;
     }
   
 .nav_heading{
@@ -390,6 +408,7 @@ header{
     }
     .cart{
       padding-bottom: 4px;
+     display:none;
     }
  
   
@@ -414,6 +433,17 @@ header{
     display: none;
   }
 
+
+  .cart {
+    margin-left: 18%;
+    color: #000000;
+    text-align: center;
+    /* padding-top: 20px; */
+    padding-right: 20px;
+  
+  }
+
+
   
   /* desktop screens for cart item only*/
   @media screen and (min-width: 800px) {
@@ -426,7 +456,10 @@ header{
       padding-right: 20px;
     
     }
-  
+    .mobile_cart{
+      display:none;
+    }
+
    
     #myLinks{
       display:flex !important; 
