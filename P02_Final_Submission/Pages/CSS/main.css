@@ -840,15 +840,29 @@ text-align:center;
 
 
 /* footer css*/
+.sweet-spot-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-element {
+  margin-top: 2%;
+}
+
+.footer-socials {
+  margin-top: 3%;
+}
+
 .footer_text {
   font-style: italic;
   }
 
 .sweet-spot-footer {
   /* background-color: rgb(246, 215, 130); */
-  background-color:#390834;
+  background-color:rgb(54, 13, 62);
   color: #ffffff;
-  padding: 40px;
+  padding: 3%;
   text-align: center;
   }
 
