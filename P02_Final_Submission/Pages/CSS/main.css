@@ -42,6 +42,10 @@ p{
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
+li{font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
 h1, h2, h3{
   font-family: Georgia, serif;
 }
@@ -170,6 +174,13 @@ h1, h2, h3{
   background-blend-mode: darken;
   /* position:fixed; */
 }
+
+
+#blueberrymuffin_banner{
+  background-image: url("../img/blueberry_muffin_wallpaper.jpeg");
+}
+
+
 
 /* home landing image end */
 
@@ -381,12 +392,14 @@ transition: 0.5s;
   .product-details-content {
   display: flex;
   gap: 1rem;
+  /* color:#000000; */
   }
 
   .info-ingredients-container {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+
   /* background-color: #8D4B0A; */
   } 
 
@@ -405,18 +418,205 @@ transition: 0.5s;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  list-style-type: none;
+  margin-left:0;
+  padding-inline-start: 0;
   }
 
+.floating_food{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 25px;
+
+
+}
+
   #blueberry-muffin {
-  width: 350px;
+  width: 400px;
   flex-shrink: 0;
   border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+  position:sticky;
+  top:100px;
+  z-index:2;
+  }
+  #blueberry-muffin-oval {
+    position:sticky;
+    z-index:1;
+    top: 458px;
+    width: 50%;
+    height: 80px;
+    background:		rgba(5, 5, 5, 0.5);
+
+    margin-left: 25%;
+    -moz-border-radius: 126px / 50px;
+    -webkit-border-radius: 126px / 50px;
+    border-radius: 126px / 50px;
+    animation: shadow 6s ease-in-out infinite;
+}
+#croissant {
+  width: 400px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+  position:sticky;
+  top:100px;
+  z-index:2;
+  }
+#croissant-oval {
+  position:sticky;
+  z-index:1;
+  top: 458px;
+  width: 70%;
+  height: 80px;
+  background:		rgba(5, 5, 5, 0.3);
+
+  /* border-color:black;
+  border-style: solid; */
+
+  margin-left: 25%;
+  -moz-border-radius: 126px / 50px;
+  -webkit-border-radius: 126px / 50px;
+  border-radius: 126px / 50px;
+  animation: shadow 6s ease-in-out infinite;
+}
+.product-description{
+/* margin-left:25%; */
+background-color: #ffffffc9;
+padding-left: 15%;
+padding-right: 15%;
+}
+
+
+.gallery-recommended {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.gallery-recommended  img {
+  /* max-width: 100%; */
+  /* height: auto; */
+  width: 200px;
+height: 100px;
+object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1080px) {
+  .floating_food{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .product-details-content{
+
+  }
+  #blueberry-muffin {
+    width: 50%;
+   
+    }
+ 
+    #blueberry-muffin-oval {
+      display:none;
+    }
+    #croissant {
+      width: 50%;
+     
+      }
+    #croissant-oval {
+      display:none;
+    }
+  .product-description{
+    margin-left:0;
+    margin-right:0;
+    padding-left: 5%;
+padding-right: 5%;
+    
+    }
+    
+
+    .gallery-recommended{
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center
+    }
+
+    .gallery-recommended  img{
+      width: 75%;
+      height: 50%;
+    }
+    .product-details-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  /* width:100%; */
+    }
+  
+    .product-details-content {
+      max-width: none;
+    }
+  
+    .info-ingredients-container {
+      justify-content: center;
+    }
+
+  }
+
+
+  @keyframes float {
+    0% {
+  transform: translatey(0px);
+    }
+    50% {
+  
+      transform: translatey(-30px);
+    }
+    100% {
+  
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes shadow {
+    0% {
+  
+      transform: scale(1.0);
+  opacity:1;
+    }
+  
+  
+  50%{
+    transform: scale(1.15);
+  opacity:0.25;
+  }
+    100% {
+  
+      transform: scale(1.0);
+  opacity:1;
+    }
   }
 
   .product-info {
   display: flex;
   gap: 1rem;
   font-weight: 200;
+}
+
+#blueberry_muffin_details{
+  background-image: url(../img/blueberry_muffin_wallpaper.jpg);
+  background-repeat:no-repeat;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position:sticky;
+  top:0; */
+  background-color: #ffffff91;
+  background-blend-mode: saturation;
 }
 
   @media only screen and (max-width: 800px) {
@@ -431,19 +631,7 @@ transition: 0.5s;
     }
 
  
-    .product-details-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .product-details-content {
-    max-width: none;
-  }
-
-  .info-ingredients-container {
-    justify-content: center;
-  }
   }
 /* product details end css */
 
