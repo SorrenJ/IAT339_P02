@@ -466,8 +466,19 @@ form {
   flex: 50%;
   padding-left: 25px;
   padding-right: 25px;
-  color: white;
+  /* color: white; */
   padding-bottom: 25px;
+
+}
+
+.super-order-flex-item-sticky {
+  flex: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* color: white; */
+  padding-bottom: 25px;
+  position: sticky;
+  top: 100px;
 
 }
 
@@ -477,9 +488,8 @@ form {
   padding-bottom: 25px;
   border-radius: 25px;
   margin-bottom: 25px;
-  border-style: solid;
+  /* border-style: solid; */
   /* border-color: #2348624d; */
-  background-color: #ffffff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
@@ -492,41 +502,86 @@ form {
   padding-right: 50px;
   color: rgb(0, 0, 0);
   padding-bottom: 25px;
+
+}
+
+#sticky{
+    position: sticky;
+    top: 100px;
 }
 
 .order-summary {
+  margin-left:50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  color: black;
+  position: sticky;
+  top: 100px;
+  /* border-color: #a5a5a5;
+  border-style: solid; */
+  background-color: #f8f6f6;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.order-summary-cart {
   padding-bottom: 25px;
   border-radius: 25px;
   margin-bottom: 25px;
   color: black;
+  /* position: relative; */
+  top: 100px;
 }
 
 .order-summary table{
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
+
+.order-img {
+  /* makes imgs all same size */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* maintain aspect ratio */
+  border-radius: 25px;
+
+}
+
+.order-img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 @media only screen and (max-width: 800px) {
+  section {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+ 
   .order-flex-container {
     flex-direction: column;
-    margin-left: auto;
+    margin-left: 1%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  
+    margin-right: 1%;
     border-color: transparent;
   }
 
   .order-flex-container .order-flex-item {
     flex: 75%;
     margin-left: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
 
   }
 
 
   .super-order-flex-container {
     flex-direction: column;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 
@@ -536,6 +591,10 @@ form {
     padding-right: 0;
 
   }
+  .order-summary{
+    text-align:center;
+  }
+
 
   .order-summary .button {
     margin-left: auto;
@@ -546,14 +605,31 @@ form {
   }
 
   .order-summary table {
-
+text-align:center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 
 
   }
+
+  .order-img {
+  
+    width: 65%;
+    height: 65%;
+
+  }
+  
+
 }
+
+
+
+
+
+
+
+
 
 /* end of Sorren's flex payment */
 
@@ -627,6 +703,13 @@ form {
   background-color: #ffffff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.089);
 }
+
+
+
+
+
+
+
 
 .menu-flex-container {
   display: flex;

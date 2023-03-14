@@ -186,22 +186,11 @@
               <label for="cvc">CVC</label>
               <br>
               <input type="text" id="cvc" name="cvc">
-            </div>
-            <!-- order item 1 ends -->
+        
 
-            <!-- order item 2 starts -->
-            <div class="order-flex-item">
-              <h2>Items and shipping</h2>
+  
+              <h2>Shipping</h2>
 
-              <h3>Cart</h3>
-              <ol>
-                <li>
-                  <p>Croissant- $4.99</p>
-                </li>
-                <li>
-                  <p>Chocolate Cake- $9.99</p>
-                </li>
-              </ol>
               <h3>Delivery date(s)</h3>
               <input type="radio" id="delivery_date1" name="delivery_date" value="1">
               <label for="delivery_date1">Jan. 21 </label>
@@ -209,9 +198,7 @@
               <input type="radio" id="delivery_date2" name="delivery_date" value="2">
               <label for="delivery_date2">Jan. 22 </label>
 
-           
-            </div>
-            <!-- order item 2 ends -->
+        </div>
          
          
 
@@ -230,17 +217,15 @@
 
           <!--  order summary container starts -->
           <div class="order-summary">
-            <h2>Order Summary</h2>
+            <h3>Order Summary</h3>
+            <hr>
             <table>
               <tr>
-                <td>Croissant: <br>
+                <td>Subtotal: <br>
                 </td>
-                <td>$4.99</td>
+                <td>$14.98</td>
               </tr>
-              <tr>
-                <td>Chocolate Cake:</td>
-                <td>$9.99</td>
-              </tr>
+           
 
 
               <tr>
@@ -256,14 +241,94 @@
             </table>
             <h3> Order total:</h3>
             <h3>$16.77</h3>
+          
+          
+           
+          
+            <h3>Order Details</h3>
+            <hr>
+            <div class = "menu-flex-container">
+              <div class="menu-flex-item-pic">
+                <br><a href="itemDetails_croissants.html"><img class="order-img" src="img/croissant.png" alt="croissant"></a>
+              </div>
+              <div class="menu-flex-item-desc">
+               <h3>Croissant</h3>
+               <h3>$4.99</h3> 
+                <br>
+                <label for="quantity1">Qty:</label>
+                <select name="quantity1" id="quantity1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select><br>
+                 <br>
+                
+              </div>
+            </div>
+          
+          
+          
+            <div class = "menu-flex-container">
+              <div class="menu-flex-item-pic">
+               <br><a href="itemDetails_blueberryMuffin.html"><img class="order-img" src="img/chocolate_cake.png" alt="chocolate cake"></a>
+              </div>
+              <div class="menu-flex-item-desc">
+                <h3>Chocolate Cake</h3>
+                <h3>$9.99</h3>
+                <br>
+               <!-- <p>60 customizable rice/noodle dishes.<br> Dishes range from shanghai noodles to fried rice dishes.</p> <br> -->
+               <label for="quantity2">Qty:</label>
+               <select name="quantity2" id="quantity2">
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+               </select>
+               <br>
+           
+              </div>
+            </div>
+          
+             <hr>
             <input class="button" type="reset" value="Reset">
-            <br><br>
+            
             <input class="button" type="submit" value="Place order">
+          </div>
+          
+          
+          
+          
+          
+          
+       
           </div>
           <!--  order summary container ends -->
 
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
         </div>
         <!-- form container item 2 ends -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       </div>
       <!-- form container ends -->
 
