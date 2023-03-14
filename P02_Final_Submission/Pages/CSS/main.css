@@ -1,5 +1,40 @@
 body{
   background-color: #ebebeb;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+#blueberry_muffin_details{
+  background-image: url(../img/blueberry_muffin_wallpaper.jpg);
+  background-repeat:no-repeat;
+  /* Full height */
+  height: 100%;
+  min-height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position:sticky;
+  top:0; */
+  background-color: #ffffff91;
+  background-blend-mode: saturation;
+}
+
+#croissant_details{
+  background-image: url(../img/croissant_wallpaper.jpg);
+  background-repeat:no-repeat;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position:sticky;
+  top:0; */
+  background-color: #ffffff91;
+  background-blend-mode: saturation;
 }
 
 header {
@@ -603,37 +638,6 @@ padding-right: 5%;
   font-weight: 200;
 }
 
-#blueberry_muffin_details{
-  background-image: url(../img/blueberry_muffin_wallpaper.jpg);
-  background-repeat:no-repeat;
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  /* position:sticky;
-  top:0; */
-  background-color: #ffffff91;
-  background-blend-mode: saturation;
-}
-
-#croissant_details{
-  background-image: url(../img/croissant_wallpaper.jpg);
-  background-repeat:no-repeat;
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  /* position:sticky;
-  top:0; */
-  background-color: #ffffff91;
-  background-blend-mode: saturation;
-}
 
   @media only screen and (max-width: 800px) {
     section .gallery{
@@ -876,8 +880,8 @@ text-align:center;
 
 .feedbackContainer{
   /* padding-bottom: 25px; */
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15%;
+  padding-right: 15%;
   border-radius: 25px;
 
   /* border-style: solid; */
@@ -891,20 +895,28 @@ text-align:center;
   padding: 10px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 1px solid #390834;
   }
 
   textarea {
-  width: 50%;
+  width: 100%;
   height: 200px;
   }
+
+select{
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #390834; 
+}
 
   @media only screen and (max-width: 800px) {
 
   .feedbackContainer {
     margin-left: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
     text-align:center;
   }
 }
