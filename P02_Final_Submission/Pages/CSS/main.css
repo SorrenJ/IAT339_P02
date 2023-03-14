@@ -619,6 +619,22 @@ padding-right: 5%;
   background-blend-mode: saturation;
 }
 
+#croissant_details{
+  background-image: url(../img/croissant_wallpaper.jpg);
+  background-repeat:no-repeat;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position:sticky;
+  top:0; */
+  background-color: #ffffff91;
+  background-blend-mode: saturation;
+}
+
   @media only screen and (max-width: 800px) {
     section .gallery{
       margin-left:auto;
