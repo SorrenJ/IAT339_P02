@@ -1008,3 +1008,16 @@ text-align:center;
 }
 
 /* end of cart page */
+
+
+.events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  overflow: hidden;
+}
+
+.events-1 {
+  overflow: hidden;
+}
