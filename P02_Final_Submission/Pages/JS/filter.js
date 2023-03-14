@@ -23,6 +23,7 @@ filterButtons.forEach((button) => {
     }
     const filteredCategories = initialProducts.map(({ items, title }) => {
       const filteredItems = items.filter((item) => {
+        if (!item.dataset.filterType) return true;
         const itemFilters = item.dataset.filterType.split(" ");
         let shouldInclude = true;
         for (const activeFilter of activeFilters) {
@@ -44,11 +45,13 @@ filterButtons.forEach((button) => {
 function getGalleryNodes(data) {
   const container = document.createDocumentFragment();
   data.forEach((category) => {
-    container.appendChild(category.title);
-    const section = document.createElement("section");
-    section.classList.add("gallery");
-    section.replaceChildren(...category.items);
-    container.appendChild(section);
+    if (category.items.length) {
+      container.appendChild(category.title);
+      const section = document.createElement("section");
+      section.classList.add("gallery");
+      section.replaceChildren(...category.items);
+      container.appendChild(section);
+    }
   })
   return container;
 }
@@ -68,3 +71,5 @@ function getInitialProducts() {
   })
   return initialProducts;
 }
+const test = ["hi", "bye"]
+console.log(test)

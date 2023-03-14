@@ -266,6 +266,7 @@ text-align:center;
 .filter-buttons {
   display: flex;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .filter-button {
@@ -593,7 +594,7 @@ form {
   input[type="text"],
   input[type="email"] {
   padding: 10px;
-  width: 50%;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid gray;
   }
