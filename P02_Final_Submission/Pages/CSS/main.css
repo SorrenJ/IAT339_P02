@@ -98,7 +98,7 @@ h1, h2, h3{
   margin-top: 20px;
   padding: 10px 20px;
   /* background-color: rgb(246, 215, 130); */
-  background-color:#540e4d;
+  background-color:#722668;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
@@ -109,7 +109,7 @@ h1, h2, h3{
   }
 
 .button:hover {
-  background-color:#130311;
+  background-color:#3e0d37;
   color: #fff;
 }
 
@@ -544,7 +544,7 @@ object-fit: cover;
     padding-left: 5%;
     padding-right: 5%;
   }
-  
+
   #blueberry-muffin {
     width: 50%;
    
@@ -1023,11 +1023,19 @@ select{
 .events {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   margin: 0;
   overflow: hidden;
+  padding: 1%;
+}
+
+.workshopImage {
+  max-width: 60%;
 }
 
 .events-1 {
-  overflow: hidden;
+  width: 33%;
+}
+
+.events-2 {
+  width: 33%;
 }
