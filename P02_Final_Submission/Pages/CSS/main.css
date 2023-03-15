@@ -331,6 +331,7 @@ text-align:center;
   cursor: pointer;
 }
 
+/* data-active is toggled in filter.js when a filter is active */
 .filter-button[data-active] {
   color: white;
   background-color: #390834;
