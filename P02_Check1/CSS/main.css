@@ -42,7 +42,10 @@ div h4 {
   font-family: Georgia, serif;
 }
 
-
+header {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
 textarea {
   width: 100%;
@@ -73,8 +76,9 @@ p .wrap{
 
 .logo{
 float:left;
-width:313px;
-height:126px;
+width:200px;
+height:150px;
+margin: 1rem;
 }
 
 
@@ -86,7 +90,7 @@ height:126px;
 
 /* nav_elements is the container for all nav  */
 .nav_elements {
-  background-color: rgb(246, 215, 130);
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -96,21 +100,28 @@ height:126px;
 
 /* items of nav_elements */
 .nav {
-  color: black;
+  color: #390a35;
   justify-content: space-between;
-  background-color: rgb(246, 215, 130);
+  background-color: #ffffff;
   text-decoration: none;
   transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
+.nav-logo {
+  height: 50px;
+  width: 60px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
 .nav:hover,
 .nav:focus {
-  background-color: rgba(141, 75, 10, 0.837);
+  background-color: #5d1c57;
   color: #fff;
 }
 
@@ -198,8 +209,8 @@ nav {
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  background-color: #5d1c57;
+  color: white;
   border: none;
   border-radius: 20px;
   font-size: 16px;
@@ -230,8 +241,8 @@ button {
   display: inline-block;
 }
 
-.colorPalette_beige {
-  background-color: rgb(246, 215, 130);
+.colorPalette_mainPurple {
+  background-color: #390834;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -239,8 +250,8 @@ button {
   display: inline-block;
 }
 
-.colorPalette_orange {
-  background-color: rgb(247, 153, 12);
+.colorPalette_secondaryPurple {
+  background-color: #540e4d;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -258,8 +269,8 @@ button {
 }
 
 
-.colorPalette_leafGreen {
-  background-color: #91d24d;
+.colorPalette_logo {
+  background-color: #390834;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -457,8 +468,8 @@ button:hover {
 
 /* css styling for a footer description of the Sweet Spot, center aligned and lighter color text */
 .sweet-spot-footer {
-  background-color: rgb(246, 215, 130);
-  color: #333;
+  background-color: #3d0c39;
+  color: white;
   padding: 40px;
   text-align: center;
 }
@@ -472,8 +483,8 @@ button:hover {
 /* Sorren's Flex Payment Form */
 
 .button {
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  background-color: #3d0c39;
+  color: white;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 15px;
@@ -501,8 +512,8 @@ button:hover {
 /* styling the submit button */
 .button[type="submit"] {
   padding: 10px 20px;
-  background-color: rgb(247, 153, 12);
-  color: rgb(0, 0, 0);
+  background-color: #3d0c39;
+  color: white;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -511,16 +522,16 @@ button:hover {
 /* styling the reset button */
 .button[type="reset"] {
   padding: 10px 20px;
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  background-color: #3d0c39;
+  color:white;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: rgba(141, 75, 10, 0.837);
-  color: #fff;
+  background-color: #60235a;
+  color: white;
 }
 
 form {

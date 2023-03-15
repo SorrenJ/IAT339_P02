@@ -98,7 +98,7 @@ h1, h2, h3{
   margin-top: 20px;
   padding: 10px 20px;
   /* background-color: rgb(246, 215, 130); */
-  background-color:#390834;
+  background-color:#540e4d;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
@@ -544,9 +544,7 @@ object-fit: cover;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .product-details-content{
-
-  }
+  
   #blueberry-muffin {
     width: 50%;
    
@@ -1020,3 +1018,16 @@ select{
 }
 
 /* end of cart page */
+
+
+.events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  overflow: hidden;
+}
+
+.events-1 {
+  overflow: hidden;
+}
