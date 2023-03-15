@@ -467,12 +467,32 @@ button:hover {
 }
 
 /* css styling for a footer description of the Sweet Spot, center aligned and lighter color text */
+* footer css*/
 .sweet-spot-footer {
-  background-color: #3d0c39;
-  color: white;
-  padding: 40px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.footer-element {
+  margin-top: 2%;
+}
+
+.footer-socials {
+  margin-top: 3%;
+}
+
+.footer_text {
+  font-style: italic;
+  }
+
+.sweet-spot-footer {
+  /* background-color: rgb(246, 215, 130); */
+  background-color:rgb(54, 13, 62);
+  color: #ffffff;
+  padding: 3%;
+  text-align: center;
+  }
 
 .sweet-spot-footer p {
   font-size: 16px;
