@@ -90,7 +90,7 @@ margin: 1rem;
 
 /* nav_elements is the container for all nav  */
 .nav_elements {
-  background-color: #390a35;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -100,9 +100,9 @@ margin: 1rem;
 
 /* items of nav_elements */
 .nav {
-  color: white;
+  color: #390a35;
   justify-content: space-between;
-  background-color: #390a35;
+  background-color: #ffffff;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.25s;
@@ -110,6 +110,13 @@ margin: 1rem;
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 60px;
+  margin-right: 1%;
+  margin-left: 1%;
 }
 
 .nav:hover,
@@ -202,8 +209,8 @@ nav {
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  background-color: #5d1c57;
+  color: white;
   border: none;
   border-radius: 20px;
   font-size: 16px;
@@ -461,8 +468,8 @@ button:hover {
 
 /* css styling for a footer description of the Sweet Spot, center aligned and lighter color text */
 .sweet-spot-footer {
-  background-color: rgb(246, 215, 130);
-  color: #333;
+  background-color: #3d0c39;
+  color: white;
   padding: 40px;
   text-align: center;
 }
@@ -476,8 +483,8 @@ button:hover {
 /* Sorren's Flex Payment Form */
 
 .button {
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  background-color: #3d0c39;
+  color: white;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 15px;
@@ -505,8 +512,8 @@ button:hover {
 /* styling the submit button */
 .button[type="submit"] {
   padding: 10px 20px;
-  background-color: rgb(247, 153, 12);
-  color: rgb(0, 0, 0);
+  background-color: #3d0c39;
+  color: white;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -515,16 +522,16 @@ button:hover {
 /* styling the reset button */
 .button[type="reset"] {
   padding: 10px 20px;
-  background-color: rgb(246, 215, 130);
-  color: rgb(0, 0, 0);
+  background-color: #3d0c39;
+  color:white;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: rgba(141, 75, 10, 0.837);
-  color: #fff;
+  background-color: #60235a;
+  color: white;
 }
 
 form {
