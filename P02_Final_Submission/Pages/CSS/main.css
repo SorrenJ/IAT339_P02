@@ -1063,7 +1063,7 @@ select{
   }
 
   .event-fair {
-    width: 30%;
+    max-width: 30%;
     background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/baking-fair.png");
     background-size: cover;
     background-color: #2b2b2b91;
@@ -1071,7 +1071,7 @@ select{
   }
 
   .fair-text {
-    width: 60%;
+    max-width: 60%;
     margin-top: 0;
     text-align: left;
     color: white;
@@ -1081,7 +1081,7 @@ select{
   }
 
   .event-fundraising {
-    width: 30%;
+    max-width: 30%;
     background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/bake-sale.jpg");
     background-size: cover;
     background-color: #2b2b2b91;
@@ -1097,3 +1097,14 @@ select{
     padding: 10%;
     background-color: transparent;
   }
+
+@media only screen and (max-width: 800px) {
+  .events {
+    flex-direction: column;
+  }
+
+  body .event-fair, .event-fundraising, .event-workshop {
+    width: 100%;
+  }
+
+}
