@@ -37,6 +37,22 @@ body{
   background-blend-mode: saturation;
 }
 
+#brownie_details{
+  background-image: url(../img/brownies-background.jpg);
+  background-repeat:no-repeat;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position:sticky;
+  top:0; */
+  background-color: #ffffff91;
+  background-blend-mode: saturation;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -477,9 +493,7 @@ transition: 0.5s;
   padding-left: 5%;
   padding-right: 5%;
   margin-right: 25px;
-
-
-}
+  }
 
   #blueberry-muffin {
   width: 400px;
@@ -489,6 +503,7 @@ transition: 0.5s;
   position:sticky;
   top:100px;
   z-index:2;
+
   }
   #blueberry-muffin-oval {
     position:sticky;
@@ -505,9 +520,9 @@ transition: 0.5s;
     background:-webkit-radial-gradient(center, ellipse cover,  
     rgba(43, 43, 43, 0.418) 34%,rgba(43, 43, 43, 0.185) 72%,rgba(255, 255, 255, 0) 100%);
    
-   
     animation: shadow 6s ease-in-out infinite;
 }
+
 #croissant {
   width: 400px;
   flex-shrink: 0;
@@ -535,6 +550,35 @@ transition: 0.5s;
   border-radius: 126px / 50px;
   animation: shadow 6s ease-in-out infinite;
 }
+
+#brownie {
+  width: 500px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+  position:sticky;
+  top:100px;
+  z-index:2;
+  }
+
+  #brownie-oval {
+  position:sticky;
+  z-index:1;
+  top: 458px;
+  width: 40%;
+  height: 80px;
+  /* background:		rgba(5, 5, 5, 0.5);*/
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.089); */
+  margin-left: 25%;
+  border-style: hidden;
+  border-radius: 126px / 50px; 
+
+  background:-webkit-radial-gradient(center, ellipse cover,  
+  rgba(43, 43, 43, 0.418) 34%,rgba(43, 43, 43, 0.185) 72%,rgba(255, 255, 255, 0) 100%);
+ 
+  animation: shadow 6s ease-in-out infinite;
+}
+
 .product-description{
 /* margin-left:25%; */
 background-color: #ffffffc9;
