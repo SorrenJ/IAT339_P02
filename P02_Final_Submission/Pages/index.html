@@ -23,9 +23,6 @@ Project: P2 Final Submission -->
     <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
     <!-- header -->
     <div class="home_nav">
-
-
-
       <div class="home_nav-item">
         <div class="home_icon"><a href="index.html">
             <img src="img/logoCondensed5.svg" alt="logo"></a>
@@ -76,7 +73,7 @@ Project: P2 Final Submission -->
 
 
         </div>
-      
+    
       
       </div>
 
@@ -105,28 +102,41 @@ Project: P2 Final Submission -->
 
  <!-- Company/Special Events/Updates --> 
   <section class="events">
-    <div class="events-1">
-      <img src="img/workshop.png" class="workshopImage">
-      <h2> Baking Workshop </h2>
-      <p> Join us at the Sweet Spot Bakery for a free workshop where you'll learn to bake some of our most iconic pastries!
-        <br><br>  
-        Whether you're a seasoned baker or a complete novice, this workshop is the perfect opportunity to improve your skills and indulge your sweet tooth. Our expert bakers will guide you through each step of the process as you create delectable treats like croissants, eclairs, and macarons. Plus, you'll get to take home everything you bake, so you can share your creations with friends and family.
-        <br><br>
-        The workshop is completely free, but spaces are limited, so be sure to reserve your spot today. We can't wait to see you at the Sweet Spot Bakery!</p>
-        <div class="workshp-button">
-          <a href="#workshop" class="button"> Learn more</a>
-        </div>
+    <div class="events-header"> 
+      <h2> Sweet Spot Events </h2> 
+    </div>
+    <div class="event-workshop">
+      <div class="workshop-text">
+        <h2> Free Workshops </h2>
+        <p> Join us at the Sweet Spot Bakery for a free workshop where you'll learn to bake some of our most iconic pastries! Spots are limited, reserve your spot today! </p><br>
+         <!--
+          <br><br>  
+          Whether you're a seasoned baker or a complete novice, this workshop is the perfect opportunity to improve your skills and indulge your sweet tooth. Our expert bakers will guide you through each step of the process as you create delectable treats like croissants, eclairs, and macarons. Plus, you'll get to take home everything you bake, so you can share your creations with friends and family.
+          <br><br>
+          The workshop is completely free, but spaces are limited, so be sure to reserve your spot today. We can't wait to see you at the Sweet Spot Bakery!</p>
+          --> 
+        <a href="#workshop" class="button"> Reserve Spot </a>
+      </div>
     </div>
      
     
-    <div class="events-2">
-      <img src="img/Facebook.png">
-      <h2> Recipe Networking </h2>
+    <div class="event-fair">
+      <div class="fair-text">
+        <h2> Bakers Fair </h2>
+        <p> 
+          Join us for a day of delicious delights as local Canadian bakers and pastry chefs showcase their skills. Sample mouth-watering creations from classic chocolate chip cookies to decadent cupcakes and everything in between.
+        </p><br>
+        <a href="#fair" class="button"> Learn more </a>
+      </div>
     </div>
     
-    <div class="events-3">
-      <img src="img/Facebook.png">
-      <h2> Event 3 </h2>
+    <div class="event-fundraising">
+      <div class="fundraising-text">
+        <h2> Fundraising </h2>
+        <p> Satisfy your sweet tooth and support a great cause at our upcoming bake sale! All proceeds will go to a local charity that promotes cooking and baking skills in underserved communities.
+        </p><br>
+        <a href="#sale" class="button"> Learn more </a>
+      </div>
     </div>
 
   </section>
@@ -157,7 +167,6 @@ Project: P2 Final Submission -->
   <!-- </section> -->
 
 
-
   <div class="landingImg2">
     <div class="landingContent2">
      
@@ -173,18 +182,34 @@ Project: P2 Final Submission -->
       <a href="itemDetails_blueberryMuffin.html"><img class="featured_gallery_menu-img" src="img/blueberry_muffin.png" alt="Muffin"></a>
       <h2>Blueberry Muffins</h2>
       <p>Muffins with fresh blueberies.</p>
-      <div class="buttons_container">
-        <a href="cart.html" class="button"> Add to Cart </a>
+
+      <div class="item-details">
+        <div class="buttons_container">
+          <a href="itemDetails_blueberryMuffin.html" class="button"> Details </a>
+        </div>
+
+        <div class="buttons_container">
+          <a href="cart.html" class="button"> Add to Cart </a>
+        </div>
       </div>
     </div>
+
     <div class="item" data-filter-type="muffin">
       <a href="itemDetails_croissants.html"><img class="featured_gallery_menu-img" src="img/croissant.png" alt="Croissants"></a>
       <h2>Croissants</h2>
       <p>Flaky and buttery croissants.</p>
-      <div class="buttons_container">
-        <a href="cart.html" class="button"> Add to Cart </a>
+
+      <div class="item-details">
+        <div class="buttons_container">
+          <a href="itemDetails_croissants.html" class="button"> Details </a>
+        </div>
+
+        <div class="buttons_container">
+          <a href="cart.html" class="button"> Add to Cart </a>
+        </div>
       </div>
     </div>
+    
     <div class="item" data-filter-type="muffin">
       <a href="itemDetails_croissants.html"><img class="featured_gallery_menu-img" src="img/brownies.jpg" alt="Croissants"></a>
       <h2>Brownies</h2>

@@ -303,8 +303,14 @@ text-align:center;
 .featured_gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
+.item-details {
+  display: flex;
+  flex-direction: row;
 }
 
 /* product page css */
@@ -1021,21 +1027,73 @@ select{
 
 
 .events {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  overflow: hidden;
-  padding: 1%;
-}
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    flex-wrap: wrap;
+  }
 
-.workshopImage {
-  max-width: 60%;
-}
+  .events-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
 
-.events-1 {
-  width: 33%;
-}
+  .event-workshop {
+    width: 30%;
+    background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/workshop.png");
+    background-size: cover;
+    background-color: #2b2b2b91;
+    background-blend-mode: darken;
+  }
 
-.events-2 {
-  width: 33%;
-}
+  .workshop-text {
+    width: 60%;
+    margin-top: 0;
+    text-align: left;
+    color: white;
+    background-image: none;
+    padding: 10%;
+    background-color: transparent;
+  }
+
+  .event-fair {
+    width: 30%;
+    background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/baking-fair.png");
+    background-size: cover;
+    background-color: #2b2b2b91;
+    background-blend-mode: darken;
+  }
+
+  .fair-text {
+    width: 60%;
+    margin-top: 0;
+    text-align: left;
+    color: white;
+    background-image: none;
+    padding: 10%;
+    background-color: transparent;
+  }
+
+  .event-fundraising {
+    width: 30%;
+    background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/bake-sale.jpg");
+    background-size: cover;
+    background-color: #2b2b2b91;
+    background-blend-mode: darken;
+  }
+
+  .fundraising-text {
+    width: 60%;
+    margin-top: 0;
+    text-align: left;
+    color: white;
+    background-image: none;
+    padding: 10%;
+    background-color: transparent;
+  }
