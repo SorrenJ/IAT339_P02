@@ -303,8 +303,14 @@ text-align:center;
 .featured_gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
+.item-details {
+  display: flex;
+  flex-direction: row;
 }
 
 /* product page css */
