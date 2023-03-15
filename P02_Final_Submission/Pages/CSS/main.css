@@ -552,7 +552,7 @@ transition: 0.5s;
 }
 
 #brownie {
-  width: 500px;
+  width: 400px;
   flex-shrink: 0;
   border-radius: 25px;
   animation: float 6s ease-in-out infinite;
@@ -589,16 +589,17 @@ padding-right: 15%;
 
 .gallery-recommended {
   display: flex;
+  max-width: 100%;
   flex-wrap: wrap;
   gap: 20px;
+} 
 
-}
 .gallery-recommended  img {
   /* max-width: 100%; */
   /* height: auto; */
   width: 200px;
-height: 100px;
-object-fit: cover;
+  height: 100px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
