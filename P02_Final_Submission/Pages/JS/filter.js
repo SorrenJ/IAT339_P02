@@ -5,10 +5,17 @@ const initialProducts = getInitialProducts();
 const activeFilters = new Set();
 
 const filterButtons = document.querySelectorAll(".filter-button");
+
+// Add click listeners to all buttons with the class="filter-button"
 filterButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
+    // Each button will have a data attribute [data-filter-type]
+    // which indicates the type of filter
     const filter = e.target.dataset.filterType;
     const isActive = e.target.dataset.active;
+
+    // If currently active when clicked, set to inactive
+    // The data-active attribute is used for applying css styles
     if (isActive) {
       e.target.removeAttribute("data-active");
       activeFilters.delete(filter);
@@ -17,11 +24,17 @@ filterButtons.forEach((button) => {
       e.target.setAttribute("data-active", true);
       activeFilters.add(filter);
     }
+
+    // Check if then number of filters is > 0
+    // If not, then there's no filter active so display initial products
     if (!activeFilters.size) {
       galleryContainer.replaceChildren(getGalleryNodes(initialProducts));
       return;
     }
+
+    // Filter must be active
     const filteredCategories = initialProducts.map(({ items, title }) => {
+      // Get intersection of products and activeFilters
       const filteredItems = items.filter((item) => {
         if (!item.dataset.filterType) return true;
         const itemFilters = item.dataset.filterType.split(" ");
@@ -71,5 +84,3 @@ function getInitialProducts() {
   })
   return initialProducts;
 }
-const test = ["hi", "bye"]
-console.log(test)
