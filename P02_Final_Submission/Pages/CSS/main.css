@@ -1063,11 +1063,7 @@ select{
   }
 
   .event-fair {
-<<<<<<< HEAD
     max-width: 30%;
-=======
-    width: 30%;
->>>>>>> main
     background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/baking-fair.png");
     background-size: cover;
     background-color: #2b2b2b91;
@@ -1075,11 +1071,7 @@ select{
   }
 
   .fair-text {
-<<<<<<< HEAD
     max-width: 60%;
-=======
-    width: 60%;
->>>>>>> main
     margin-top: 0;
     text-align: left;
     color: white;
@@ -1089,17 +1081,12 @@ select{
   }
 
   .event-fundraising {
-<<<<<<< HEAD
     max-width: 30%;
-=======
-    width: 30%;
->>>>>>> main
     background-image: url("file:///Users/wga9/Desktop/IAT339_P02/P02_Final_Submission/Pages/img/bake-sale.jpg");
     background-size: cover;
     background-color: #2b2b2b91;
     background-blend-mode: darken;
   }
-<<<<<<< HEAD
 
   .fundraising-text {
     width: 60%;
@@ -1121,15 +1108,3 @@ select{
   }
 
 }
-=======
-
-  .fundraising-text {
-    width: 60%;
-    margin-top: 0;
-    text-align: left;
-    color: white;
-    background-image: none;
-    padding: 10%;
-    background-color: transparent;
-  }
->>>>>>> main
