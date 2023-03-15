@@ -985,15 +985,6 @@ text-align:center;
   
 
 }
-
-
-
-
-
-
-
-
-
 /* end of Sorren's flex payment */
 
 
@@ -1015,6 +1006,10 @@ text-align:center;
 .footer_text {
   font-style: italic;
   }
+
+.link {
+  color: white;
+}
 
 .sweet-spot-footer {
   /* background-color: rgb(246, 215, 130); */
@@ -1260,3 +1255,19 @@ border: 2px solid #390834;
     max-width: 100%;
   }
 }
+
+
+.citations-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+  margin-bottom: 5%;
+  }
+
+  .code-citations {
+    
+  }
+
+  .image-citations {
+
+  }
