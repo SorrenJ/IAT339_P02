@@ -358,6 +358,7 @@ font-size:2em;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .about-flex-item img {
@@ -378,8 +379,8 @@ padding-bottom: 0;
 .about-flex-item .wrap{
   /* display:flex;
   align-items: center; */
-  padding-left: 0;
-  padding-right:0;
+  padding-left: 5px;
+  padding-right:5px;
   padding-top:0;
   padding-bottom:25px;
   
@@ -1270,7 +1271,13 @@ position:fixed;
   letter-spacing: 1.7px;
 }
 
-
+/* chat icon */
+img.chat{
+  width:50%; 
+  position:absolute;
+  right:12px;
+  bottom:12px;
+}
 
 
 
@@ -1299,9 +1306,10 @@ position:fixed;
 height:150px;
 }
 
-.chatReply strong {
+.chatReply a strong {
   font-weight: 700;
   letter-spacing: 1.7px;
+  color: white;
 }
 
 .chatReply:hover, .chatReply:focus {
@@ -1340,9 +1348,10 @@ height:150px;
 position:fixed;
 }
 
-.chatReply2 strong {
+.chatReply2 a strong {
   font-weight: 700;
   letter-spacing: 1.7px;
+  color: white;
 }
 
 .chatReply2:hover, .chatReply2:focus {
@@ -1742,10 +1751,19 @@ width:100%;
     flex-direction: column;
   }
 
-  body .event-fair, .event-fundraising, .event-workshop {
+   .event-fair, .event-fundraising, .event-workshop {
     max-width: 100%;
     margin-bottom:5px;
+    text-align:center;
   }
+
+  .workshop-text, .fair-text, .fundraising-text{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+
+  }
+
 }
 
 

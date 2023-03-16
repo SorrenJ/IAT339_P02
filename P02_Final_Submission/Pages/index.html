@@ -9,8 +9,14 @@ Project: P2 Final Submission -->
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <!-- allows chrome emulation device mode respond to media queries -->
   <title> Sweet Spot Bakery </title>
+  <link  rel="stylesheet" media='screen and (min-width: 900px)' href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- scrolling anime causes problems for mobile sandwich -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <link href="CSS/main.css" rel="stylesheet">
   <link href="CSS/navbar.css" rel="stylesheet">
+
+
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
 </head>
@@ -69,10 +75,12 @@ Project: P2 Final Submission -->
 
   <div class="landingImg">
     <div class="landingContent">
-      <h1>Have a sweet tooth?</h1><br>
-      <h2>Enjoy our freshly handmade baked goods.</h2>
+      <h1 data-aos="fade-right">Have a sweet tooth?</h1><br>
+      <h2 data-aos="fade-right" data-aos-easing="linear"
+      data-aos-duration="1000">Enjoy our freshly handmade baked goods.</h2>
         <a href="#events">     
-        <h1 class="center_button"> Have a taste!</h1> 
+        <h1 class="center_button" data-aos="zoom-out-up" data-aos-easing="linear"
+        data-aos-duration="1200"> Have a taste!</h1> 
         </a>
     </div>
   </div>
@@ -83,7 +91,7 @@ Project: P2 Final Submission -->
       <h2> Sweet Spot Events </h2> 
     </div> -->
 
-    <div id="events" class="event-workshop" class="test">
+    <div id="events" class="event-workshop">
       <div class="workshop-text">
         <h2> Free Workshops </h2>
         <p> Join us at the Sweet Spot Bakery for a free workshop where you'll learn to bake some of our most iconic pastries! Spots are limited, reserve your spot today! </p><br>
@@ -91,7 +99,7 @@ Project: P2 Final Submission -->
       </div>
     </div>
     
-    <div class="event-fair" class="test">
+    <div class="event-fair" >
       <div class="fair-text">
         <h2> Bakers Fair </h2>
         <p> 
@@ -101,7 +109,7 @@ Project: P2 Final Submission -->
       </div>
     </div>
     
-    <div class="event-fundraising" class="test">
+    <div class="event-fundraising" >
       <div class="fundraising-text">
         <h2> Fundraising </h2>
         <p> Satisfy your sweet tooth and support a great cause at our upcoming bake sale! All proceeds will go to a local charity that promotes cooking and baking skills in underserved communities.
@@ -220,10 +228,10 @@ Project: P2 Final Submission -->
     </div>
     
     <div class="footer-socials">
-      <div class="footer-socials-elements"></div>
-        <a href="#Facebook"> <img src="img/Facebook.png"> </a>
-        <a href="#Twitter"> <img src="img/Twitter.png"> </a>
-        <a href="#Instagram"> <img src="img/Instagram.png"> </a>
+      <div class="footer-socials-elements">
+        <a href="#Facebook"> <img src="img/Facebook.png" alt="fb"> </a>
+        <a href="#Twitter"> <img src="img/Twitter.png" alt="twitter"> </a>
+        <a href="#Instagram"> <img src="img/Instagram.png" alt="ig"> </a>
       </div>
     </div>
 
@@ -234,6 +242,12 @@ Project: P2 Final Submission -->
       <a href="styleguide.html" class="link"> Style Guide Template </a>
     </div>
   </footer>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 </body>
 
 </html>
