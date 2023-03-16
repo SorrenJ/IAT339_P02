@@ -1,6 +1,7 @@
 html{
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -140,7 +141,7 @@ h1, h2, h3{
   border-width: thick;
   border-color:white;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1em;
   margin-right: 2rem;
   cursor:pointer;
   font-weight: bold;
@@ -164,24 +165,46 @@ h1, h2, h3{
   background-size: cover;
   background-color: #00000091;
   background-blend-mode: darken;
+  height:100vh;
+  background-size: 105% 100em;
+
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: mymove 10s alternate infinite;
+  object-fit: cover;
 }
 
 
+@keyframes mymove {
+  to {
+    background-position: top right;
+
+  }
+
+  from {
+    background-position: top left;
+
+  }
+}
 
 /* home landing image end */
 
 /* content on the landing image */
 .landingContent {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-top: 0;
+  padding-top: 15vh;
   text-align: center;
   color: white;
   background-image: none;
-  padding: 100px;
+  /* padding: 100px; */
   background-color: transparent;
-
+  height:100vh;
+font-size:2em;
 }
 
 
@@ -193,14 +216,26 @@ h1, h2, h3{
 
   .landingImg {
     width: 100%;
-    margin-left: auto;
-    margin-right: 0;
-
+    /* margin-left: auto;
+    margin-right: 0; */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    height:50vh;
+    background-size: 200% 100%;
+    animation: mymove 20s alternate infinite;
   }
 
 
   .landingContent {
+    /* padding-left: 5px;
+    padding-right: 5px; */
     padding-top: 25px;
+    font-size:1em;
+      margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right:0;
+  height:50vh;
   }
 }
 
@@ -264,48 +299,93 @@ h1, h2, h3{
 /*end of content on the landing image */
 
 
-.about_img{
-  width:100%;
-  height:100%;
-}
+
 
 
 .about-flex-container {
   display: flex;
   flex-direction: row;
-  padding-bottom: 25px;
-  border-radius: 25px;
+
+  /* border-radius: 25px; */
   margin-bottom: 25px;
+  background-color:#3908346b;
+  color:#390834;
+  padding-bottom: 0;
+
+
+
 }
 
+.about-flex-item h2{
+  color:#5e0f56;
+}
 
 .about-flex-item {
   flex: 50%;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 0;
+  padding-right: 0;
   /* color: white; */
-  padding-bottom: 25px;
+  padding-bottom: 0;
+  padding-top: 0;
+  display:flex;
+  height: 50%;
 
 }
 
-.wrap{
-  padding-left: 25px;
-  padding-right: 25px;
+.about-flex-item img{
+
+}
+ .about-flex-item img {
+   background-size: cover;
+   object-fit: cover;
+   width:100%;
+   height: 400px;
+  padding-bottom: 0;
+}
+
+.about-flex-item .wrap{
+  /* display:flex;
+  align-items: center; */
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top:25px;
+  padding-bottom:25px;
+  
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .about-flex-container {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 
+.about-flex-item img {
+  background-size:contain;
+  object-fit: contain;
+  width:100%;
+  height: 100%;
+ padding-bottom: 0;
+}
+
+
+
 .about-flex-item {
 
 text-align:center;
-
+padding-bottom: 0;
 }
+.about-flex-item .wrap{
+  /* display:flex;
+  align-items: center; */
+  padding-left: 0;
+  padding-right:0;
+  padding-top:0;
+  padding-bottom:25px;
+  
+}
+
+
 
 }
 
@@ -1604,7 +1684,7 @@ width:100%;
   }
 
   .event-workshop {
-    max-width: 30%;
+    max-width: 33%;
     background-image: url("../img/workshop.png");
     background-size: cover;
     background-color: #2b2b2b91;
@@ -1657,13 +1737,14 @@ width:100%;
     background-color: transparent;
   }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .events {
     flex-direction: column;
   }
 
   body .event-fair, .event-fundraising, .event-workshop {
     max-width: 100%;
+    margin-bottom:5px;
   }
 }
 
