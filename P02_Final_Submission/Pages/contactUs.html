@@ -106,12 +106,23 @@
             <option value="3">COVID-19</option>
             <option value="4">Delivery</option>
           </select><br>
-          <h3><label for="full-name">Full Name</label></h3><input type="text" name="name" id="full-name"
-            placeholder="First and Last" required=""><br>
-          <h3><label for="email-address">Email Address</label></h3><input type="email" name="_replyto"
-            id="email-address" placeholder="sjao@sfu.ca" required=""><br>
+          <h3><label for="full-name">Full Name</label></h3> <div class="input-container name">
+            <input type="text" id="full-name" name="full-name" placeholder=" " required="required">
+            <label class="placeholder-text" for="full-name" >
+              <span class="placeholder-name">Full Name</span>
+            </label>
+          </div>
+          <h3><label for="email-address">Email Address</label></h3><div class="input-container name">
+            <input type="text" id="email-address" name="email-address" placeholder=" " required="required">
+            <label class="placeholder-text" for="email-address" >
+              <span class="placeholder-name">Email Address</span>
+            </label>
+          </div><br>
           <h3><label for="message">How can we improve your experience?</label></h3> <textarea name="message"
-            id="message" placeholder="Hello." required=""></textarea> <input type="hidden" name="_subject"
+            id="message" placeholder="Hello." required=""></textarea> 
+            
+            
+            <input type="hidden" name="_subject"
             id="email-subject" value="Contact Form Submission"> <br> <br> <input class="button" type="submit"
             value="Submit">
        <br> <br>
@@ -121,6 +132,37 @@
 
     <br>
   </div>
+
+    <button type="button" class="openReply" onclick="openForm()"><img src="img/chat2.png" style="width:50%; position:absolute;right:12px;bottom:12px;" alt="chat"></button></button>
+    <div class="chat-popup"id="myForm">
+    
+     <div class="livechat">
+    <h3 >Live chat          <button class="button" type="button" onclick="closeForm()">X</button></h3>
+  </div>
+  <div class="inner">
+        <h3>Sorren</h3>
+    <p>Hi, how can we help you today?</p>
+  </div>
+     <a href="#help1">
+        <button class="chatReply"> <strong>I didn't <br> recieve my delivery. </strong></button></a>
+    
+        <a href="#help2">
+        <button class="chatReply2"> <strong>I have dietary concerns.</strong></button></a>
+
+   
+    
+    </div>
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+
   <footer class="sweet-spot-footer">
     <div class="footer-element">
         <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
