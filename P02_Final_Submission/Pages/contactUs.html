@@ -13,91 +13,72 @@
 </head>
 
 <body>
-  <!-- container for the navigation, then individual nav elements within -->
-
+  <!-- Navbar starts here -->
   <header>
     <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
     <!-- header -->
     <div class="home_nav">
-
-
-
       <div class="home_nav-item">
         <div class="home_icon"><a href="index.html">
             <img src="img/logoCondensed5.svg" alt="logo"></a>
-            <!-- <p class="nav_heading">&nbsp;The Sweet Spot</p> -->
+          <div class="mobile_cart"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-size:24pt"></i>
+          </a>
 
-            <div class="mobile_cart"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-              <i class="fa fa-bars" style="font-size:24pt"></i>
-            </a>
-          
-          </div>
-            
-          </div>
-          <div class="cart"> <span><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart (2)</a></span>
-            <div class="dropdownCart-content">
-              <div class="menu-flex-container">
-                <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
-                      src="img/croissant.png" alt="croissant"></a> </div>
-                <div class="menu-flex-item-desc">
-                  <p>Croissant</p>
-                  <p>$4.99</p>
-                </div>
-              </div>
-              <div class="menu-flex-container">
-                <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
-                      src="img/chocolate_cake.png" alt="asianDish"></a> </div>
-                <div class="menu-flex-item-desc">
-                  <p>Chocolate Cake</p>
-                  <p>$9.99</p>
-                </div>
-              </div>
+        </div>
+
+      </div>
+      <div class="cart"> <span><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart (2)</a></span>
+        <div class="dropdownCart-content">
+          <div class="menu-flex-container">
+            <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
+                  src="img/croissant.png" alt="croissant"></a> </div>
+            <div class="menu-flex-item-desc">
+              <p>Croissant</p>
+              <p>$4.99</p>
             </div>
           </div>
-     
+          <div class="menu-flex-container">
+            <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
+                  src="img/chocolate_cake.png" alt="asianDish"></a> </div>
+            <div class="menu-flex-item-desc">
+              <p>Chocolate Cake</p>
+              <p>$9.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="home_nav-item">
-       
-        
-        <div id="myLinks" class="nav" >
-
-
-
+        <div id="myLinks" class="nav">
           <div class="nav-item"> <a href="products.html">Products</a></div>
-
-        
-
           <div class="nav-item "><a href="contactUs.html">Contact</a></div>
           <div class="nav-item "><a href="citations.html">Citations</a></div>
 
-
         </div>
-      
-      
       </div>
-
-    
     </div>
     <!-- header ends -->
-
-
   </header>
   <script src="JS/navbar.js"></script>
+  <!-- Navbar ends -->
 
+  <!-- Banner title image -->
   <div class="landingImg2">
     <div class="landingContent2">
       <h1>Any questions or concerns?</h1>
-    
     </div>
   </div>
   <br>
   <div class="page_container">
 
     <section id="feedback" class="feedback">
-    
+      <!-- feedback container starts -->
       <div class="feedbackContainer"><br>
-    
+
         <form action="_blank" method="post">
+          <!-- start of a selection input -->
           <h3><label for="help">How can we help you?</label></h3>
           <select name="help" id="help">
             <option value="0">Select a subject</option>
@@ -105,107 +86,119 @@
             <option value="2">Dietary concerns of alternatives</option>
             <option value="3">COVID-19</option>
             <option value="4">Delivery</option>
-          </select><br>
-          <h3><label for="full-name">Full Name</label></h3> <div class="input-container name">
+          </select>
+          <!-- end of selection input -->
+          <br>
+          <!-- full name input -->
+          <h3><label for="full-name">Full Name</label></h3>
+          <div class="input-container name">
             <input type="text" id="full-name" name="full-name" placeholder=" " required="required">
-            <label class="placeholder-text" for="full-name" >
+            <label class="placeholder-text" for="full-name">
               <span class="placeholder-name">Full Name</span>
             </label>
           </div>
-          <h3><label for="email-address">Email Address</label></h3><div class="input-container name">
+          <!-- end of full name input -->
+
+          <!-- email address input -->
+          <h3><label for="email-address">Email Address</label></h3>
+          <div class="input-container name">
             <input type="text" id="email-address" name="email-address" placeholder=" " required="required">
-            <label class="placeholder-text" for="email-address" >
+            <label class="placeholder-text" for="email-address">
               <span class="placeholder-name">Email Address</span>
             </label>
-          </div><br>
+          </div>
+          <!-- end of email address input -->
+          <br>
+          <!-- start of text area input -->
           <h3><label for="message">How can we improve your experience?</label></h3> <textarea name="message"
-            id="message" placeholder="Hello." required=""></textarea> 
-            
-            
-            <input type="hidden" name="_subject"
-            id="email-subject" value="Contact Form Submission"> <br> <br> <input class="button" type="submit"
-            value="Submit">
-       <br> <br>
-          </form>
+            id="message" placeholder="Hello." required=""></textarea>
+          <!-- end of text area input -->
+
+          <!-- start of fake submit button -->
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"> <br> <br> <input
+            class="button" type="submit" value="Submit">
+
+          <!-- end of fake submit button -->
+          <br> <br>
+        </form>
+        <!-- end of form -->
       </div>
     </section>
 
     <br>
   </div>
+  <!-- pop up message button -->
+  <button type="button" class="openReply" onclick="openForm()"><img class="chat" src="img/chat2.png"
+      alt="chat"></button>
 
-    <button type="button" class="openReply" onclick="openForm()"><img class="chat" src="img/chat2.png" alt="chat"></button>
-    <div class="chat-popup" id="myForm">
-    
-     <div class="livechat">
-    <h3 >Live chat          <button class="button" type="button" onclick="closeForm()">X</button></h3>
-  </div>
-  <div class="inner">
-        <h3>Sorren</h3>
-    <p>Hi, how can we help you today?</p>
-  </div>
+  <!-- pop up content -->
+  <div class="chat-popup" id="myForm">
 
-  <div class="chatoptions">
-
-    <a class="chatReply" href="#help1"><strong>I didn't <br> recieve my delivery. 
-    </strong></a>
-    
-        
-   
-    <a class="chatReply2" href="#help2">  <strong>I have dietary concerns.</strong>
-    </a>
-
-   </div>
-    
+    <div class="livechat">
+      <h3>Live chat <button class="button" type="button" onclick="closeForm()">X</button></h3>
     </div>
-    <script>
+    <div class="inner">
+      <h3>Sorren</h3>
+      <p>Hi, how can we help you today?</p>
+    </div>
+    <!-- button options -->
+    <div class="chatoptions">
+      <a class="chatReply" href="#help1"><strong>I didn't <br>recieve my delivery.</strong></a>
+      <a class="chatReply2" href="#help2"> <strong>I have dietary concerns.</strong></a>
+    </div>
+    <!-- end of button options -->
+  </div>
+  <!-- end of pop up content -->
+
+  <!-- scripts to toggle pop up content -->
+  <script>
     function openForm() {
       document.getElementById("myForm").style.display = "block";
     }
-    
     function closeForm() {
       document.getElementById("myForm").style.display = "none";
     }
-    </script>
-    
+  </script>
 
-    <footer class="sweet-spot-footer">
-      <div class="footer-element">
-        <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
-          European-style pastries and sweets, and we're proud to be a part of the local community. Our brand
-          identity is a combination of warm beige and earthy green, symbolizing our connection to nature and our
-          community, and our passion for creating sweet treats that bring people together.</p>
+
+  <footer class="sweet-spot-footer">
+    <div class="footer-element">
+      <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
+        European-style pastries and sweets, and we're proud to be a part of the local community. Our brand
+        identity is a combination of warm beige and earthy green, symbolizing our connection to nature and our
+        community, and our passion for creating sweet treats that bring people together.</p>
+    </div>
+
+    <div class="footer-element">
+      <p class="footer_text">
+        Address:
+        <br>
+        110 - 12000 First Avenue
+        Richmond, BC V7E 3L9
+        Steveston Village
+        <br>
+        <br>
+        Contact us:
+        <br>
+        604-271-8865
+      </p>
+    </div>
+
+    <div class="footer-socials">
+      <div class="footer-socials-elements">
+        <a href="#Facebook"> <img src="img/Facebook.png" alt="fb"> </a>
+        <a href="#Twitter"> <img src="img/Twitter.png" alt="twitter"> </a>
+        <a href="#Instagram"> <img src="img/Instagram.png" alt="ig"> </a>
       </div>
-  
-      <div class="footer-element">
-        <p class="footer_text">
-          Address:
-          <br>
-          110 - 12000 First Avenue
-          Richmond, BC V7E 3L9
-          Steveston Village
-          <br>
-          <br>
-          Contact us:
-          <br>
-          604-271-8865
-        </p>
-      </div>
-      
-      <div class="footer-socials">
-        <div class="footer-socials-elements">
-          <a href="#Facebook"> <img src="img/Facebook.png" alt="fb"> </a>
-          <a href="#Twitter"> <img src="img/Twitter.png" alt="twitter"> </a>
-          <a href="#Instagram"> <img src="img/Instagram.png" alt="ig"> </a>
-        </div>
-      </div>
-  
-      <div class="footer-links">
-        <h2> Other links </h2>
-        <a href="citations.html" class="link"> Image & Code Citations </a>
-        <br><br>
-        <a href="styleguide.html" class="link"> Style Guide Template </a>
-      </div>
-    </footer>
+    </div>
+
+    <div class="footer-links">
+      <h2> Other links </h2>
+      <a href="citations.html" class="link"> Image & Code Citations </a>
+      <br><br>
+      <a href="styleguide.html" class="link"> Style Guide Template </a>
+    </div>
+  </footer>
 
 </body>
 

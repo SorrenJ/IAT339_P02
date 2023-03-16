@@ -3,13 +3,14 @@
 <!-- Group members: Marcus Chan, Sorren Jao, Bill Gao
 Course: Iat 339
 Project: P2 Final Submission -->
+
 <head>
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <!-- allows chrome emulation device mode respond to media queries -->
+  <!-- allows chrome emulation device mode respond to media queries -->
   <title> Sweet Spot Bakery </title>
-  <link  rel="stylesheet" media='screen and (min-width: 900px)' href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" media='screen and (min-width: 900px)' href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <!-- scrolling anime causes problems for mobile sandwich -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -22,19 +23,19 @@ Project: P2 Final Submission -->
 </head>
 
 <body>
-  <!-- container for the navigation, then individual nav elements within -->
+  <!-- Navbar starts here -->
   <header>
     <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
     <!-- header -->
     <div class="home_nav">
       <div class="home_nav-item">
         <div class="home_icon"><a href="index.html">
-          <img src="img/logoCondensed5.svg" alt="logo"></a>
+            <img src="img/logoCondensed5.svg" alt="logo"></a>
           <!-- <p class="nav_heading">&nbsp;The Sweet Spot</p> -->
-            <div class="mobile_cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-              <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-                <i class="fa fa-bars" style="font-size:24pt"></i>
-              </a>
+          <div class="mobile_cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-size:24pt"></i>
+          </a>
         </div>
       </div>
 
@@ -42,14 +43,14 @@ Project: P2 Final Submission -->
         <div class="dropdownCart-content">
           <div class="menu-flex-container">
             <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
-              src="img/croissant.png" alt="croissant"></a> 
+                  src="img/croissant.png" alt="croissant"></a>
             </div>
             <div class="menu-flex-item-desc">
               <p>Croissant</p>
               <p>$4.99</p>
             </div>
           </div>
-        
+
           <div class="menu-flex-container">
             <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
                   src="img/chocolate_cake.png" alt="asianDish"></a> </div>
@@ -60,103 +61,108 @@ Project: P2 Final Submission -->
           </div>
         </div>
       </div>
-     
-      <div class="home_nav-item"> 
-        <div id="myLinks" class="nav" >
+
+      <div class="home_nav-item">
+        <div id="myLinks" class="nav">
           <div class="nav-item"> <a href="products.html">Products</a></div>
           <div class="nav-item "><a href="contactUs.html">Contact</a></div>
           <div class="nav-item "><a href="citations.html">Citations</a></div>
         </div>
-      </div> 
+      </div>
     </div>
   </header>
-  
+
   <script src="JS/navbar.js"></script>
 
+  <!-- Navbar ends here -->
+
+  <!-- Home landing image -->
   <div class="landingImg">
     <div class="landingContent">
       <h1 data-aos="fade-right">Have a sweet tooth?</h1><br>
-      <h2 data-aos="fade-right" data-aos-easing="linear"
-      data-aos-duration="1000">Enjoy our freshly handmade baked goods.</h2>
-        <a href="#events">     
-        <h1 class="center_button" data-aos="zoom-out-up" data-aos-easing="linear"
-        data-aos-duration="1200"> Have a taste!</h1> 
-        </a>
+      <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">Enjoy our freshly handmade baked
+        goods.</h2>
+      <a href="#events">
+        <h1 class="center_button" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1200"> Have a
+          taste!</h1>
+      </a>
     </div>
   </div>
 
- <!-- Company/Special Events/Updates --> 
+  <!-- Company/Special Events/Updates -->
   <div class="events">
-    <!-- <div id="events" class="events-header"> 
-      <h2> Sweet Spot Events </h2> 
-    </div> -->
-
     <div id="events" class="event-workshop">
       <div class="workshop-text">
         <h2> Free Workshops </h2>
-        <p> Join us at the Sweet Spot Bakery for a free workshop where you'll learn to bake some of our most iconic pastries! Spots are limited, reserve your spot today! </p><br>
+        <p> Join us at the Sweet Spot Bakery for a free workshop where you'll learn to bake some of our most iconic
+          pastries! Spots are limited, reserve your spot today! </p><br>
         <a href="#workshop" class="button">Book Today</a>
       </div>
     </div>
-    
-    <div class="event-fair" >
+
+    <div class="event-fair">
       <div class="fair-text">
         <h2> Bakers Fair </h2>
-        <p> 
-          Join us for a day of delicious delights as local Canadian bakers and pastry chefs showcase their skills. Sample mouth-watering creations from classic chocolate chip cookies to decadent cupcakes and everything in between.
+        <p>
+          Join us for a day of delicious delights as local Canadian bakers and pastry chefs showcase their skills.
+          Sample mouth-watering creations from classic chocolate chip cookies to decadent cupcakes and everything in
+          between.
         </p><br>
         <a href="#fair" class="button"> Learn More </a>
       </div>
     </div>
-    
-    <div class="event-fundraising" >
+
+    <div class="event-fundraising">
       <div class="fundraising-text">
         <h2> Fundraising </h2>
-        <p> Satisfy your sweet tooth and support a great cause at our upcoming bake sale! All proceeds will go to a local charity that promotes cooking and baking skills in underserved communities.
+        <p> Satisfy your sweet tooth and support a great cause at our upcoming bake sale! All proceeds will go to a
+          local charity that promotes cooking and baking skills in underserved communities.
         </p><br>
         <a href="#sale" class="button"> Learn More </a>
       </div>
     </div>
   </div>
 
-  <!-- <section id="identity"> -->
-<div class="about-flex-container">
-  <div class="about-flex-item"><img src="img/chocolate_cake.png" alt="croissant"></div>
+  <!-- About section -->
+  <div class="about-flex-container">
+    <div class="about-flex-item"><img src="img/chocolate_cake.png" alt="croissant"></div>
     <div class="about-flex-item">
-        <div>
-          <div class="wrap">
-            <h2>
-              The Sweet Spot Identity
-            </h2>
-            <p>The Sweet Spot Bakery, located in Richmond, British Columbia, is a family-owned bakery that
+      <div>
+        <div class="wrap">
+          <h2>
+            The Sweet Spot Identity
+          </h2>
+          <p>The Sweet Spot Bakery, located in Richmond, British Columbia, is a family-owned bakery that
             specializes in European-style pastries and sweets. The bakery is proud to be a part of the local
-            community and wants to represent this in its brand identity. 
-<br><br>
+            community and wants to represent this in its brand identity.
+            <br><br>
             The Sweet Spot's brand identity represents its passion for creating sweet treats that bring people
             together. Whether it's a morning coffee and croissant, or a celebration cake, the Sweet Spot Bakery
             is dedicated to providing its customers with a memorable experience that they can share with their
             loved ones. The bakery's brand promise is to create a warm, welcoming, and comfortable atmosphere
             where everyone feels at home, and the focus is always on quality, fresh ingredients and traditional
-            baking techniques.</p>
-          </div>
+            baking techniques.
+          </p>
         </div>
+      </div>
     </div>
   </div>
-  <!-- </section> -->
 
 
+  <!-- Featured goods section -->
   <div class="landingImg2">
     <div class="landingContent2">
-     
+
       <h1>Featured Goods</h1>
-    
+
     </div>
   </div>
-<br>
+  <br>
 
   <section class="featured_gallery">
     <div class="item" data-filter-type="muffin">
-      <a href="itemDetails_blueberryMuffin.html"><img class="featured_gallery_menu-img" src="img/blueberry_muffin.png" alt="Muffin"></a>
+      <a href="itemDetails_blueberryMuffin.html"><img class="featured_gallery_menu-img" src="img/blueberry_muffin.png"
+          alt="Muffin"></a>
       <h2>Blueberry Muffins</h2>
       <p>Muffins with fresh blueberies.</p>
 
@@ -172,7 +178,8 @@ Project: P2 Final Submission -->
     </div>
 
     <div class="item" data-filter-type="croissant">
-      <a href="itemDetails_croissants.html"><img class="featured_gallery_menu-img" src="img/croissant.png" alt="Croissants"></a>
+      <a href="itemDetails_croissants.html"><img class="featured_gallery_menu-img" src="img/croissant.png"
+          alt="Croissants"></a>
       <h2>Croissants</h2>
       <p>Flaky and buttery croissants.</p>
 
@@ -186,9 +193,10 @@ Project: P2 Final Submission -->
         </div>
       </div>
     </div>
-    
+
     <div class="item" data-filter-type="brownies">
-      <a href="itemDetails_brownie.html"><img class="featured_gallery_menu-img" src="img/brownies.jpg" alt="Brownies"></a>
+      <a href="itemDetails_brownie.html"><img class="featured_gallery_menu-img" src="img/brownies.jpg"
+          alt="Brownies"></a>
       <h2>Brownies</h2>
       <p>Fudgy and chocolatey brownies.</p>
 
@@ -226,7 +234,7 @@ Project: P2 Final Submission -->
         604-271-8865
       </p>
     </div>
-    
+
     <div class="footer-socials">
       <div class="footer-socials-elements">
         <a href="#Facebook"> <img src="img/Facebook.png" alt="fb"> </a>
@@ -242,12 +250,13 @@ Project: P2 Final Submission -->
       <a href="styleguide.html" class="link"> Style Guide Template </a>
     </div>
   </footer>
-    <script>
-      AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-    </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <!-- script for AOS animations -->
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
 </body>
 
 </html>
