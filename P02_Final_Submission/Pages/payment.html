@@ -17,61 +17,87 @@
 
 
   <!-- container for the navigation, then individual nav elements within -->
+
   <header>
     <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
     <!-- header -->
     <div class="home_nav">
+
+
+
       <div class="home_nav-item">
         <div class="home_icon"><a href="index.html">
             <img src="img/logoCondensed5.svg" alt="logo"></a>
-          <!-- <p class="nav_heading">&nbsp;The Sweet Spot</p> -->
+            <!-- <p class="nav_heading">&nbsp;The Sweet Spot</p> -->
 
-          <div class="mobile_cart"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-            <i class="fa fa-bars" style="font-size:24pt"></i>
-          </a>
-        </div>
-      </div>
-      <div class="cart"> <span><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart (2)</a></span>
-        <div class="dropdownCart-content">
-          <div class="menu-flex-container">
-            <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
-                  src="img/croissant.png" alt="croissant"></a> </div>
-            <div class="menu-flex-item-desc">
-              <p>Croissant</p>
-              <p>$4.99</p>
+            <div class="mobile_cart"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+              <i class="fa fa-bars" style="font-size:24pt"></i>
+            </a>
+          
+          </div>
+            
+          </div>
+          <div class="cart"> <span><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart (2)</a></span>
+            <div class="dropdownCart-content">
+              <div class="menu-flex-container">
+                <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
+                      src="img/croissant.png" alt="croissant"></a> </div>
+                <div class="menu-flex-item-desc">
+                  <p>Croissant</p>
+                  <p>$4.99</p>
+                </div>
+              </div>
+              <div class="menu-flex-container">
+                <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
+                      src="img/chocolate_cake.png" alt="asianDish"></a> </div>
+                <div class="menu-flex-item-desc">
+                  <p>Chocolate Cake</p>
+                  <p>$9.99</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="menu-flex-container">
-            <div class="menu-flex-item-pic"> <a href="itemDetails_blueberryMuffin.html"><img class="thumb-img"
-                  src="img/chocolate_cake.png" alt="asianDish"></a> </div>
-            <div class="menu-flex-item-desc">
-              <p>Chocolate Cake</p>
-              <p>$9.99</p>
-            </div>
-          </div>
-        </div>
-      </div>
+     
       <div class="home_nav-item">
-        <div id="myLinks" class="nav">
+       
+        
+        <div id="myLinks" class="nav" >
+
+
+
           <div class="nav-item"> <a href="products.html">Products</a></div>
+
+       
+
           <div class="nav-item "><a href="contactUs.html">Contact</a></div>
           <div class="nav-item "><a href="citations.html">Citations</a></div>
         </div>
-
+      
+      
       </div>
+
+    
     </div>
     <!-- header ends -->
-  </header>
 
+
+  </header>
   <script src="JS/navbar.js"></script>
+
   <div class="landingImg2">
     <div class="landingContent2">
       <h1>Checkout</h1>
+    
     </div>
   </div>
   <br>
   <section id="checkout" class="checkout">
+
+
+
+   
+
     <!-- form start -->
     <form action="order_confirmed.html" method="post">
 
@@ -80,54 +106,76 @@
 
         <!-- form container item 1 starts -->
         <div class="super-order-flex-item">
-
+      
           <!-- order container 1 starts -->
+          
+          <div class="order-flex-container">
+        
+                         <!-- order item 0 starts -->
+                  <div class="order-flex-item">
+                    <h2>Delivery Information</h2>
+                   
+                    <div class="input-container name">
+                      <input type="text" id="fname" placeholder=" " name="fname" required="required">
+                      <label class="placeholder-text" for="fname" >
+                        <span class="placeholder-name">First Name</span>
+                        </label>
+                    </div>
+                      <br>
+                      
+          
+                    
+                      <div id="name"  class="input-container name">
+                      <input type="text" id="lname" name="lname" placeholder=" " required="required">
+                      <label class="placeholder-text" for="lname" >
+                        <span class="placeholder-name">Last Name</span>
+                      </label>
+                    </div>
+                    
+                
+                  </div>
+              
+</div>
 
           <div class="order-flex-container">
-
-            <!-- order item 0 starts -->
-            <div class="order-flex-item">
-              <h2>Delivery Information</h2>
-
-              <div class="input-container">
-                <input type="text" id="fname" placeholder=" " name="fname" required="required">
-                <label class="placeholder-text" for="fname">
-                  <span class="placeholder-name">First Name</span>
-                </label>
-              </div>
-              <br>
-              <div class="input-container">
-                <input type="text" id="lname" name="lname" placeholder=" " required="required">
-                <label class="placeholder-text" for="lname">
-                  <span class="placeholder-name">Last Name</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="order-flex-container">
+          
+     
+   
+          
+          
+          
+          
+          
+          
+          
+          
+            
             <!-- order item 1 starts -->
             <div class="order-flex-item">
-              <div class="input-container">
-                <input type="text" id="address" name="address" placeholder=" " required="required">
-                <label class="placeholder-text" for="address">
-                  <span class="placeholder-name">Address</span>
-                </label>
-              </div>
-              <br>
+            
+            
+<div class="input-container">
+<input type="text" id="address" name="address"  placeholder=" " required="required">
+<label class="placeholder-text" for="address" >
+  <span class="placeholder-name">Address</span>
+</label>
+</div>
+<br>
 
-              <div class="input-container">
-                <input type="text" id="apt" name="apt" placeholder=" ">
-                <label class="placeholder-text" for="apt">
-                  <span class="placeholder-name">Apt/Suite (Optional)</span>
-                </label>
-              </div>
-              <br>
-              <div class="input-container">
-                <input type="text" id="zip" name="zip" placeholder=" " required="required">
-                <label class="placeholder-text" for="zip">
-                  <span class="placeholder-name">Postal Code</span>
-                </label>
-              </div>
+<div class="input-container">
+<input type="text" id="apt" name="apt"  placeholder=" ">
+<label class="placeholder-text" for="apt" >
+<span class="placeholder-name">Apt/Suite (Optional)</span>
+</label>
+</div>
+<br>
+<div class="input-container">
+  <input type="text" id="zip" name="zip"  placeholder=" " required="required">
+  <label class="placeholder-text" for="zip" >
+    <span class="placeholder-name">Postal Code</span>
+  </label>
+  </div>
+
             </div>
             <!-- order item 1 ends -->
 
@@ -135,346 +183,351 @@
             <div class="order-flex-item">
 
 
-
+      
               <div class="input-container">
-                <input type="text" id="state" name="state" placeholder=" " required="required">
-                <label class="placeholder-text" for="state">
+                <input type="text" id="state" name="state"  placeholder=" " required="required">
+                <label class="placeholder-text" for="state" >
                   <span class="placeholder-name">State/Province</span>
                 </label>
-              </div>
-              <br>
-              <div class="input-container">
-                <input type="text" id="city" name="city" placeholder=" " required="required">
-                <label class="placeholder-text" for="city">
-                  <span class="placeholder-name">City</span>
-                </label>
-              </div>
-              <br>
-              <div class="input-container">
-                <input type="text" id="phone" name="phone" placeholder=" " required="required">
-                <label class="placeholder-text" for="phone">
-                  <span class="placeholder-name">Phone Number</span>
-                </label>
-              </div>
+                </div>
+                <br>
+                <div class="input-container">
+                  <input type="text" id="city" name="city"  placeholder=" " required="required">
+                  <label class="placeholder-text" for="city" >
+                    <span class="placeholder-name">City</span>
+                  </label>
+                  </div>
+                  <br>
+                  <div class="input-container">
+                    <input type="text" id="phone" name="phone"  placeholder=" " required="required">
+                    <label class="placeholder-text" for="phone" >
+                      <span class="placeholder-name">Phone Number</span>
+                    </label>
+                    </div>
             </div>
             <!-- order item 2 ends -->
           </div>
           <!-- order container 1  ends -->
-          <hr>
+<hr>
           <!-- order container 2  starts -->
           <div class="order-flex-container">
-
+       
             <!-- order item 1 starts -->
             <div class="order-flex-item">
               <h2>Billing Information</h2>
-
+    
               <h3>Payment method</h3>
               <div class="radio-button-selection" onchange="popen()">
                 <div class="button-info">
-                  <input type="radio" id="payment1" name="payment" value="1">
-                  <label style="margin-left:5%" for="payment1">Payment Card
-                  </label>
-                  <div style="margin-right:5%">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30"
-                      class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="Visa">
-                      <g fill-rule="nonzero" fill="none">
-                        <rect fill="#0E4595" width="48" height="30" rx="2.56"></rect>
-                        <path fill="#FFF"
-                          d="M17.805 21.288L19.94 8.82h3.415l-2.137 12.47h-3.413zM33.556 9.088a8.858 8.858 0 00-3.061-.523c-3.374 0-5.751 1.69-5.771 4.115-.02 1.791 1.696 2.79 2.992 3.387 1.329.611 1.776 1.001 1.77 1.547-.009.835-1.062 1.217-2.044 1.217-1.366 0-2.093-.189-3.214-.654l-.44-.198-.48 2.791c.798.348 2.273.65 3.805.665 3.59 0 5.92-1.671 5.946-4.26.013-1.418-.897-2.498-2.867-3.387-1.194-.577-1.925-.962-1.917-1.546 0-.518.619-1.073 1.956-1.073a6.329 6.329 0 012.556.478l.306.144.463-2.703M42.343 8.82h-2.638c-.818 0-1.43.222-1.789 1.033L32.845 21.28h3.586s.586-1.536.719-1.873l4.373.005c.102.436.415 1.868.415 1.868h3.17L42.342 8.82zm-4.186 8.05c.282-.718 1.36-3.485 1.36-3.485-.02.033.28-.722.453-1.19l.23 1.075.791 3.6h-2.834zM14.906 8.82l-3.344 8.502-.356-1.728c-.622-1.992-2.561-4.15-4.73-5.23l3.058 10.905 3.613-.005L18.523 8.82h-3.617">
-                        </path>
-                        <path
-                          d="M8.443 8.82H2.936l-.043.259c4.284 1.032 7.118 3.526 8.295 6.523l-1.197-5.73c-.207-.79-.807-1.025-1.548-1.053"
-                          fill="#F2AE14"></path>
-                      </g>
-                    </svg>
+              <input type="radio" id="payment1" name="payment" value="1">
+              <label style="margin-left:5%" for="payment1">Payment Card 
+              </label>
+             <div style="margin-right:5%" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30" class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="Visa"><g fill-rule="nonzero" fill="none"><rect fill="#0E4595" width="48" height="30" rx="2.56"></rect><path fill="#FFF" d="M17.805 21.288L19.94 8.82h3.415l-2.137 12.47h-3.413zM33.556 9.088a8.858 8.858 0 00-3.061-.523c-3.374 0-5.751 1.69-5.771 4.115-.02 1.791 1.696 2.79 2.992 3.387 1.329.611 1.776 1.001 1.77 1.547-.009.835-1.062 1.217-2.044 1.217-1.366 0-2.093-.189-3.214-.654l-.44-.198-.48 2.791c.798.348 2.273.65 3.805.665 3.59 0 5.92-1.671 5.946-4.26.013-1.418-.897-2.498-2.867-3.387-1.194-.577-1.925-.962-1.917-1.546 0-.518.619-1.073 1.956-1.073a6.329 6.329 0 012.556.478l.306.144.463-2.703M42.343 8.82h-2.638c-.818 0-1.43.222-1.789 1.033L32.845 21.28h3.586s.586-1.536.719-1.873l4.373.005c.102.436.415 1.868.415 1.868h3.17L42.342 8.82zm-4.186 8.05c.282-.718 1.36-3.485 1.36-3.485-.02.033.28-.722.453-1.19l.23 1.075.791 3.6h-2.834zM14.906 8.82l-3.344 8.502-.356-1.728c-.622-1.992-2.561-4.15-4.73-5.23l3.058 10.905 3.613-.005L18.523 8.82h-3.617"></path><path d="M8.443 8.82H2.936l-.043.259c4.284 1.032 7.118 3.526 8.295 6.523l-1.197-5.73c-.207-.79-.807-1.025-1.548-1.053" fill="#F2AE14"></path></g></svg>
+           
+              <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30" class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="Mastercard"><g fill-rule="nonzero" fill="none"><path d="M46.218 29.94H1.62c-.891 0-1.62-.722-1.62-1.605V1.605C0 .722.729 0 1.62 0h44.598c.891 0 1.62.722 1.62 1.605v26.73c0 .883-.729 1.605-1.62 1.605z" fill="#010101"></path><path d="M13.426 27.443v-1.692c0-.636-.386-1.058-1.044-1.063-.347-.006-.704.1-.954.478-.188-.298-.483-.478-.897-.478-.29 0-.597.078-.818.393v-.326h-.545v2.688h.55v-1.54c0-.468.285-.715.688-.715.392 0 .613.253.613.709v1.546h.55v-1.54c0-.468.296-.715.688-.715.403 0 .619.253.619.708v1.547h.55zm8.846-2.688h-.988v-.816h-.55v.816h-.574v.49h.574v1.27c0 .625.221.996.92.996.255 0 .55-.079.738-.208l-.17-.478a1.096 1.096 0 01-.523.151c-.295 0-.415-.18-.415-.45v-1.282h.988v-.49zm5.037-.067a.84.84 0 00-.739.393v-.326h-.539v2.688h.545v-1.512c0-.445.216-.732.602-.732.12 0 .244.017.37.068l.181-.506a1.272 1.272 0 00-.42-.073zm-7.614.28c-.284-.185-.676-.28-1.108-.28-.687 0-1.107.32-1.107.854 0 .44.307.703.914.788l.279.04c.323.044.5.157.5.308 0 .209-.24.344-.642.344-.426 0-.704-.13-.903-.282l-.278.422c.403.293.885.349 1.175.349.783 0 1.215-.36 1.215-.872 0-.472-.33-.714-.926-.798l-.278-.04c-.255-.034-.482-.112-.482-.292 0-.197.215-.332.539-.332.346 0 .681.13.846.23l.256-.438zm8.232 1.131c0 .816.551 1.412 1.426 1.412.408 0 .68-.09.976-.32l-.284-.423a1.2 1.2 0 01-.71.242c-.47-.005-.84-.37-.84-.91s.37-.906.84-.912a1.2 1.2 0 01.71.242l.284-.422c-.295-.23-.568-.32-.976-.32-.875 0-1.426.596-1.426 1.411zm-3.815-1.411c-.795 0-1.34.568-1.34 1.406 0 .854.568 1.417 1.38 1.417.409 0 .783-.101 1.113-.377l-.29-.4a1.3 1.3 0 01-.79.282c-.38 0-.766-.214-.834-.697h2.027a2.82 2.82 0 00.012-.225c-.006-.839-.517-1.406-1.278-1.406zm-.011.5c.403 0 .675.259.715.68h-1.465c.051-.393.312-.68.75-.68zm-7.347.911v-1.344h-.546v.326c-.187-.242-.494-.393-.88-.393-.76 0-1.34.59-1.34 1.411 0 .821.58 1.412 1.34 1.412.386 0 .693-.152.88-.394v.327h.546v-1.345zm-2.198 0c0-.506.324-.91.846-.91.5 0 .829.387.829.91s-.33.911-.829.911c-.522 0-.846-.405-.846-.91zm20.951-1.411a.84.84 0 00-.738.393v-.326h-.54v2.688h.546v-1.512c0-.445.216-.732.602-.732.12 0 .244.017.37.068l.18-.506a1.272 1.272 0 00-.42-.073zm4.374 2.365a.273.273 0 01.274.267.27.27 0 01-.167.246.278.278 0 01-.361-.142.254.254 0 010-.207.271.271 0 01.254-.164zm0 .475a.201.201 0 00.147-.06.204.204 0 00.06-.148.203.203 0 00-.06-.147.209.209 0 00-.23-.044.206.206 0 00-.112.272.204.204 0 00.112.11.21.21 0 00.083.017zm.015-.333c.033 0 .057.007.075.022a.07.07 0 01.026.058c0 .02-.007.037-.021.05a.1.1 0 01-.059.025l.082.094h-.064l-.076-.093h-.025v.093h-.053v-.248h.115zm-.062.047v.066h.062a.061.061 0 00.033-.008c.009-.006.013-.014.013-.025 0-.011-.004-.02-.013-.025a.061.061 0 00-.033-.008h-.062zm-6.416-1.143v-1.344h-.545v.326c-.188-.242-.494-.393-.88-.393-.761 0-1.34.59-1.34 1.411 0 .821.579 1.412 1.34 1.412.386 0 .693-.152.88-.394v.327h.545v-1.345zm-2.197 0c0-.506.323-.91.845-.91.5 0 .83.387.83.91s-.33.911-.83.911c-.522 0-.845-.405-.845-.91zm7.676 0v-2.424h-.545v1.406c-.188-.242-.494-.393-.88-.393-.761 0-1.34.59-1.34 1.411 0 .821.579 1.412 1.34 1.412.386 0 .692-.152.88-.394v.327h.545v-1.345zm-2.197 0c0-.506.323-.91.846-.91.5 0 .829.387.829.91s-.33.911-.83.911c-.522 0-.845-.405-.845-.91z" fill="#FFF"></path><path fill="#F16122" d="M19.06 4.296h9.827v15.9H19.06z"></path><path d="M20.075 12.246c0-3.225 1.525-6.098 3.899-7.95a10.225 10.225 0 00-6.308-2.161c-5.638 0-10.208 4.527-10.208 10.111 0 5.585 4.57 10.112 10.208 10.112 2.38 0 4.572-.808 6.308-2.162-2.374-1.851-3.899-4.724-3.899-7.95z" fill="#E91D25"></path><path d="M39.549 19.12v-.83h.154v-.168h-.393v.169h.155v.829h.084zm.761 0v-1h-.12l-.138.687-.139-.687h-.12v1h.085v-.755l.13.65h.088l.13-.651v.755h.084zM40.49 12.246c0 5.585-4.57 10.112-10.208 10.112-2.381 0-4.572-.808-6.308-2.162 2.374-1.851 3.898-4.724 3.898-7.95 0-3.225-1.524-6.098-3.898-7.95a10.225 10.225 0 016.308-2.161c5.637 0 10.207 4.527 10.207 10.111z" fill="#F79E1D"></path></g></svg>
+            
+              <!-- <svg style="margin-right:5px" xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30" class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="American Express"><path d="M47.992 15.952c-3.157-.016-3.682-.073-4.54.402v-.402c-3.773 0-4.456-.137-5.405.418v-.418h-6.513v.41c-.95-.523-1.783-.41-6.305-.41v.45c-.525-.298-1.208-.45-2.024-.45h-4.831c-.292.305-1.041 1.1-1.308 1.382-1.058-1.133-.874-.932-1.29-1.382H8.853v7.417h6.83a208.12 208.12 0 001.34-1.398c1.058 1.149.858.94 1.283 1.398h4.073c0-1.181.008-.667.008-1.848.958.016 2.024-.017 2.857-.499 0 1.117-.008 1.374-.008 2.347h3.298c0-1.487.008-.595.008-2.033.517 0 .642 0 .783.008.009.104 0 0 0 2.025 12.727 0 12.152.088 13.052-.362v.362c2.898 0 4.564.177 5.622-.49v3.264C48 28.273 46.21 30 44.002 30H4.015C1.807 30 .017 28.272.017 26.143V13.774h2.215c.35-.811.183-.426.533-1.23h1.6c.35.804.183.418.532 1.23h4.406v-.916c.184.402.092.2.425.916h2.457c.2-.442.217-.466.425-.916v.916h11.286v-2.017c.533 0 .666-.008.816.016 0 0-.017.876.008 1.993h5.54v-.715c.616.474 1.448.715 2.473.715h2.232c.35-.812.183-.426.533-1.23h1.583c.541 1.206.016.04.55 1.23h4.397v-1.76c.983 1.583.65 1.037 1.1 1.76h3.464V6.373H43.27v1.479c-1.016-1.623-.525-.836-.933-1.479H38.73V8.03c-.517-1.174-.383-.868-.733-1.656h-2.699c-.033 0-.191.016-.191-.024h-2.3c-1.065 0-1.923.257-2.556.747V6.35h-3.323v.426c-.9-.49-1.724-.41-5.364-.426-.009 0-.966-.008-.966 0h-8.58c-.207.49-.566 1.318-1.049 2.41-.233-.481-.916-1.912-1.157-2.41H5.98v1.696c-.616-1.399-.391-.884-.75-1.696H1.925C1.641 6.984.783 8.921 0 10.68V3.857C0 1.727 1.79 0 3.998 0h39.98c2.206 0 3.997 1.728 3.997 3.857v12.095h.017zM32.45 9.475c-.025.016-.117.177-.117.61 0 .483.075.62.092.636.016.008.091.04.283.04l.608-1.358c-.092 0-.175-.008-.258-.008-.467 0-.583.056-.608.08zm-1.658 10.519c.767.265.916.763.916 1.478l-.008 1.11h-1.382l.008-.925c0-.948-.317-1.109-1.233-1.109h-1.466l-.008 2.033h-1.383l.009-5.569h3.281c1.083 0 2.257.185 2.257 1.503-.008.61-.35 1.23-.99 1.479zm-.524-1.238c0-.514-.467-.594-.892-.594h-1.749v1.253h1.724c.467 0 .917-.104.917-.659zm15.133-.57h2.507v-1.174h-2.74c-1.066 0-1.982.53-1.982 1.664 0 2.652 3.556 1.028 3.556 2.202 0 .41-.358.514-.7.514h-2.665l-.008 1.19h2.665c.7 0 1.466-.145 1.874-.716v-2.073c-.874-1.11-3.273-.105-3.273-1.085 0-.466.383-.522.766-.522zm-8.262-.024v-1.15h-4.598l-.008 5.57h4.598l.008-1.15-3.215-.024v-1.109h3.157v-1.133h-3.149v-1.004h3.207zm3.515 3.222h-2.682l-.008 1.19h2.681c1.233 0 2.183-.45 2.183-1.769 0-2.668-3.573-.9-3.573-2.113 0-.45.408-.514.766-.514h2.532v-1.174h-2.765c-1.067 0-1.958.53-1.958 1.664 0 2.652 3.557 1.004 3.557 2.202-.009.434-.392.514-.733.514zM34.149 8.63c-1.45-.024-2.765-.33-2.765 1.583 0 .948.233 1.6 1.34 1.6h.617l1.957-4.38h2.066l2.324 5.255V7.434h2.107l2.424 3.865V7.434h1.407v5.545h-1.965l-2.6-4.171v4.17h-2.806l-.55-1.229H34.85l-.534 1.23h-1.599c-1.899 0-2.748-.949-2.748-2.733 0-1.872.874-2.836 2.832-2.836h1.34v1.22h.009zm1.19 1.969h1.9l-.933-2.218-.966 2.218zm-6.046-3.182h-1.408v5.569h1.408v-5.57zm-3.173 2.997c.791.265.916.74.916 1.479v1.085h-1.383c-.025-1.19.3-2.017-1.232-2.017h-1.5v2.017h-1.366v-5.57l3.257.025c1.108 0 2.282.16 2.282 1.478.009.643-.358 1.262-.974 1.503zm-.558-1.23c0-.514-.467-.594-.892-.594h-1.749v1.23h1.724c.475 0 .917-.105.917-.635zm-4.956-.594V7.418h-4.623v5.569h4.623v-1.15h-3.24V10.73h3.148V9.596h-3.148V8.59h3.24zm-7.046 4.396V8.63l-2 4.356h-1.215l-2-4.356v4.356H5.53l-.533-1.23H2.124l-.533 1.23H.1l2.474-5.57h2.04l2.34 5.28v-5.28h2.258l1.807 3.778 1.641-3.777h2.299v5.569h-1.4zM4.506 10.6l-.958-2.218-.933 2.218h1.891zm21.072 8.237c0 2.242-2.532 1.872-4.106 1.872l-.008 1.872h-2.682l-1.7-1.848-1.773 1.848H9.862l.008-5.569h5.539l1.707 1.833 1.75-1.832h4.389c1.299 0 2.323.433 2.323 1.824zm-9.386.948L14.7 18.162h-3.474v1.004h3.024V20.3h-3.024v1.109h3.382l1.583-1.623zm3.898-2.178l-2.108 2.202 2.108 2.258v-4.46zm4.022 1.23c0-.49-.383-.675-.85-.675h-1.79v1.414h1.766c.491 0 .874-.225.874-.74z" fill="#0070CF"></path></svg> -->
+            </div>
+               </div>
+            </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30"
-                      class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="Mastercard">
-                      <g fill-rule="nonzero" fill="none">
-                        <path
-                          d="M46.218 29.94H1.62c-.891 0-1.62-.722-1.62-1.605V1.605C0 .722.729 0 1.62 0h44.598c.891 0 1.62.722 1.62 1.605v26.73c0 .883-.729 1.605-1.62 1.605z"
-                          fill="#010101"></path>
-                        <path
-                          d="M13.426 27.443v-1.692c0-.636-.386-1.058-1.044-1.063-.347-.006-.704.1-.954.478-.188-.298-.483-.478-.897-.478-.29 0-.597.078-.818.393v-.326h-.545v2.688h.55v-1.54c0-.468.285-.715.688-.715.392 0 .613.253.613.709v1.546h.55v-1.54c0-.468.296-.715.688-.715.403 0 .619.253.619.708v1.547h.55zm8.846-2.688h-.988v-.816h-.55v.816h-.574v.49h.574v1.27c0 .625.221.996.92.996.255 0 .55-.079.738-.208l-.17-.478a1.096 1.096 0 01-.523.151c-.295 0-.415-.18-.415-.45v-1.282h.988v-.49zm5.037-.067a.84.84 0 00-.739.393v-.326h-.539v2.688h.545v-1.512c0-.445.216-.732.602-.732.12 0 .244.017.37.068l.181-.506a1.272 1.272 0 00-.42-.073zm-7.614.28c-.284-.185-.676-.28-1.108-.28-.687 0-1.107.32-1.107.854 0 .44.307.703.914.788l.279.04c.323.044.5.157.5.308 0 .209-.24.344-.642.344-.426 0-.704-.13-.903-.282l-.278.422c.403.293.885.349 1.175.349.783 0 1.215-.36 1.215-.872 0-.472-.33-.714-.926-.798l-.278-.04c-.255-.034-.482-.112-.482-.292 0-.197.215-.332.539-.332.346 0 .681.13.846.23l.256-.438zm8.232 1.131c0 .816.551 1.412 1.426 1.412.408 0 .68-.09.976-.32l-.284-.423a1.2 1.2 0 01-.71.242c-.47-.005-.84-.37-.84-.91s.37-.906.84-.912a1.2 1.2 0 01.71.242l.284-.422c-.295-.23-.568-.32-.976-.32-.875 0-1.426.596-1.426 1.411zm-3.815-1.411c-.795 0-1.34.568-1.34 1.406 0 .854.568 1.417 1.38 1.417.409 0 .783-.101 1.113-.377l-.29-.4a1.3 1.3 0 01-.79.282c-.38 0-.766-.214-.834-.697h2.027a2.82 2.82 0 00.012-.225c-.006-.839-.517-1.406-1.278-1.406zm-.011.5c.403 0 .675.259.715.68h-1.465c.051-.393.312-.68.75-.68zm-7.347.911v-1.344h-.546v.326c-.187-.242-.494-.393-.88-.393-.76 0-1.34.59-1.34 1.411 0 .821.58 1.412 1.34 1.412.386 0 .693-.152.88-.394v.327h.546v-1.345zm-2.198 0c0-.506.324-.91.846-.91.5 0 .829.387.829.91s-.33.911-.829.911c-.522 0-.846-.405-.846-.91zm20.951-1.411a.84.84 0 00-.738.393v-.326h-.54v2.688h.546v-1.512c0-.445.216-.732.602-.732.12 0 .244.017.37.068l.18-.506a1.272 1.272 0 00-.42-.073zm4.374 2.365a.273.273 0 01.274.267.27.27 0 01-.167.246.278.278 0 01-.361-.142.254.254 0 010-.207.271.271 0 01.254-.164zm0 .475a.201.201 0 00.147-.06.204.204 0 00.06-.148.203.203 0 00-.06-.147.209.209 0 00-.23-.044.206.206 0 00-.112.272.204.204 0 00.112.11.21.21 0 00.083.017zm.015-.333c.033 0 .057.007.075.022a.07.07 0 01.026.058c0 .02-.007.037-.021.05a.1.1 0 01-.059.025l.082.094h-.064l-.076-.093h-.025v.093h-.053v-.248h.115zm-.062.047v.066h.062a.061.061 0 00.033-.008c.009-.006.013-.014.013-.025 0-.011-.004-.02-.013-.025a.061.061 0 00-.033-.008h-.062zm-6.416-1.143v-1.344h-.545v.326c-.188-.242-.494-.393-.88-.393-.761 0-1.34.59-1.34 1.411 0 .821.579 1.412 1.34 1.412.386 0 .693-.152.88-.394v.327h.545v-1.345zm-2.197 0c0-.506.323-.91.845-.91.5 0 .83.387.83.91s-.33.911-.83.911c-.522 0-.845-.405-.845-.91zm7.676 0v-2.424h-.545v1.406c-.188-.242-.494-.393-.88-.393-.761 0-1.34.59-1.34 1.411 0 .821.579 1.412 1.34 1.412.386 0 .692-.152.88-.394v.327h.545v-1.345zm-2.197 0c0-.506.323-.91.846-.91.5 0 .829.387.829.91s-.33.911-.83.911c-.522 0-.845-.405-.845-.91z"
-                          fill="#FFF"></path>
-                        <path fill="#F16122" d="M19.06 4.296h9.827v15.9H19.06z"></path>
-                        <path
-                          d="M20.075 12.246c0-3.225 1.525-6.098 3.899-7.95a10.225 10.225 0 00-6.308-2.161c-5.638 0-10.208 4.527-10.208 10.111 0 5.585 4.57 10.112 10.208 10.112 2.38 0 4.572-.808 6.308-2.162-2.374-1.851-3.899-4.724-3.899-7.95z"
-                          fill="#E91D25"></path>
-                        <path
-                          d="M39.549 19.12v-.83h.154v-.168h-.393v.169h.155v.829h.084zm.761 0v-1h-.12l-.138.687-.139-.687h-.12v1h.085v-.755l.13.65h.088l.13-.651v.755h.084zM40.49 12.246c0 5.585-4.57 10.112-10.208 10.112-2.381 0-4.572-.808-6.308-2.162 2.374-1.851 3.898-4.724 3.898-7.95 0-3.225-1.524-6.098-3.898-7.95a10.225 10.225 0 016.308-2.161c5.637 0 10.207 4.527 10.207 10.111z"
-                          fill="#F79E1D"></path>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <br>
-                <div id="paycard" style="display:none;">
-                  <div class="input-container">
-                    <input type="text" id="credit" name="credit" placeholder=" " required="required">
-                    <label class="placeholder-text" for="credit">
-                      <span class="placeholder-name">Card Number</span>
-                    </label>
-                  </div>
-                  <br>
 
-                  <div class="input-container">
-                    <input type="text" id="exp" name="exp" placeholder=" " required="required">
-                    <label class="placeholder-text" for="exp">
-                      <span class="placeholder-name">Expiration Date</span>
-                    </label>
-                  </div>
-                  <br>
-                  <div class="input-container">
-                    <input type="text" id="cvc" name="cvc" placeholder=" " required="required">
-                    <label class="placeholder-text" for="cvc">
-                      <span class="placeholder-name">CVC</span>
-                    </label>
-                  </div>
-                  <br>
-                </div>
-                <div class="radio-button-selection" onchange="eopen()">
-                  <div class="button-info">
-                    <input type="radio" id="payment2" name="payment" value="1">
-                    <label style="margin-left:5%" for="payment2">Express Payment
-                    </label>
+        
+<br>
+<div id="paycard"  style="display:none;">
+ 
+  <div class="input-container">
+    <input type="text" id="credit" name="credit" placeholder=" " required="required">
+    <label class="placeholder-text" for="credit" >
+      <span class="placeholder-name">Card Number</span>
+    </label>
+  </div>
+  <br>
 
-                    <svg style="margin-right:5%" xmlns="http://www.w3.org/2000/svg" width="64" height="30"
-                      viewBox="0.5 0 63 16.1" class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="PayPal">
-                      <g fill="none">
-                        <path
-                          d="M49.2 4.2h-3.4c-.2 0-.4.2-.5.4l-1.4 8.8c0 .2.1.3.3.3H46c.2 0 .3-.1.3-.3l.4-2.5c0-.2.2-.4.5-.4h1.1c2.3 0 3.6-1.1 3.9-3.3.2-.9 0-1.7-.4-2.2-.6-.5-1.5-.8-2.6-.8m.4 3.3c-.2 1.2-1.1 1.2-2 1.2H47l.4-2.3c0-.1.1-.2.3-.2h.2c.6 0 1.2 0 1.5.4.2.1.2.4.2.9"
-                          fill="#139AD6"></path>
-                        <path
-                          d="M24.7 4.2h-3.4c-.2 0-.4.2-.5.4l-1.4 8.8c0 .2.1.3.3.3h1.6c.2 0 .4-.2.5-.4l.4-2.4c0-.2.2-.4.5-.4h1.1c2.3 0 3.6-1.1 3.9-3.3.2-.9 0-1.7-.4-2.2-.6-.5-1.4-.8-2.6-.8m.4 3.3c-.2 1.2-1.1 1.2-2 1.2h-.5l.4-2.3c0-.1.1-.2.3-.2h.2c.6 0 1.2 0 1.5.4.1.1.2.4.1.9m9.9-.1h-1.6c-.1 0-.3.1-.3.2l-.1.5-.1-.2c-.4-.5-1.1-.7-1.9-.7-1.8 0-3.4 1.4-3.7 3.3-.2 1 .1 1.9.6 2.5.5.6 1.2.8 2.1.8 1.5 0 2.3-.9 2.3-.9l-.1.5c0 .2.1.3.3.3H34c.2 0 .4-.2.5-.4l.9-5.6c-.1-.1-.3-.3-.4-.3m-2.3 3.2c-.2.9-.9 1.6-1.9 1.6-.5 0-.9-.2-1.1-.4-.2-.3-.3-.7-.3-1.2.1-.9.9-1.6 1.8-1.6.5 0 .8.2 1.1.4.3.3.4.8.4 1.2"
-                          fill="#263B80"></path>
-                        <path
-                          d="M59.4 7.4h-1.6c-.1 0-.3.1-.3.2l-.1.5-.1-.2c-.4-.5-1.1-.7-1.9-.7-1.8 0-3.4 1.4-3.7 3.3-.2 1 .1 1.9.6 2.5.5.6 1.2.8 2.1.8 1.5 0 2.3-.9 2.3-.9l-.1.5c0 .2.1.3.3.3h1.5c.2 0 .4-.2.5-.4l.9-5.6c-.1-.1-.2-.3-.4-.3m-2.3 3.2c-.2.9-.9 1.6-1.9 1.6-.5 0-.9-.2-1.1-.4-.2-.3-.3-.7-.3-1.2.1-.9.9-1.6 1.8-1.6.5 0 .8.2 1.1.4.4.3.5.8.4 1.2"
-                          fill="#139AD6"></path>
-                        <path
-                          d="M43.7 7.4H42c-.2 0-.3.1-.4.2L39.4 11l-1-3.2c-.1-.2-.2-.3-.5-.3h-1.6c-.2 0-.3.2-.3.4l1.8 5.3-1.7 2.4c-.1.2 0 .5.2.5h1.6c.2 0 .3-.1.4-.2L43.8 8c.3-.3.1-.6-.1-.6"
-                          fill="#263B80"></path>
-                        <path
-                          d="M61.3 4.5l-1.4 9c0 .2.1.3.3.3h1.4c.2 0 .4-.2.5-.4l1.4-8.8c0-.2-.1-.3-.3-.3h-1.6c-.1-.1-.2 0-.3.2"
-                          fill="#139AD6"></path>
-                        <path
-                          d="M12 1.2C11.3.4 10 0 8.2 0h-5c-.3 0-.6.3-.7.6l-2 13.1c0 .3.2.5.4.5H4l.8-4.9v.2c.1-.3.4-.6.7-.6H7c2.9 0 5.1-1.2 5.8-4.5v-.3c-.1 0-.1 0 0 0 .1-1.3-.1-2.1-.8-2.9"
-                          fill="#263B80"></path>
-                        <path
-                          d="M12.7 4.1v.3C12 7.8 9.8 8.9 6.9 8.9H5.4c-.3 0-.6.3-.7.6l-1 6.1c0 .2.1.4.4.4h2.6c.3 0 .6-.2.6-.5v-.1l.5-3.1v-.2c0-.3.3-.5.6-.5h.4c2.5 0 4.5-1 5-4 .2-1.2.1-2.3-.5-3-.1-.2-.3-.4-.6-.5"
-                          fill="#139AD6"></path>
-                        <path
-                          d="M12 3.8c-.1 0-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.4-.1-.8-.1-1.3-.1H6.2c-.1 0-.2 0-.3.1-.2.1-.3.3-.3.5l-.8 5.2v.2c.1-.3.4-.6.7-.6H7c2.9 0 5.1-1.2 5.8-4.5 0-.1 0-.2.1-.3-.2-.1-.3-.2-.5-.2-.3-.1-.3-.1-.4-.1"
-                          fill="#232C65"></path>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <br>
-                <div id="expresspay" style="display:none;">
-                  <div class="input-container">
-                    <input type="text" id="expemail" name="expemail" placeholder=" " required="required">
-                    <label class="placeholder-text" for="expemail">
-                      <span class="placeholder-name">Email Address</span>
-                    </label>
-                  </div>
-                  <br>
-                </div>
-                <hr>
+  <div class="input-container">
+    <input type="text" id="exp" name="exp" placeholder=" " required="required">
+    <label class="placeholder-text" for="exp" >
+      <span class="placeholder-name">Expiration Date</span>
+    </label>
+  </div>
+  <br>
+  <div class="input-container">
+    <input type="text" id="cvc" name="cvc" placeholder=" " required="required">
+    <label class="placeholder-text" for="cvc" >
+      <span class="placeholder-name">CVC</span>
+    </label>
+  </div>
+        
+        
+            </div>
+  
+        
+            <div class="radio-button-selection" onchange="eopen()">
+              <div class="button-info">
+            <input type="radio" id="payment2" name="payment" value="1">
+            <label style="margin-left:5%"  for="payment2">Express Payment
+            </label>
+           
+           <svg style="margin-right:5%" xmlns="http://www.w3.org/2000/svg" width="64" height="30" viewBox="0.5 0 63 16.1" class="Icon__StyledSVG-lm07h6-0 dHKzVM" aria-label="PayPal"><g fill="none"><path d="M49.2 4.2h-3.4c-.2 0-.4.2-.5.4l-1.4 8.8c0 .2.1.3.3.3H46c.2 0 .3-.1.3-.3l.4-2.5c0-.2.2-.4.5-.4h1.1c2.3 0 3.6-1.1 3.9-3.3.2-.9 0-1.7-.4-2.2-.6-.5-1.5-.8-2.6-.8m.4 3.3c-.2 1.2-1.1 1.2-2 1.2H47l.4-2.3c0-.1.1-.2.3-.2h.2c.6 0 1.2 0 1.5.4.2.1.2.4.2.9" fill="#139AD6"></path><path d="M24.7 4.2h-3.4c-.2 0-.4.2-.5.4l-1.4 8.8c0 .2.1.3.3.3h1.6c.2 0 .4-.2.5-.4l.4-2.4c0-.2.2-.4.5-.4h1.1c2.3 0 3.6-1.1 3.9-3.3.2-.9 0-1.7-.4-2.2-.6-.5-1.4-.8-2.6-.8m.4 3.3c-.2 1.2-1.1 1.2-2 1.2h-.5l.4-2.3c0-.1.1-.2.3-.2h.2c.6 0 1.2 0 1.5.4.1.1.2.4.1.9m9.9-.1h-1.6c-.1 0-.3.1-.3.2l-.1.5-.1-.2c-.4-.5-1.1-.7-1.9-.7-1.8 0-3.4 1.4-3.7 3.3-.2 1 .1 1.9.6 2.5.5.6 1.2.8 2.1.8 1.5 0 2.3-.9 2.3-.9l-.1.5c0 .2.1.3.3.3H34c.2 0 .4-.2.5-.4l.9-5.6c-.1-.1-.3-.3-.4-.3m-2.3 3.2c-.2.9-.9 1.6-1.9 1.6-.5 0-.9-.2-1.1-.4-.2-.3-.3-.7-.3-1.2.1-.9.9-1.6 1.8-1.6.5 0 .8.2 1.1.4.3.3.4.8.4 1.2" fill="#263B80"></path><path d="M59.4 7.4h-1.6c-.1 0-.3.1-.3.2l-.1.5-.1-.2c-.4-.5-1.1-.7-1.9-.7-1.8 0-3.4 1.4-3.7 3.3-.2 1 .1 1.9.6 2.5.5.6 1.2.8 2.1.8 1.5 0 2.3-.9 2.3-.9l-.1.5c0 .2.1.3.3.3h1.5c.2 0 .4-.2.5-.4l.9-5.6c-.1-.1-.2-.3-.4-.3m-2.3 3.2c-.2.9-.9 1.6-1.9 1.6-.5 0-.9-.2-1.1-.4-.2-.3-.3-.7-.3-1.2.1-.9.9-1.6 1.8-1.6.5 0 .8.2 1.1.4.4.3.5.8.4 1.2" fill="#139AD6"></path><path d="M43.7 7.4H42c-.2 0-.3.1-.4.2L39.4 11l-1-3.2c-.1-.2-.2-.3-.5-.3h-1.6c-.2 0-.3.2-.3.4l1.8 5.3-1.7 2.4c-.1.2 0 .5.2.5h1.6c.2 0 .3-.1.4-.2L43.8 8c.3-.3.1-.6-.1-.6" fill="#263B80"></path><path d="M61.3 4.5l-1.4 9c0 .2.1.3.3.3h1.4c.2 0 .4-.2.5-.4l1.4-8.8c0-.2-.1-.3-.3-.3h-1.6c-.1-.1-.2 0-.3.2" fill="#139AD6"></path><path d="M12 1.2C11.3.4 10 0 8.2 0h-5c-.3 0-.6.3-.7.6l-2 13.1c0 .3.2.5.4.5H4l.8-4.9v.2c.1-.3.4-.6.7-.6H7c2.9 0 5.1-1.2 5.8-4.5v-.3c-.1 0-.1 0 0 0 .1-1.3-.1-2.1-.8-2.9" fill="#263B80"></path><path d="M12.7 4.1v.3C12 7.8 9.8 8.9 6.9 8.9H5.4c-.3 0-.6.3-.7.6l-1 6.1c0 .2.1.4.4.4h2.6c.3 0 .6-.2.6-.5v-.1l.5-3.1v-.2c0-.3.3-.5.6-.5h.4c2.5 0 4.5-1 5-4 .2-1.2.1-2.3-.5-3-.1-.2-.3-.4-.6-.5" fill="#139AD6"></path><path d="M12 3.8c-.1 0-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.4-.1-.8-.1-1.3-.1H6.2c-.1 0-.2 0-.3.1-.2.1-.3.3-.3.5l-.8 5.2v.2c.1-.3.4-.6.7-.6H7c2.9 0 5.1-1.2 5.8-4.5 0-.1 0-.2.1-.3-.2-.1-.3-.2-.5-.2-.3-.1-.3-.1-.4-.1" fill="#232C65"></path></g></svg>
+          
+             </div>
+             </div>
+          <br>
+             <div id="expresspay"  style="display:none;">
+              <div class="input-container">
+                <input type="text" id="expemail" name="expemail" placeholder=" " required="required">
+                <label class="placeholder-text" for="expemail" >
+                  <span class="placeholder-name">Email Address</span>
+                </label>
+              </div>
+        
+        
+            </div>
+          
+       <!-- </div> -->
+       <!-- </div> -->
+       <!-- </div> -->
+          
+          <hr>
                 <!-- order item 2 starts -->
+                <!-- <div class="order-flex-item"> -->
+              <h2>Shipping</h2>
 
-                <h2>Shipping</h2>
-
-                <h3>Delivery date(s)</h3>
-                <div class="radio-button-selection">
-                  <div class="button-info">
-                    <input type="radio" id="delivery_date1" name="delivery_date" value="1">
-                    <label style="margin-left:5%" for="delivery_date1">$9.99 - Express Delivery:
-                    </label>
-                    <div style="margin-right:5%">
-                      <p>March 15</p>
-                    </div>
-                  </div>
-                </div>
-
-
-                <br>
-                <div class="radio-button-selection">
-                  <div class="button-info">
-                    <input type="radio" id="delivery_date2" name="delivery_date" value="2">
-                    <label style="margin-left:5%" for="delivery_date2">Free - Standard Delivery:
-                    </label>
-                    <div style="margin-right:5%">
-                      <p>March 18</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h3>Delivery date(s)</h3>
+              <div class="radio-button-selection">
+                <div class="button-info">
+              <input type="radio" id="delivery_date1" name="delivery_date" value="1">
+              <label style="margin-left:5%" for="delivery_date1">Express Delivery:
+              </label>
+             <div style="margin-right:5%" >
+             <p>March 15</p>
             </div>
-
-            <!-- order container 2  ends -->
-            <div class="buttons_container">
-              <a href="cart.html" class="button"> Back to Cart </a>
+               </div>
+               </div>
+              
+              
+              <br>
+              <div class="radio-button-selection">
+                <div class="button-info">
+              <input type="radio" id="delivery_date2" name="delivery_date" value="2">
+              <label style="margin-left:5%" for="delivery_date2">Standard Delivery:
+              </label>
+             <div style="margin-right:5%" >
+             <p>March 18</p>
             </div>
+               </div>
+               </div>
+
+        <!-- </div> -->
+         
+         </div>
+
           </div>
-          <!-- form container item 1 ends -->
+          <!-- order container 2  ends -->
+          <div class="buttons_container">
+            <a href="cart.html" class="button"> Back to Cart </a>
+          </div>
+        </div>
+        <!-- form container item 1 ends -->
 
-          <!-- form container item 2 starts -->
-          <div class="super-order-flex-item">
+       
 
-            <!--  order summary container starts -->
-            <div class="order-summary">
-              <h3>Order Summary</h3>
-              <table>
-                <tr>
-                  <td>Subtotal: <br>
-                  </td>
-                  <td>$14.98</td>
-                </tr>
+        <!-- form container item 2 starts -->
+        <div class="super-order-flex-item">
 
-                <tr>
-                  <td>Shipping:</td>
-                  <td>
-                    <del>$9.99</del>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Tax:</td>
-                  <td>$1.79</td>
-                </tr>
-              </table>
-              <h3> Order total:</h3>
-              <h3>$16.77</h3>
+          <!--  order summary container starts -->
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+        
+            <table>
+              <tr>
+                <td>Subtotal: <br>
+                </td>
+                <td>$14.98</td>
+              </tr>
+           
 
-              <hr>
 
-              <h3>Order Details</h3>
-
-              <div class="menu-flex-container">
-                <div class="menu-flex-item-pic">
-                  <br><a href="itemDetails_croissants.html"><img class="order-img" src="img/croissant.png"
-                      alt="croissant"></a>
-                </div>
-                <div class="menu-flex-item-desc">
-                  <h3>Croissant</h3>
-                  <h3>$4.99</h3>
-                  <br>
-                  <label for="quantity">Qty:</label>
-                  <input id="quantity" type="number" placeholder="1" name="quantity" min="0" max="99">
-                  <br>
-
-                </div>
+              <tr>
+                <td>Shipping:</td>
+                <td>
+                  <del>$9.99</del>
+                </td>
+              </tr>
+              <tr>
+                <td>Tax:</td>
+                <td>$1.79</td>
+              </tr>
+            </table>
+            <h3> Order total:</h3>
+            <h3>$16.77</h3>
+          
+          <hr>
+           
+          
+            <h3>Order Details</h3>
+         
+            <div class = "menu-flex-container">
+              <div class="menu-flex-item-pic">
+                <br><a href="itemDetails_croissants.html"><img class="order-img" src="img/croissant.png" alt="croissant"></a>
               </div>
-
-              <div class="menu-flex-container">
-                <div class="menu-flex-item-pic">
-                  <br><a href="itemDetails_blueberryMuffin.html"><img class="order-img" src="img/chocolate_cake.png"
-                      alt="chocolate cake"></a>
-                </div>
-                <div class="menu-flex-item-desc">
-                  <h3>Chocolate Cake</h3>
-                  <h3>$9.99</h3>
-                  <br>
-                <input type="number" placeholder="1" name="quantity1" min="0" max="99" id="quantity1">
-                  <br>
-                </div>
+              <div class="menu-flex-item-desc">
+               <h3>Croissant</h3>
+               <h3>$4.99</h3> 
+                <br>
+                <label for="quantity">Qty:</label>
+                <input id="quantity" type="number" placeholder="1" name="quantity" min="0" max="99" >
+                 <br>
+                
               </div>
-
-              <hr>
-              <input class="button" type="reset" value="Reset">
-              <input class="button" type="submit" value="Place order">
             </div>
-
+          
+          
+          
+            <div class = "menu-flex-container">
+              <div class="menu-flex-item-pic">
+               <br><a href="itemDetails_blueberryMuffin.html"><img class="order-img" src="img/chocolate_cake.png" alt="chocolate cake"></a>
+              </div>
+              <div class="menu-flex-item-desc">
+                <h3>Chocolate Cake</h3>
+                <h3>$9.99</h3>
+                <br>
+               <!-- <p>60 customizable rice/noodle dishes.<br> Dishes range from shanghai noodles to fried rice dishes.</p> <br> -->
+               <label for="quantity1">Qty:</label>
+               <input type="number" placeholder="1" name="quantity1" min="0" max="99" id="quantity1">
+               <br>
+           
+              </div>
+            </div>
+          
+             <hr>
+            <input class="button" type="reset" value="Reset">
+            
+            <input class="button" type="submit" value="Place order">
+          </div>
+          
+          
+          
+          
+          
+          
+       
           </div>
           <!--  order summary container ends -->
 
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
         </div>
         <!-- form container item 2 ends -->
-    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- </div> -->
+      <!-- form container ends -->
+
     </form>
     <!-- form ends -->
+ 
   </section>
 
   <br>
 
-  <footer class="sweet-spot-footer">
-    <div class="footer-element">
-      <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
-        European-style pastries and sweets, and we're proud to be a part of the local community. Our brand
-        identity is a combination of warm beige and earthy green, symbolizing our connection to nature and our
-        community, and our passion for creating sweet treats that bring people together.</p>
-    </div>
-
-    <div class="footer-element">
-      <p class="footer_text">
-        Address:
-        <br>
-        110 - 12000 First Avenue
-        Richmond, BC V7E 3L9
-        Steveston Village
-        <br>
-        <br>
-        Contact us:
-        <br>
-        604-271-8865
-      </p>
-    </div>
-
-    <div class="footer-socials">
-      <div class="footer-socials-elements">
-        <a href="#Facebook"> <img src="img/Facebook.png" alt="fb"> </a>
-        <a href="#Twitter"> <img src="img/Twitter.png" alt="twitter"> </a>
-        <a href="#Instagram"> <img src="img/Instagram.png" alt="ig"> </a>
+    <footer class="sweet-spot-footer">
+      <div class="footer-element">
+        <p>The Sweet Spot Bakery is a family-owned bakery located in Richmond, British Columbia. We specialize in
+          European-style pastries and sweets, and we're proud to be a part of the local community. Our brand
+          identity is a combination of warm beige and earthy green, symbolizing our connection to nature and our
+          community, and our passion for creating sweet treats that bring people together.</p>
       </div>
-    </div>
-
-    <div class="footer-links">
-      <h2> Other links </h2>
-      <a href="citations.html" class="link"> Image & Code Citations </a>
-      <br><br>
-      <a href="styleguide.html" class="link"> Style Guide Template </a>
-    </div>
-  </footer>
-
-  <script>
-
-
-    function popen() {
-      var x = document.getElementById("paycard");
-      var y = document.getElementById("expresspay");
-
-      if (x.style.display === "block") {
-        x.style.display = "none";
-
-      } else {
-        x.style.display = "block";
-        y.style.display = "none";
-      }
-
-
-
-    }
-
-    function eopen() {
-      var x = document.getElementById("expresspay");
-      var y = document.getElementById("paycard");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-
-      } else {
-        x.style.display = "block";
-        y.style.display = "none";
-      }
+  
+      <div class="footer-element">
+        <p class="footer_text">
+          Address:
+          <br>
+          110 - 12000 First Avenue
+          Richmond, BC V7E 3L9
+          Steveston Village
+          <br>
+          <br>
+          Contact us:
+          <br>
+          604-271-8865
+        </p>
+      </div>
+  
+      <div class="footer-socials">
+        <div class="footer-socials-elements">
+          <a href="#Facebook"> <img src="img/Facebook.png" alt="fb"> </a>
+          <a href="#Twitter"> <img src="img/Twitter.png" alt="twitter"> </a>
+          <a href="#Instagram"> <img src="img/Instagram.png" alt="ig"> </a>
+        </div>
+      </div>
+  
+      <div class="footer-links">
+        <h2> Other links </h2>
+        <a href="citations.html" class="link"> Image & Code Citations </a>
+        <br><br>
+        <a href="styleguide.html" class="link"> Style Guide Template </a>
+      </div>
+    </footer>
 
 
 
-    }
 
-
-
-  </script>
-
-
-</body>
-
+<script>
+ 
+ 
+  function popen() {
+     var x = document.getElementById("paycard");
+     var y = document.getElementById("expresspay");
+   
+     if (x.style.display === "block" ) {
+       x.style.display = "none";
+ 
+     } else {
+       x.style.display = "block";
+       y.style.display = "none";
+     }
+ 
+ 
+ 
+ }
+  
+ function eopen() {
+     var x = document.getElementById("expresspay");
+     var y = document.getElementById("paycard");
+   if (x.style.display === "block" ) {
+       x.style.display = "none";
+ 
+     } else {
+       x.style.display = "block";
+       y.style.display = "none";
+     }
+ 
+ 
+ 
+ }
+  
+  
+  
+ </script>
+ </body>
 </html>
