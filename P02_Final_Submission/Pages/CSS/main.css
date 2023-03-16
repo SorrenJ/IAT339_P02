@@ -712,9 +712,17 @@ padding-right: 5%;
       text-align:center
     }
 
-    .gallery-recommended  img{
+    .gallery-recommended img{
+  
       width: 75%;
-      height: 50%;
+      height: 100px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .gallery-recommended .item{
+      margin-left: auto;
+      margin-right: auto;
     }
     .product-details-content {
       flex-direction: column;
@@ -1617,7 +1625,7 @@ width:100%;
   object-fit: cover;
   /* maintain aspect ratio */
   border-radius: 25px;
-
+  transition: 0.5s;
 }
 
 .menu-img:hover {
