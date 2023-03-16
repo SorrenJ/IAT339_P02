@@ -1772,6 +1772,7 @@ width:100%;
   flex-direction: column;
   margin-left: 1%;
   margin-bottom: 5%;
+  
   }
 
   .code-citations {
@@ -1779,5 +1780,5 @@ width:100%;
   }
 
   .image-citations {
-
+    word-break: break-all;
   }
